@@ -1,10 +1,6 @@
-Winter Storm
-=======
+Laralips Storm Library
+======================
 
-[![Tests](https://img.shields.io/github/actions/workflow/status/wintercms/storm/tests.yml?branch=develop&label=tests&style=flat-square)](https://github.com/wintercms/storm/actions)
-[![License](https://img.shields.io/github/license/wintercms/storm?label=open%20source&style=flat-square)](https://packagist.org/packages/winter/storm)
-[![Discord](https://img.shields.io/discord/816852513684193281?label=discord&style=flat-square)](https://discord.gg/D5MFSPH6Ux)
+This repository is a sub-split of the Winter CMS `Backend` module for use in a refactored, upgraded for Laravel 11+, customized version for devcu. Please note that we do not accept any pull requests to this repository.
 
-This repository contains the core library for Winter CMS. If you want to build a website using Winter, visit the main [Winter repository](https://github.com/wintercms/winter).
-
-Please report any library issues to the [main Winter repository](https://github.com/wintercms/winter/issues/new/choose).
+If you wish to make changes to this module, please submit them to the [main repository](https://github.com/wintercms/winter).
