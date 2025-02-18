@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Database\Attach;
+<?php namespace Laralips\Storm\Database\Attach;
 
 use Exception;
 use GdImage;

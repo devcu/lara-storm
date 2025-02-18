@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Halcyon\Exception;
+<?php namespace Laralips\Storm\Halcyon\Exception;
 
-use Winter\Storm\Halcyon\Model;
-use Winter\Storm\Exception\ValidationException;
+use Laralips\Storm\Halcyon\Model;
+use Laralips\Storm\Exception\ValidationException;
 
 /**
  * Used when validation fails. Contains the invalid model for easy analysis.

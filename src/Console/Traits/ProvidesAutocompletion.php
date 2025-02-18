@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Console\Traits;
+<?php namespace Laralips\Storm\Console\Traits;
 
-use Winter\Storm\Support\Str;
+use Laralips\Storm\Support\Str;
 use Symfony\Component\Console\Completion\CompletionInput;
 use Symfony\Component\Console\Completion\CompletionSuggestions;
 
@@ -8,7 +8,7 @@ use Symfony\Component\Console\Completion\CompletionSuggestions;
  * Console Command Trait that injects cross-platform signal handling to trigger
  * cleanup on exit through the handleCleanup() method on the implementing class.
  *
- * @package winter\storm
+ * @package laralips\storm
  * @author Luke Towers
  */
 trait ProvidesAutocompletion

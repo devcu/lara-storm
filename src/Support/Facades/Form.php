@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Support\Facades;
+<?php namespace Laralips\Storm\Support\Facades;
 
-use Winter\Storm\Support\Facade;
+use Laralips\Storm\Support\Facade;
 
 /**
  * @method static string open(array $options = [])
@@ -33,12 +33,12 @@ use Winter\Storm\Support\Facade;
  * @method static string old(string $name)
  * @method static bool oldInputIsEmpty()
  * @method static \Illuminate\Session\Store getSessionStore()
- * @method static \Winter\Storm\Html\FormBuilder setSessionStore(\Illuminate\Session\Store $session)
+ * @method static \Laralips\Storm\Html\FormBuilder setSessionStore(\Illuminate\Session\Store $session)
  * @method static string value(string $name, string $value = null)
  * @method static string sessionKey(string $sessionKey = null)
  * @method static string getSessionKey()
  *
- * @see \Winter\Storm\Html\FormBuilder
+ * @see \Laralips\Storm\Html\FormBuilder
  */
 class Form extends Facade
 {

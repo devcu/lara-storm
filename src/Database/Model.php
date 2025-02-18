@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Database;
+<?php namespace Laralips\Storm\Database;
 
 use Illuminate\Support\Facades\Cache;
 use Closure;
@@ -7,9 +7,9 @@ use Exception;
 use Illuminate\Database\Eloquent\Collection as CollectionBase;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Throwable;
-use Winter\Storm\Argon\Argon;
-use Winter\Storm\Support\Arr;
-use Winter\Storm\Support\Str;
+use Laralips\Storm\Argon\Argon;
+use Laralips\Storm\Support\Arr;
+use Laralips\Storm\Support\Str;
 
 /**
  * Active Record base class.
@@ -26,11 +26,11 @@ class Model extends EloquentModel implements ModelInterface
     use Concerns\HasRelationships;
     use Concerns\HidesAttributes;
     use Traits\Purgeable;
-    use \Winter\Storm\Support\Traits\Emitter;
-    use \Winter\Storm\Extension\ExtendableTrait {
+    use \Laralips\Storm\Support\Traits\Emitter;
+    use \Laralips\Storm\Extension\ExtendableTrait {
         addDynamicProperty as protected extendableAddDynamicProperty;
     }
-    use \Winter\Storm\Database\Traits\DeferredBinding;
+    use \Laralips\Storm\Database\Traits\DeferredBinding;
 
     /**
      * @var string|array|null Extensions implemented by this class.
@@ -245,11 +245,11 @@ class Model extends EloquentModel implements ModelInterface
             /**
              * @event model.afterBoot
              * Called after the model is booted
-             * > **Note:** also triggered in Winter\Storm\Halcyon\Model
+             * > **Note:** also triggered in Laralips\Storm\Halcyon\Model
              *
              * Example usage:
              *
-             *     $model->bindEvent('model.afterBoot', function () use (\Winter\Storm\Database\Model $model) {
+             *     $model->bindEvent('model.afterBoot', function () use (\Laralips\Storm\Database\Model $model) {
              *         \Log::info(get_class($model) . ' has booted');
              *     });
              *
@@ -286,11 +286,11 @@ class Model extends EloquentModel implements ModelInterface
         /**
          * @event model.beforeCreate
          * Called before the model is created
-         * > **Note:** also triggered in Winter\Storm\Halcyon\Model
+         * > **Note:** also triggered in Laralips\Storm\Halcyon\Model
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.beforeCreate', function () use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.beforeCreate', function () use (\Laralips\Storm\Database\Model $model) {
          *         if (!$model->isValid()) {
          *             throw new \Exception("Invalid Model!");
          *         }
@@ -307,11 +307,11 @@ class Model extends EloquentModel implements ModelInterface
         /**
          * @event model.afterCreate
          * Called after the model is created
-         * > **Note:** also triggered in Winter\Storm\Halcyon\Model
+         * > **Note:** also triggered in Laralips\Storm\Halcyon\Model
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.afterCreate', function () use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.afterCreate', function () use (\Laralips\Storm\Database\Model $model) {
          *         \Log::info("{$model->name} was created!");
          *     });
          *
@@ -326,11 +326,11 @@ class Model extends EloquentModel implements ModelInterface
         /**
          * @event model.beforeUpdate
          * Called before the model is updated
-         * > **Note:** also triggered in Winter\Storm\Halcyon\Model
+         * > **Note:** also triggered in Laralips\Storm\Halcyon\Model
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.beforeUpdate', function () use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.beforeUpdate', function () use (\Laralips\Storm\Database\Model $model) {
          *         if (!$model->isValid()) {
          *             throw new \Exception("Invalid Model!");
          *         }
@@ -347,11 +347,11 @@ class Model extends EloquentModel implements ModelInterface
         /**
          * @event model.afterUpdate
          * Called after the model is updated
-         * > **Note:** also triggered in Winter\Storm\Halcyon\Model
+         * > **Note:** also triggered in Laralips\Storm\Halcyon\Model
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.afterUpdate', function () use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.afterUpdate', function () use (\Laralips\Storm\Database\Model $model) {
          *         if ($model->title !== $model->original['title']) {
          *             \Log::info("{$model->name} updated its title!");
          *         }
@@ -368,11 +368,11 @@ class Model extends EloquentModel implements ModelInterface
         /**
          * @event model.beforeSave
          * Called before the model is saved
-         * > **Note:** This is called both when creating and updating and is also triggered in Winter\Storm\Halcyon\Model
+         * > **Note:** This is called both when creating and updating and is also triggered in Laralips\Storm\Halcyon\Model
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.beforeSave', function () use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.beforeSave', function () use (\Laralips\Storm\Database\Model $model) {
          *         if (!$model->isValid()) {
          *             throw new \Exception("Invalid Model!");
          *         }
@@ -389,11 +389,11 @@ class Model extends EloquentModel implements ModelInterface
         /**
          * @event model.afterSave
          * Called after the model is saved
-         * > **Note:** This is called both when creating and updating and is also triggered in Winter\Storm\Halcyon\Model
+         * > **Note:** This is called both when creating and updating and is also triggered in Laralips\Storm\Halcyon\Model
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.afterSave', function () use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.afterSave', function () use (\Laralips\Storm\Database\Model $model) {
          *         if ($model->title !== $model->original['title']) {
          *             \Log::info("{$model->name} updated its title!");
          *         }
@@ -410,11 +410,11 @@ class Model extends EloquentModel implements ModelInterface
         /**
          * @event model.beforeDelete
          * Called before the model is deleted
-         * > **Note:** also triggered in Winter\Storm\Halcyon\Model
+         * > **Note:** also triggered in Laralips\Storm\Halcyon\Model
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.beforeDelete', function () use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.beforeDelete', function () use (\Laralips\Storm\Database\Model $model) {
          *         if (!$model->isAllowedToBeDeleted()) {
          *             throw new \Exception("You cannot delete me!");
          *         }
@@ -431,11 +431,11 @@ class Model extends EloquentModel implements ModelInterface
         /**
          * @event model.afterDelete
          * Called after the model is deleted
-         * > **Note:** also triggered in Winter\Storm\Halcyon\Model
+         * > **Note:** also triggered in Laralips\Storm\Halcyon\Model
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.afterDelete', function () use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.afterDelete', function () use (\Laralips\Storm\Database\Model $model) {
          *         \Log::info("{$model->name} was deleted");
          *     });
          *
@@ -450,11 +450,11 @@ class Model extends EloquentModel implements ModelInterface
         /**
          * @event model.beforeFetch
          * Called before the model is fetched
-         * > **Note:** also triggered in Winter\Storm\Halcyon\Model
+         * > **Note:** also triggered in Laralips\Storm\Halcyon\Model
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.beforeFetch', function () use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.beforeFetch', function () use (\Laralips\Storm\Database\Model $model) {
          *         if (!\Auth::getUser()->hasAccess('fetch.this.model')) {
          *             throw new \Exception("You shall not pass!");
          *         }
@@ -471,11 +471,11 @@ class Model extends EloquentModel implements ModelInterface
         /**
          * @event model.afterFetch
          * Called after the model is fetched
-         * > **Note:** also triggered in Winter\Storm\Halcyon\Model
+         * > **Note:** also triggered in Laralips\Storm\Halcyon\Model
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.afterFetch', function () use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.afterFetch', function () use (\Laralips\Storm\Database\Model $model) {
          *         \Log::info("{$model->name} was retrieved from the database");
          *     });
          *
@@ -681,8 +681,8 @@ class Model extends EloquentModel implements ModelInterface
     /**
      * Create a new Eloquent query builder for the model.
      *
-     * @param  \Winter\Storm\Database\QueryBuilder $query
-     * @return \Winter\Storm\Database\Builder
+     * @param  \Laralips\Storm\Database\QueryBuilder $query
+     * @return \Laralips\Storm\Database\Builder
      */
     public function newEloquentBuilder($query)
     {
@@ -692,7 +692,7 @@ class Model extends EloquentModel implements ModelInterface
     /**
      * Get a new query builder instance for the connection.
      *
-     * @return \Winter\Storm\Database\QueryBuilder
+     * @return \Laralips\Storm\Database\QueryBuilder
      */
     protected function newBaseQueryBuilder()
     {
@@ -713,7 +713,7 @@ class Model extends EloquentModel implements ModelInterface
      * Create a new Model Collection instance.
      *
      * @param  array  $models
-     * @return \Winter\Storm\Database\Collection
+     * @return \Laralips\Storm\Database\Collection
      */
     public function newCollection(array $models = [])
     {
@@ -824,12 +824,12 @@ class Model extends EloquentModel implements ModelInterface
 
     /**
      * Create a generic pivot model instance.
-     * @param  \Winter\Storm\Database\Model  $parent
+     * @param  \Laralips\Storm\Database\Model  $parent
      * @param  array  $attributes
      * @param  string  $table
      * @param  bool  $exists
      * @param  string|null  $using
-     * @return \Winter\Storm\Database\Pivot
+     * @return \Laralips\Storm\Database\Pivot
      */
     public function newPivot(EloquentModel $parent, array $attributes, $table, $exists, $using = null)
     {
@@ -840,12 +840,12 @@ class Model extends EloquentModel implements ModelInterface
 
     /**
      * Create a pivot model instance specific to a relation.
-     * @param  \Winter\Storm\Database\Model  $parent
+     * @param  \Laralips\Storm\Database\Model  $parent
      * @param  string  $relationName
      * @param  array   $attributes
      * @param  string  $table
      * @param  bool    $exists
-     * @return \Winter\Storm\Database\Pivot|null
+     * @return \Laralips\Storm\Database\Pivot|null
      */
     public function newRelationPivot($relationName, $parent, $attributes, $table, $exists)
     {
@@ -868,11 +868,11 @@ class Model extends EloquentModel implements ModelInterface
         /**
          * @event model.saveInternal
          * Called before the model is saved
-         * > **Note:** also triggered in Winter\Storm\Halcyon\Model
+         * > **Note:** also triggered in Laralips\Storm\Halcyon\Model
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.saveInternal', function ((array) $attributes, (array) $options) use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.saveInternal', function ((array) $attributes, (array) $options) use (\Laralips\Storm\Database\Model $model) {
          *         // Prevent anything from saving ever!
          *         return false;
          *     });
@@ -1108,11 +1108,11 @@ class Model extends EloquentModel implements ModelInterface
         /**
          * @event model.beforeGetAttribute
          * Called before the model attribute is retrieved (only when the attribute exists in `$model->attributes` or has a get mutator method defined; i.e. `getFooAttribute()`)
-         * > **Note:** also triggered in Winter\Storm\Halcyon\Model
+         * > **Note:** also triggered in Laralips\Storm\Halcyon\Model
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.beforeGetAttribute', function ((string) $key) use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.beforeGetAttribute', function ((string) $key) use (\Laralips\Storm\Database\Model $model) {
          *         if ($key === 'not-for-you-to-look-at') {
          *             return 'you are not allowed here';
          *         }
@@ -1139,11 +1139,11 @@ class Model extends EloquentModel implements ModelInterface
         /**
          * @event model.getAttribute
          * Called after the model attribute is retrieved (only when the attribute exists in `$model->attributes` or has a get mutator method defined; i.e. `getFooAttribute()`)
-         * > **Note:** also triggered in Winter\Storm\Halcyon\Model
+         * > **Note:** also triggered in Laralips\Storm\Halcyon\Model
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.getAttribute', function ((string) $key, $value) use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.getAttribute', function ((string) $key, $value) use (\Laralips\Storm\Database\Model $model) {
          *         if ($key === 'not-for-you-to-look-at') {
          *             return "Totally not $value";
          *         }
@@ -1301,11 +1301,11 @@ class Model extends EloquentModel implements ModelInterface
         /**
          * @event model.beforeSetAttribute
          * Called before the model attribute is set
-         * > **Note:** also triggered in Winter\Storm\Halcyon\Model
+         * > **Note:** also triggered in Laralips\Storm\Halcyon\Model
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.beforeSetAttribute', function ((string) $key, $value) use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.beforeSetAttribute', function ((string) $key, $value) use (\Laralips\Storm\Database\Model $model) {
          *         if ($key === 'not-for-you-to-touch') {
          *             return '$value has been touched! The humanity!';
          *         }
@@ -1335,11 +1335,11 @@ class Model extends EloquentModel implements ModelInterface
         /**
          * @event model.setAttribute
          * Called after the model attribute is set
-         * > **Note:** also triggered in Winter\Storm\Halcyon\Model
+         * > **Note:** also triggered in Laralips\Storm\Halcyon\Model
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.setAttribute', function ((string) $key, $value) use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.setAttribute', function ((string) $key, $value) use (\Laralips\Storm\Database\Model $model) {
          *         if ($key === 'not-for-you-to-touch') {
          *             \Log::info("{$key} has been touched and set to {$value}!")
          *         }

@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Filesystem;
+<?php namespace Laralips\Storm\Filesystem;
 
 use Illuminate\Filesystem\FilesystemManager as BaseFilesystemManager;
 

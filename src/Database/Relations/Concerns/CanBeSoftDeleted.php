@@ -1,6 +1,6 @@
 <?php
 
-namespace Winter\Storm\Database\Relations\Concerns;
+namespace Laralips\Storm\Database\Relations\Concerns;
 
 /**
  * This trait is used to mark certain relationships as soft deletable, where the record is made invisible from the
@@ -27,7 +27,7 @@ namespace Winter\Storm\Database\Relations\Concerns;
  * ];
  * ```
  *
- * Please note that the related model must import the `Winter\Storm\Database\Traits\SoftDelete` trait in order to be
+ * Please note that the related model must import the `Laralips\Storm\Database\Traits\SoftDelete` trait in order to be
  * marked as soft-deletable.
  *
  * @author Ben Thomson <git@alfreido.com>
@@ -50,7 +50,7 @@ trait CanBeSoftDeleted
      */
     public function softDeletable(bool $enabled = true): static
     {
-        if (in_array('Winter\Storm\Database\Traits\SoftDelete', class_uses_recursive($this->related))) {
+        if (in_array('Laralips\Storm\Database\Traits\SoftDelete', class_uses_recursive($this->related))) {
             $this->isSoftDeletable = $enabled;
         }
 

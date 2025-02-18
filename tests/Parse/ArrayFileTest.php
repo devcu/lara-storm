@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Parse\PHP\ArrayFile;
+use Laralips\Storm\Parse\PHP\ArrayFile;
 
 class ArrayFileTest extends TestCase
 {
@@ -438,7 +438,7 @@ PHP;
         $file = __DIR__ . '/../fixtures/parse/arrayfile/empty.php';
         $arrayFile = ArrayFile::open($file);
 
-        $this->expectException(\Winter\LaravelConfigWriter\Exceptions\ConfigWriterException::class);
+        $this->expectException(\Laralips\LaravelConfigWriter\Exceptions\ConfigWriterException::class);
 
         $arrayFile->set([
             'w.i.n.t.e.r' => 'Winter CMS',
@@ -533,7 +533,7 @@ PHP;
         ]);
 
         $arrayFile->set([
-            'curl_return' => new \Winter\Storm\Parse\PHP\PHPConstant('CURLOPT_RETURNTRANSFER')
+            'curl_return' => new \Laralips\Storm\Parse\PHP\PHPConstant('CURLOPT_RETURNTRANSFER')
         ]);
 
         $expected = <<<PHP
@@ -561,8 +561,8 @@ PHP;
                     'test1',
                     'test2',
                     'additional' => [
-                        $arrayFile->constant('\Winter\Storm\Parse\PHP\ArrayFile::SORT_ASC'),
-                        $arrayFile->constant('\Winter\Storm\Parse\PHP\ArrayFile::SORT_DESC')
+                        $arrayFile->constant('\Laralips\Storm\Parse\PHP\ArrayFile::SORT_ASC'),
+                        $arrayFile->constant('\Laralips\Storm\Parse\PHP\ArrayFile::SORT_DESC')
                     ]
                 ]
             ]
@@ -580,8 +580,8 @@ return [
                     'test1',
                     'test2',
                     'additional' => [
-                        \Winter\Storm\Parse\PHP\ArrayFile::SORT_ASC,
-                        \Winter\Storm\Parse\PHP\ArrayFile::SORT_DESC,
+                        \Laralips\Storm\Parse\PHP\ArrayFile::SORT_ASC,
+                        \Laralips\Storm\Parse\PHP\ArrayFile::SORT_DESC,
                     ],
                 ],
             ],
@@ -604,7 +604,7 @@ PHP;
         ]);
 
         $arrayFile->set([
-            'key2' => new \Winter\Storm\Parse\PHP\PHPFunction('nl2br', ['KEY_B', false])
+            'key2' => new \Laralips\Storm\Parse\PHP\PHPFunction('nl2br', ['KEY_B', false])
         ]);
 
         $expected = <<<PHP
@@ -630,7 +630,7 @@ PHP;
         ]);
 
         $arrayFile->set([
-            'key' => new \Winter\Storm\Parse\PHP\PHPFunction('nl2br', ['KEY_B', false])
+            'key' => new \Laralips\Storm\Parse\PHP\PHPFunction('nl2br', ['KEY_B', false])
         ]);
 
         $expected = <<<PHP

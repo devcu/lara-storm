@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Halcyon\Processors\SectionParser;
+use Laralips\Storm\Halcyon\Processors\SectionParser;
 
 class SectionParserTest extends TestCase
 {
@@ -364,13 +364,13 @@ line = "Line 2"
 setting = "test"
 ==
 
-use Winter\Storm\Support\Str; // This will be removed (-1 line)
-use Winter\Storm\Flash\FlashBag; // This will be removed (-1 line)
+use Laralips\Storm\Support\Str; // This will be removed (-1 line)
+use Laralips\Storm\Flash\FlashBag; // This will be removed (-1 line)
 
 function onStart() { // Line 7
 
-    use Winter\Storm\Support\Str; // And placed here
-    use Winter\Storm\Flash\FlashBag; // And placed here
+    use Laralips\Storm\Support\Str; // And placed here
+    use Laralips\Storm\Flash\FlashBag; // And placed here
 
 }
 ==

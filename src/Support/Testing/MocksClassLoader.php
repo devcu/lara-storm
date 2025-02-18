@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Support\Testing;
+<?php namespace Laralips\Storm\Support\Testing;
 
-use Winter\Storm\Filesystem\Filesystem;
-use Winter\Storm\Support\ClassLoader;
+use Laralips\Storm\Filesystem\Filesystem;
+use Laralips\Storm\Support\ClassLoader;
 
 /**
  * Helper trait to test classes which use the ClassLoader (ie. extensions).

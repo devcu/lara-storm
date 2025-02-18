@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Parse\Syntax;
+<?php namespace Laralips\Storm\Parse\Syntax;
 
 use Illuminate\Support\Facades\Request;
 

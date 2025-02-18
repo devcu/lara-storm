@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Support\Facades;
+<?php namespace Laralips\Storm\Support\Facades;
 
-use Winter\Storm\Support\Facade;
+use Laralips\Storm\Support\Facade;
 
 /**
  * @method static mixed raw(string $sql)
@@ -15,7 +15,7 @@ use Winter\Storm\Support\Facade;
  * @method static string getDriver()
  * @method static string getTablePrefix()
  *
- * @see \Winter\Storm\Database\Dongle
+ * @see \Laralips\Storm\Database\Dongle
  */
 class DbDongle extends Facade
 {

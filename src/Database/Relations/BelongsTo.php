@@ -1,14 +1,14 @@
 <?php
 
-namespace Winter\Storm\Database\Relations;
+namespace Laralips\Storm\Database\Relations;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo as BelongsToBase;
 
 /**
- * @phpstan-property \Winter\Storm\Database\Model $child
- * @phpstan-property \Winter\Storm\Database\Model $parent
+ * @phpstan-property \Laralips\Storm\Database\Model $child
+ * @phpstan-property \Laralips\Storm\Database\Model $parent
  */
 class BelongsTo extends BelongsToBase implements RelationInterface
 {

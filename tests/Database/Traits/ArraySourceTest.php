@@ -104,9 +104,9 @@ class ArraySourceTest extends DbTestCase
     }
 }
 
-class ArrayModel extends \Winter\Storm\Database\Model
+class ArrayModel extends \Laralips\Storm\Database\Model
 {
-    use \Winter\Storm\Database\Traits\ArraySource;
+    use \Laralips\Storm\Database\Traits\ArraySource;
 
     public $records = [
         [
@@ -148,9 +148,9 @@ class ArrayModel extends \Winter\Storm\Database\Model
     }
 }
 
-class Country extends \Winter\Storm\Database\Model
+class Country extends \Laralips\Storm\Database\Model
 {
-    use \Winter\Storm\Database\Traits\ArraySource;
+    use \Laralips\Storm\Database\Traits\ArraySource;
 
     public $records = [
         [
@@ -173,9 +173,9 @@ class Country extends \Winter\Storm\Database\Model
     }
 }
 
-class State extends \Winter\Storm\Database\Model
+class State extends \Laralips\Storm\Database\Model
 {
-    use \Winter\Storm\Database\Traits\ArraySource;
+    use \Laralips\Storm\Database\Traits\ArraySource;
 
     public $records = [
         [
@@ -262,9 +262,9 @@ class State extends \Winter\Storm\Database\Model
     }
 }
 
-class Random extends \Winter\Storm\Database\Model
+class Random extends \Laralips\Storm\Database\Model
 {
-    use \Winter\Storm\Database\Traits\ArraySource;
+    use \Laralips\Storm\Database\Traits\ArraySource;
 
     public $schema = [
         'name' => 'string',

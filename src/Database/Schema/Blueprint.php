@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Database\Schema;
+<?php namespace Laralips\Storm\Database\Schema;
 
 use Illuminate\Database\Schema\Blueprint as BaseBlueprint;
-use Winter\Storm\Support\Facades\Schema;
+use Laralips\Storm\Support\Facades\Schema;
 
 /**
  * Proxy class

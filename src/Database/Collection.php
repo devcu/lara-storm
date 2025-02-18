@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Database;
+<?php namespace Laralips\Storm\Database;
 
 use Illuminate\Database\Eloquent\Collection as CollectionBase;
 

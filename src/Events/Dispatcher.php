@@ -1,9 +1,9 @@
-<?php namespace Winter\Storm\Events;
+<?php namespace Laralips\Storm\Events;
 
 use Closure;
 use ReflectionClass;
-use Winter\Storm\Support\Serialization;
-use Winter\Storm\Support\Str;
+use Laralips\Storm\Support\Serialization;
+use Laralips\Storm\Support\Str;
 use Illuminate\Events\Dispatcher as BaseDispatcher;
 use Illuminate\Contracts\Broadcasting\ShouldBroadcast;
 use Illuminate\Events\QueuedClosure;
@@ -250,7 +250,7 @@ class Dispatcher extends BaseDispatcher
             if (method_exists($class, 'queue')) {
                 $this->callQueueMethodOnHandler($class, $method, $arguments);
             } else {
-                $this->resolveQueue()->push('Winter\Storm\Events\CallQueuedHandler@call', [
+                $this->resolveQueue()->push('Laralips\Storm\Events\CallQueuedHandler@call', [
                     'class' => $class, 'method' => $method, 'data' => serialize($arguments),
                 ]);
             }
@@ -282,7 +282,7 @@ class Dispatcher extends BaseDispatcher
     {
         $handler = (new ReflectionClass($class))->newInstanceWithoutConstructor();
 
-        $handler->queue($this->resolveQueue(), 'Winter\Storm\Events\CallQueuedHandler@call', [
+        $handler->queue($this->resolveQueue(), 'Laralips\Storm\Events\CallQueuedHandler@call', [
             'class' => $class, 'method' => $method, 'data' => serialize($arguments),
         ]);
     }

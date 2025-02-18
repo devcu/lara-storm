@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Foundation;
+<?php namespace Laralips\Storm\Foundation;
 
 use Illuminate\Foundation\ProviderRepository as BaseProviderRepository;
 

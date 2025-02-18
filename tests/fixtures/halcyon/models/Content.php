@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Halcyon\Model;
+use Laralips\Storm\Halcyon\Model;
 
 class HalcyonTestContent extends Model
 {

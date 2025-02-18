@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Mail;
+<?php namespace Laralips\Storm\Mail;
 
-use Winter\Storm\Support\Facades\Config;
-use Winter\Storm\Support\Facades\Event;
+use Laralips\Storm\Support\Facades\Config;
+use Laralips\Storm\Support\Facades\Event;
 use Illuminate\Contracts\Mail\Mailable as MailableContract;
 use Illuminate\Mail\Mailer as MailerBase;
 use Illuminate\Mail\SentMessage;
@@ -14,7 +14,7 @@ use Illuminate\Support\Collection;
  */
 class Mailer extends MailerBase
 {
-    use \Winter\Storm\Support\Traits\Emitter;
+    use \Laralips\Storm\Support\Traits\Emitter;
 
     /**
      * @var string Original driver before pretending.
@@ -127,7 +127,7 @@ class Mailer extends MailerBase
           *
           * Example usage (stops the sending process):
           *
-          *     Event::listen('mailer.prepareSend', function ((\Winter\Storm\Mail\Mailer) $mailerInstance, (string) $view, (\Illuminate\Mail\Message) $message, (array) $data) {
+          *     Event::listen('mailer.prepareSend', function ((\Laralips\Storm\Mail\Mailer) $mailerInstance, (string) $view, (\Illuminate\Mail\Message) $message, (array) $data) {
           *         return false;
           *     });
           *
@@ -167,7 +167,7 @@ class Mailer extends MailerBase
                  *
                  * Example usage (logs the message):
                  *
-                 *     Event::listen('mailer.send', function ((\Winter\Storm\Mail\Mailer) $mailerInstance, (string) $view, (\Illuminate\Mail\Message) $message, (array) $data) {
+                 *     Event::listen('mailer.send', function ((\Laralips\Storm\Mail\Mailer) $mailerInstance, (string) $view, (\Illuminate\Mail\Message) $message, (array) $data) {
                  *         \Log::info("Message was rendered with $view and sent");
                  *     });
                  *
@@ -209,7 +209,7 @@ class Mailer extends MailerBase
          *
          * Example usage (stops the content adding process):
          *
-         *     Event::listen('mailer.beforeAddContent', function ((\Winter\Storm\Mail\Mailer) $mailerInstance, (\Illuminate\Mail\Message) $message, (string) $view, (array) $data, (string) $raw, (string) $plain) {
+         *     Event::listen('mailer.beforeAddContent', function ((\Laralips\Storm\Mail\Mailer) $mailerInstance, (\Illuminate\Mail\Message) $message, (string) $view, (array) $data, (string) $raw, (string) $plain) {
          *         return false;
          *     });
          *
@@ -267,7 +267,7 @@ class Mailer extends MailerBase
          *
          * Example usage (Logs that content has been added):
          *
-         *     Event::listen('mailer.addContent', function ((\Winter\Storm\Mail\Mailer) $mailerInstance, (\Illuminate\Mail\Message) $message, (string) $view, (array) $data) {
+         *     Event::listen('mailer.addContent', function ((\Laralips\Storm\Mail\Mailer) $mailerInstance, (\Illuminate\Mail\Message) $message, (string) $view, (array) $data) {
          *         \Log::info("$view has had content added to the message");
          *     });
          *

@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Support\Facades;
+<?php namespace Laralips\Storm\Support\Facades;
 
-use Winter\Storm\Support\Facade;
+use Laralips\Storm\Support\Facade;
 
 /**
  * @see \Illuminate\Http\Request

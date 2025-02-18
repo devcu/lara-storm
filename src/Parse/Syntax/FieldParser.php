@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Parse\Syntax;
+<?php namespace Laralips\Storm\Parse\Syntax;
 
-use Winter\Storm\Exception\ApplicationException;
+use Laralips\Storm\Exception\ApplicationException;
 
 /**
  * Dynamic Syntax parser

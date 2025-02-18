@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Console\Traits;
+<?php namespace Laralips\Storm\Console\Traits;
 
 /**
  * Console Command Trait that injects cross-platform signal handling to trigger
@@ -7,7 +7,7 @@
  * >**NOTE:** This trait requires the implementing class to implement the
  * Symfony\Component\Console\Command\SignalableCommandInterface interface
  *
- * @package winter\storm
+ * @package laralips\storm
  * @author Luke Towers
  */
 trait HandlesCleanup

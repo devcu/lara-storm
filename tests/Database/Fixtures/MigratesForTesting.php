@@ -1,6 +1,6 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Fixtures;
+namespace Laralips\Storm\Tests\Database\Fixtures;
 
 use Illuminate\Database\Schema\Builder;
 

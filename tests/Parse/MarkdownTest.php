@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Support\Facades\Markdown;
+use Laralips\Storm\Support\Facades\Markdown;
 
 class MarkdownTest extends TestCase
 {

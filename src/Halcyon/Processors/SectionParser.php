@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Halcyon\Processors;
+<?php namespace Laralips\Storm\Halcyon\Processors;
 
-use Winter\Storm\Parse\Ini;
-use Winter\Storm\Support\Str;
+use Laralips\Storm\Parse\Ini;
+use Laralips\Storm\Support\Str;
 use InvalidArgumentException;
 
 /**

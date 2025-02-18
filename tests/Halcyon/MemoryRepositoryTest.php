@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Halcyon\MemoryRepository;
+use Laralips\Storm\Halcyon\MemoryRepository;
 use Illuminate\Cache\ArrayStore;
 
 class MemoryRepositoryTest extends TestCase

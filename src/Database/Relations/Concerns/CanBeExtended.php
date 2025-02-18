@@ -1,8 +1,8 @@
 <?php
 
-namespace Winter\Storm\Database\Relations\Concerns;
+namespace Laralips\Storm\Database\Relations\Concerns;
 
-use Winter\Storm\Extension\ExtendableTrait;
+use Laralips\Storm\Extension\ExtendableTrait;
 
 /**
  * Adds extension support for relations.

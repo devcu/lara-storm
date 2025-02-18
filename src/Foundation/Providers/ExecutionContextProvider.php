@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Foundation\Providers;
+<?php namespace Laralips\Storm\Foundation\Providers;
 
 use Illuminate\Support\ServiceProvider;
-use Winter\Storm\Support\Str;
+use Laralips\Storm\Support\Str;
 
 class ExecutionContextProvider extends ServiceProvider
 {

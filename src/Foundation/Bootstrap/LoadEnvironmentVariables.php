@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Foundation\Bootstrap;
+<?php namespace Laralips\Storm\Foundation\Bootstrap;
 
 use Illuminate\Support\Env;
 use Illuminate\Contracts\Foundation\Application;

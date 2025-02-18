@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Validation;
+<?php namespace Laralips\Storm\Validation;
 
 use Illuminate\Contracts\Validation\Factory as FactoryContract;
 use Illuminate\Validation\Factory as BaseFactory;
@@ -6,7 +6,7 @@ use Illuminate\Validation\Factory as BaseFactory;
 /**
  * Winter CMS wrapper for the Laravel Validation factory.
  *
- * Ensures that the default resolver is the Winter\Storm\Validation\Validator.
+ * Ensures that the default resolver is the Laralips\Storm\Validation\Validator.
  */
 class Factory extends BaseFactory implements FactoryContract
 {
@@ -17,7 +17,7 @@ class Factory extends BaseFactory implements FactoryContract
      * @param  array  $rules
      * @param  array  $messages
      * @param  array  $customAttributes
-     * @return \Winter\Storm\Validation\Validator
+     * @return \Laralips\Storm\Validation\Validator
      */
     protected function resolve(array $data, array $rules, array $messages, array $customAttributes)
     {

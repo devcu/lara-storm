@@ -1,9 +1,9 @@
-<?php namespace Winter\Storm\Halcyon;
+<?php namespace Laralips\Storm\Halcyon;
 
-use Winter\Storm\Support\Arr;
-use Winter\Storm\Support\Str;
-use Winter\Storm\Extension\Extendable;
-use Winter\Storm\Halcyon\Datasource\ResolverInterface as Resolver;
+use Laralips\Storm\Support\Arr;
+use Laralips\Storm\Support\Str;
+use Laralips\Storm\Extension\Extendable;
+use Laralips\Storm\Halcyon\Datasource\ResolverInterface as Resolver;
 use Illuminate\Contracts\Support\Jsonable;
 use Illuminate\Contracts\Support\Arrayable;
 use Illuminate\Contracts\Events\Dispatcher;
@@ -23,7 +23,7 @@ use Exception;
  */
 class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable, Jsonable, JsonSerializable
 {
-    use \Winter\Storm\Support\Traits\Emitter;
+    use \Laralips\Storm\Support\Traits\Emitter;
 
     /**
      * @var string|null The data source for the model, a directory path.
@@ -116,14 +116,14 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
     /**
      * The datasource resolver instance.
      *
-     * @var \Winter\Storm\Halcyon\Datasource\ResolverInterface|null
+     * @var \Laralips\Storm\Halcyon\Datasource\ResolverInterface|null
      */
     protected static $resolver;
 
     /**
      * The event dispatcher instance.
      *
-     * @var \Winter\Storm\Events\Dispatcher|null
+     * @var \Laralips\Storm\Events\Dispatcher|null
      */
     protected static $dispatcher;
 
@@ -254,7 +254,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
 
         /*
          * Hook to boot events
-         * @see Winter\Storm\Database\Model::registerModelEvent
+         * @see Laralips\Storm\Database\Model::registerModelEvent
          */
         static::registerModelEvent('booted', function ($model) {
             $model->fireEvent('model.afterBoot');
@@ -503,7 +503,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
      *
      * @param  array  $items
      * @param  string|null  $datasource
-     * @return \Winter\Storm\Halcyon\Collection
+     * @return \Laralips\Storm\Halcyon\Collection
      */
     public static function hydrate(array $items, $datasource = null)
     {
@@ -534,7 +534,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
     /**
      * Begin querying the model.
      *
-     * @return \Winter\Storm\Halcyon\Builder
+     * @return \Laralips\Storm\Halcyon\Builder
      */
     public static function query()
     {
@@ -545,7 +545,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
      * Begin querying the model on a given datasource.
      *
      * @param  string|null  $datasource
-     * @return \Winter\Storm\Halcyon\Model
+     * @return \Laralips\Storm\Halcyon\Model
      */
     public static function on($datasource = null)
     {
@@ -561,7 +561,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
     /**
      * Get all of the models from the datasource.
      *
-     * @return \Winter\Storm\Halcyon\Collection
+     * @return \Laralips\Storm\Halcyon\Collection
      */
     public static function all()
     {
@@ -682,7 +682,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
     public function getAttribute($key)
     {
         /**
-         * @see Winter\Storm\Database\Model::getAttributeValue
+         * @see Laralips\Storm\Database\Model::getAttributeValue
          */
         $attr = $this->fireEvent('model.beforeGetAttribute', [$key], true);
         if (!is_null($attr)) {
@@ -699,7 +699,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
         }
 
         /**
-         * @see Winter\Storm\Database\Model::getAttributeValue
+         * @see Laralips\Storm\Database\Model::getAttributeValue
          */
         $_attr = $this->fireEvent('model.getAttribute', [$key, $value], true);
         if (!is_null($_attr)) {
@@ -769,7 +769,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
     public function setAttribute($key, $value)
     {
         /**
-         * @see Winter\Storm\Database\Model::setAttributeValue
+         * @see Laralips\Storm\Database\Model::setAttributeValue
          */
         // Before Event
         if (($_value = $this->fireEvent('model.beforeSetAttribute', [$key, $value], true)) !== null) {
@@ -792,7 +792,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
         }
 
         /**
-         * @see Winter\Storm\Database\Model::setAttributeValue
+         * @see Laralips\Storm\Database\Model::setAttributeValue
          */
         // After Event
         $this->fireEvent('model.setAttribute', [$key, $value]);
@@ -1231,7 +1231,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
     public function saveInternal(array $options = [])
     {
         /**
-         * @see Winter\Storm\Database\Model::saveInternal
+         * @see Laralips\Storm\Database\Model::saveInternal
          */
         // Event
         if ($this->fireEvent('model.saveInternal', [$this->attributes, $options], true) === false) {
@@ -1278,7 +1278,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
     /**
      * Perform a model update operation.
      *
-     * @param  \Winter\Storm\Halcyon\Builder  $query
+     * @param  \Laralips\Storm\Halcyon\Builder  $query
      * @return bool
      */
     protected function performUpdate(Builder $query)
@@ -1310,7 +1310,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
     /**
      * Perform a model insert operation.
      *
-     * @param  \Winter\Storm\Halcyon\Builder  $query
+     * @param  \Laralips\Storm\Halcyon\Builder  $query
      * @return bool
      */
     protected function performInsert(Builder $query)
@@ -1360,7 +1360,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
 
     /**
      * Get a new query builder for the object
-     * @return \Winter\Storm\Halcyon\Builder
+     * @return \Laralips\Storm\Halcyon\Builder
      */
     public function newQuery()
     {
@@ -1375,7 +1375,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
      * Create a new Halcyon Collection instance.
      *
      * @param  array  $models
-     * @return \Winter\Storm\Halcyon\Collection
+     * @return \Laralips\Storm\Halcyon\Collection
      */
     public function newCollection(array $models = [])
     {
@@ -1406,7 +1406,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
     /**
      * Get the datasource for the model.
      *
-     * @return \Winter\Storm\Halcyon\Datasource\DatasourceInterface
+     * @return \Laralips\Storm\Halcyon\Datasource\DatasourceInterface
      */
     public function getDatasource()
     {
@@ -1440,7 +1440,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
      * Resolve a datasource instance.
      *
      * @param  string|null  $datasource
-     * @return \Winter\Storm\Halcyon\Datasource\DatasourceInterface
+     * @return \Laralips\Storm\Halcyon\Datasource\DatasourceInterface
      */
     public static function resolveDatasource($datasource = null)
     {
@@ -1450,7 +1450,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
     /**
      * Get the datasource resolver instance.
      *
-     * @return \Winter\Storm\Halcyon\Datasource\ResolverInterface
+     * @return \Laralips\Storm\Halcyon\Datasource\ResolverInterface
      */
     public static function getDatasourceResolver()
     {
@@ -1460,7 +1460,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
     /**
      * Set the datasource resolver instance.
      *
-     * @param  \Winter\Storm\Halcyon\Datasource\ResolverInterface  $resolver
+     * @param  \Laralips\Storm\Halcyon\Datasource\ResolverInterface  $resolver
      * @return void
      */
     public static function setDatasourceResolver(Resolver $resolver)
@@ -1481,7 +1481,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
     /**
      * Get the event dispatcher instance.
      *
-     * @return \Winter\Storm\Events\Dispatcher
+     * @return \Laralips\Storm\Events\Dispatcher
      */
     public static function getEventDispatcher()
     {
@@ -1491,7 +1491,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
     /**
      * Set the event dispatcher instance.
      *
-     * @param  \Winter\Storm\Events\Dispatcher  $dispatcher
+     * @param  \Laralips\Storm\Events\Dispatcher  $dispatcher
      * @return void
      */
     public static function setEventDispatcher(Dispatcher $dispatcher)
@@ -1560,7 +1560,7 @@ class Model extends Extendable implements ModelInterface, ArrayAccess, Arrayable
             return;
         }
 
-        /** @var \Winter\Storm\Halcyon\MemoryRepository */
+        /** @var \Laralips\Storm\Halcyon\MemoryRepository */
         $cacheDriver = self::getCacheManager()->driver();
         $cacheDriver->flushInternalCache();
     }

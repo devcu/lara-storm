@@ -1,4 +1,4 @@
-<?php namespace Winter\Plugin\Models;
+<?php namespace Laralips\Plugin\Models;
 
 class TestModel
 {

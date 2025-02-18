@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Parse;
+<?php namespace Laralips\Storm\Parse;
 
 use Illuminate\Support\Facades\App;
 

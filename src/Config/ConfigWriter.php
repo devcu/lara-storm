@@ -1,10 +1,10 @@
-<?php namespace Winter\Storm\Config;
+<?php namespace Laralips\Storm\Config;
 
 use PhpParser\Error;
 use PhpParser\Lexer\Emulative;
 use PhpParser\ParserFactory;
-use Winter\Storm\Exception\SystemException;
-use Winter\Storm\Parse\PHP\ArrayFile;
+use Laralips\Storm\Exception\SystemException;
+use Laralips\Storm\Parse\PHP\ArrayFile;
 
 /**
  * Configuration rewriter

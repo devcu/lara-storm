@@ -4,7 +4,7 @@ class ValidationTraitTest extends TestCase
 {
     public function testArrayFieldNames()
     {
-        $mock = $this->getMockForTrait('Winter\Storm\Halcyon\Traits\Validation');
+        $mock = $this->getMockForTrait('Laralips\Storm\Halcyon\Traits\Validation');
 
         $rules = [
             'field' => 'required',

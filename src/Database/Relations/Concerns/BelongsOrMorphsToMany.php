@@ -1,6 +1,6 @@
 <?php
 
-namespace Winter\Storm\Database\Relations\Concerns;
+namespace Laralips\Storm\Database\Relations\Concerns;
 
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
@@ -103,7 +103,7 @@ trait BelongsOrMorphsToMany
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.relation.beforeAttach', function (string $relationName, array $attachedIdList, array $insertData) use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.relation.beforeAttach', function (string $relationName, array $attachedIdList, array $insertData) use (\Laralips\Storm\Database\Model $model) {
          *         if (!$model->isRelationValid($attachedIdList)) {
          *             throw new \Exception("Invalid relation!");
          *             return false;
@@ -136,7 +136,7 @@ trait BelongsOrMorphsToMany
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.relation.afterAttach', function (string $relationName, array $attachedIdList, array $insertData) use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.relation.afterAttach', function (string $relationName, array $attachedIdList, array $insertData) use (\Laralips\Storm\Database\Model $model) {
          *         traceLog("New relation {$relationName} was created", $attachedIdList);
          *     });
          *
@@ -166,7 +166,7 @@ trait BelongsOrMorphsToMany
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.relation.beforeDetach', function (string $relationName, array $attachedIdList) use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.relation.beforeDetach', function (string $relationName, array $attachedIdList) use (\Laralips\Storm\Database\Model $model) {
          *         if (!$model->isRelationValid($attachedIdList)) {
          *             throw new \Exception("Invalid relation!");
          *             return false;
@@ -189,7 +189,7 @@ trait BelongsOrMorphsToMany
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.relation.afterDetach', function (string $relationName, array $attachedIdList) use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.relation.afterDetach', function (string $relationName, array $attachedIdList) use (\Laralips\Storm\Database\Model $model) {
          *         traceLog("Relation {$relationName} was removed", $attachedIdList);
          *     });
          *

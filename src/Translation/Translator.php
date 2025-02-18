@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Translation;
+<?php namespace Laralips\Storm\Translation;
 
 use Illuminate\Contracts\Events\Dispatcher;
 use Illuminate\Translation\Translator as TranslatorBase;
@@ -16,7 +16,7 @@ class Translator extends TranslatorBase
     /**
      * The event dispatcher instance.
      *
-     * @var \Illuminate\Contracts\Events\Dispatcher|\Winter\Storm\Events\Dispatcher|null
+     * @var \Illuminate\Contracts\Events\Dispatcher|\Laralips\Storm\Events\Dispatcher|null
      */
     protected $events;
 

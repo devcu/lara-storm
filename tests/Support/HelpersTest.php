@@ -1,7 +1,7 @@
 <?php
 
-use Winter\Storm\Foundation\Application;
-use Winter\Storm\Filesystem\PathResolver;
+use Laralips\Storm\Foundation\Application;
+use Laralips\Storm\Filesystem\PathResolver;
 
 class HelpersTest extends TestCase
 {
@@ -12,7 +12,7 @@ class HelpersTest extends TestCase
 
         // Mock Config facade
         if (!class_exists('Config')) {
-            class_alias('Winter\Storm\Support\Facades\Config', 'Config');
+            class_alias('Laralips\Storm\Support\Facades\Config', 'Config');
         }
 
         Config::shouldReceive('get')->andreturnUsing(function ($key) {

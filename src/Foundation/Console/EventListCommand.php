@@ -1,12 +1,12 @@
 <?php
 
-namespace Winter\Storm\Foundation\Console;
+namespace Laralips\Storm\Foundation\Console;
 
 use Closure;
 use Illuminate\Foundation\Console\EventListCommand as BaseEventListCommand;
 use Laravel\SerializableClosure\SerializableClosure;
 use ReflectionFunction;
-use Winter\Storm\Events\Dispatcher;
+use Laralips\Storm\Events\Dispatcher;
 
 class EventListCommand extends BaseEventListCommand
 {
@@ -21,7 +21,7 @@ class EventListCommand extends BaseEventListCommand
 
         foreach ($this->getRawListeners() as $event => $rawListeners) {
             foreach ($rawListeners as $rawListener) {
-                // Winter\Storm\Events\Dispatcher->makeListener() wraps closures in a SerializableClosure object
+                // Laralips\Storm\Events\Dispatcher->makeListener() wraps closures in a SerializableClosure object
                 if ($rawListener instanceof SerializableClosure) {
                     $rawListener = $rawListener->getClosure();
                 }

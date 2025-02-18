@@ -1,14 +1,14 @@
 <?php
 
-namespace Winter\Storm\Tests;
+namespace Laralips\Storm\Tests;
 
 use ReflectionClass;
 use Illuminate\Database\Schema\Builder;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Support\Facades\DB;
-use Winter\Storm\Database\Model;
-use Winter\Storm\Database\Pivot;
-use Winter\Storm\Events\Dispatcher;
+use Laralips\Storm\Database\Model;
+use Laralips\Storm\Database\Pivot;
+use Laralips\Storm\Events\Dispatcher;
 
 /**
  * Base test case class for test cases involving the database.
@@ -56,7 +56,7 @@ class DbTestCase extends TestCase
 
             $model = $params[0];
 
-            if (!in_array('Winter\Storm\Tests\Database\Fixtures\MigratesForTesting', class_uses_recursive($model))) {
+            if (!in_array('Laralips\Storm\Tests\Database\Fixtures\MigratesForTesting', class_uses_recursive($model))) {
                 return;
             }
 

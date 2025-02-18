@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Halcyon\Datasource;
+<?php namespace Laralips\Storm\Halcyon\Datasource;
 
-use \Winter\Storm\Halcyon\Datasource\DatasourceInterface;
+use \Laralips\Storm\Halcyon\Datasource\DatasourceInterface;
 
 /**
  * The resolver interface defines the methods required for resolving Halcyon datasources.
@@ -12,7 +12,7 @@ interface ResolverInterface
     /**
      * Get a datasource instance by name.
      *
-     * @throws \Winter\Storm\Halcyon\Exception\MissingDatasourceException If a datasource with the given name does not exist.
+     * @throws \Laralips\Storm\Halcyon\Exception\MissingDatasourceException If a datasource with the given name does not exist.
      */
     public function datasource(?string $name = null): DatasourceInterface;
 

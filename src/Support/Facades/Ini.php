@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Support\Facades;
+<?php namespace Laralips\Storm\Support\Facades;
 
-use Winter\Storm\Support\Facade;
+use Laralips\Storm\Support\Facade;
 
 /**
  * @method static array parse(string $contents)
@@ -8,7 +8,7 @@ use Winter\Storm\Support\Facade;
  * @method static array expandProperty(array &$array, string $key, $value)
  * @method static string render(array $vars = [], int $level = 1)
  *
- * @see \Winter\Storm\Parse\Ini
+ * @see \Laralips\Storm\Parse\Ini
  */
 class Ini extends Facade
 {

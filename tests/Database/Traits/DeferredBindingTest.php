@@ -1,12 +1,12 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Traits;
+namespace Laralips\Storm\Tests\Database\Traits;
 
-use Winter\Storm\Database\Models\DeferredBinding;
-use Winter\Storm\Database\Model;
-use Winter\Storm\Tests\Database\Fixtures\Post;
-use Winter\Storm\Tests\Database\Fixtures\Author;
-use Winter\Storm\Tests\DbTestCase;
+use Laralips\Storm\Database\Models\DeferredBinding;
+use Laralips\Storm\Database\Model;
+use Laralips\Storm\Tests\Database\Fixtures\Post;
+use Laralips\Storm\Tests\Database\Fixtures\Author;
+use Laralips\Storm\Tests\DbTestCase;
 
 class DeferredBindingTest extends DbTestCase
 {

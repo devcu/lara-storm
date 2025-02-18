@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Mail;
+<?php namespace Laralips\Storm\Mail;
 
 use Illuminate\Support\Facades\App;
 use Illuminate\Mail\Mailable as MailableBase;

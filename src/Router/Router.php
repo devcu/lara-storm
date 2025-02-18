@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Router;
+<?php namespace Laralips\Storm\Router;
 
 /**
  * URL Router
@@ -20,7 +20,7 @@ class Router
     protected $routeMap = [];
 
     /**
-     * @var \Winter\Storm\Router\Rule|null A referred to the matched router rule
+     * @var \Laralips\Storm\Router\Rule|null A referred to the matched router rule
      */
     protected $matchedRouteRule;
 
@@ -225,7 +225,7 @@ class Router
     /**
      * Returns the matched route rule name.
      *
-     * @return \Winter\Storm\Router\Rule|false The matched rule object. If no rule was matched, returns `false`.
+     * @return \Laralips\Storm\Router\Rule|false The matched rule object. If no rule was matched, returns `false`.
      */
     public function matchedRoute()
     {

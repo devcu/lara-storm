@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Config\ConfigWriter;
+use Laralips\Storm\Config\ConfigWriter;
 
 class ConfigWriterTest extends TestCase
 {

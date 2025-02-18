@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Parse\Contracts;
+<?php namespace Laralips\Storm\Parse\Contracts;
 
 interface DataFileInterface
 {

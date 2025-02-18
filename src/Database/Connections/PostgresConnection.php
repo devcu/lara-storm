@@ -1,9 +1,9 @@
-<?php namespace Winter\Storm\Database\Connections;
+<?php namespace Laralips\Storm\Database\Connections;
 
 use Illuminate\Database\Schema\PostgresBuilder;
 use Illuminate\Database\PDO\PostgresDriver;
 use Illuminate\Database\Query\Processors\PostgresProcessor;
-use Winter\Storm\Database\Query\Grammars\PostgresGrammar as QueryGrammar;
+use Laralips\Storm\Database\Query\Grammars\PostgresGrammar as QueryGrammar;
 use Illuminate\Database\Schema\Grammars\PostgresGrammar as SchemaGrammar;
 
 /**

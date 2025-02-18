@@ -1,13 +1,13 @@
-<?php namespace Winter\Storm\Foundation\Bootstrap;
+<?php namespace Laralips\Storm\Foundation\Bootstrap;
 
-use Winter\Storm\Foundation\Application;
+use Laralips\Storm\Foundation\Application;
 
 class RegisterWinter
 {
     /**
      * Specific features for Winter.
      *
-     * @param \Winter\Storm\Foundation\Application $app
+     * @param \Laralips\Storm\Foundation\Application $app
      * @return void
      */
     public function bootstrap(Application $app): void
@@ -23,10 +23,10 @@ class RegisterWinter
          * Register singletons
          */
         $app->singleton('string', function () {
-            return new \Winter\Storm\Support\Str;
+            return new \Laralips\Storm\Support\Str;
         });
         $app->singleton('svg', function () {
-            return new \Winter\Storm\Support\Svg;
+            return new \Laralips\Storm\Support\Svg;
         });
 
         /*

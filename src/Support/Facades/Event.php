@@ -1,8 +1,8 @@
-<?php namespace Winter\Storm\Support\Facades;
+<?php namespace Laralips\Storm\Support\Facades;
 
 use Illuminate\Support\Facades\Cache;
-use Winter\Storm\Database\Model;
-use Winter\Storm\Support\Testing\Fakes\EventFake;
+use Laralips\Storm\Database\Model;
+use Laralips\Storm\Support\Testing\Fakes\EventFake;
 
 /**
  * @method static \Closure createClassListener(string $listener, bool $wildcard = false)
@@ -27,7 +27,7 @@ use Winter\Storm\Support\Testing\Fakes\EventFake;
  * @method static array|mixed|null fire(string|object $event, mixed $payload = [], bool $halt = false)
  * @method static void sortListeners(string $eventName))
  *
- * @see \Winter\Storm\Events\Dispatcher
+ * @see \Laralips\Storm\Events\Dispatcher
  */
 class Event extends \Illuminate\Support\Facades\Event
 {
@@ -35,7 +35,7 @@ class Event extends \Illuminate\Support\Facades\Event
      * Replace the bound instance with a fake.
      *
      * @param  array|string  $eventsToFake
-     * @return \Winter\Storm\Support\Testing\Fakes\EventFake
+     * @return \Laralips\Storm\Support\Testing\Fakes\EventFake
      */
     public static function fake($eventsToFake = [])
     {

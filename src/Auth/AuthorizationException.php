@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Auth;
+<?php namespace Laralips\Storm\Auth;
 
-use Winter\Storm\Exception\ApplicationException;
+use Laralips\Storm\Exception\ApplicationException;
 
 /**
  * Used when user authorization fails. Implements a softer error message.

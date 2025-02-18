@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Filesystem;
+<?php namespace Laralips\Storm\Filesystem;
 
 use DirectoryIterator;
 use FilesystemIterator;
@@ -7,7 +7,7 @@ use Illuminate\Filesystem\Filesystem as FilesystemBase;
 use Illuminate\Filesystem\FilesystemAdapter;
 use InvalidArgumentException;
 use ReflectionClass;
-use Winter\Storm\Support\Facades\Config;
+use Laralips\Storm\Support\Facades\Config;
 
 /**
  * File helper

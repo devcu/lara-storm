@@ -1,7 +1,7 @@
 <?php
 
-use Winter\Storm\Exception\ApplicationException;
-use Winter\Storm\Network\Http;
+use Laralips\Storm\Exception\ApplicationException;
+use Laralips\Storm\Network\Http;
 
 class HttpTest extends TestCase
 {
@@ -10,7 +10,7 @@ class HttpTest extends TestCase
     /**
      * Http object fixture
      *
-     * @var \Winter\Storm\Network\Http
+     * @var \Laralips\Storm\Network\Http
      */
     protected $Http;
 

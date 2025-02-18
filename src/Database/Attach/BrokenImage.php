@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Database\Attach;
+<?php namespace Laralips\Storm\Database\Attach;
 
-use Winter\Storm\Support\Facades\File as FileHelper;
+use Laralips\Storm\Support\Facades\File as FileHelper;
 
 class BrokenImage
 {

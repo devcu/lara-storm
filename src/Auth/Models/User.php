@@ -1,25 +1,25 @@
-<?php namespace Winter\Storm\Auth\Models;
+<?php namespace Laralips\Storm\Auth\Models;
 
 use Exception;
 use InvalidArgumentException;
 use Illuminate\Support\Facades\Hash;
-use Winter\Storm\Support\Str;
-use Winter\Storm\Database\Model;
+use Laralips\Storm\Support\Str;
+use Laralips\Storm\Database\Model;
 
 /**
  * User model
  *
  * @property array|null $groups Related groups.
- * @property \Winter\Storm\Auth\Models\Role|null $role Related role.
+ * @property \Laralips\Storm\Auth\Models\Role|null $role Related role.
  * @property array $permissions Permissions array.
- * @method \Winter\Storm\Database\Relations\BelongsToMany groups() Group relation.
- * @method \Winter\Storm\Database\Relations\BelongsTo role() Role relation.
+ * @method \Laralips\Storm\Database\Relations\BelongsToMany groups() Group relation.
+ * @method \Laralips\Storm\Database\Relations\BelongsTo role() Role relation.
  */
 class User extends Model implements \Illuminate\Contracts\Auth\Authenticatable
 {
-    use \Winter\Storm\Database\Traits\Hashable;
-    use \Winter\Storm\Database\Traits\Purgeable;
-    use \Winter\Storm\Database\Traits\Validation;
+    use \Laralips\Storm\Database\Traits\Hashable;
+    use \Laralips\Storm\Database\Traits\Purgeable;
+    use \Laralips\Storm\Database\Traits\Validation;
 
     /**
      * @var string The table associated with the model.
@@ -336,7 +336,7 @@ class User extends Model implements \Illuminate\Contracts\Auth\Authenticatable
 
     /**
      * Returns the role assigned to this user.
-     * @return \Winter\Storm\Auth\Models\Role|null
+     * @return \Laralips\Storm\Auth\Models\Role|null
      */
     public function getRole()
     {
@@ -666,7 +666,7 @@ class User extends Model implements \Illuminate\Contracts\Auth\Authenticatable
     /**
      * Check if this user can be impersonated by the provided impersonator
      *
-     * @param \Winter\Storm\Auth\Models\User|false $impersonator The user attempting to impersonate this user, false when not available
+     * @param \Laralips\Storm\Auth\Models\User|false $impersonator The user attempting to impersonate this user, false when not available
      * @return boolean
      */
     public function canBeImpersonated($impersonator = false)

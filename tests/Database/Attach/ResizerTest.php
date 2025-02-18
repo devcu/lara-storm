@@ -1,7 +1,7 @@
 <?php
 
 use AssertGD\DiffCalculator\ScaledRgbChannels;
-use Winter\Storm\Database\Attach\Resizer;
+use Laralips\Storm\Database\Attach\Resizer;
 
 class ResizerTest extends TestCase
 {

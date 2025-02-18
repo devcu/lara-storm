@@ -1,9 +1,9 @@
 <?php
 
-namespace Winter\Storm\Parse;
+namespace Laralips\Storm\Parse;
 
 use Illuminate\Support\ServiceProvider;
-use Winter\Storm\Parse\Processor\Symfony3Processor;
+use Laralips\Storm\Parse\Processor\Symfony3Processor;
 
 class ParseServiceProvider extends ServiceProvider
 {

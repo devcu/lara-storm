@@ -1,9 +1,9 @@
-<?php namespace Winter\Storm\Foundation\Console;
+<?php namespace Laralips\Storm\Foundation\Console;
 
 use Illuminate\Foundation\Console\ClearCompiledCommand as ClearCompiledCommandBase;
 
 /**
- * @property \Winter\Storm\Foundation\Application $laravel
+ * @property \Laralips\Storm\Foundation\Application $laravel
  */
 class ClearCompiledCommand extends ClearCompiledCommandBase
 {

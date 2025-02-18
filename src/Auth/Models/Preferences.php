@@ -1,8 +1,8 @@
-<?php namespace Winter\Storm\Auth\Models;
+<?php namespace Laralips\Storm\Auth\Models;
 
-use Winter\Storm\Database\Model;
-use Winter\Storm\Auth\AuthException;
-use Winter\Storm\Auth\Manager;
+use Laralips\Storm\Database\Model;
+use Laralips\Storm\Auth\AuthException;
+use Laralips\Storm\Auth\Manager;
 
 /**
  * User Preferences model
@@ -13,12 +13,12 @@ use Winter\Storm\Auth\Manager;
  * @property string|null $item Represents the item name of the preference.
  * @property int|null $user_id Represents the user ID that this preference belongs to.
  *
- * @method static \Winter\Storm\Database\QueryBuilder applyKeyAndUser($key, $user = null) Scope to find a setting record
+ * @method static \Laralips\Storm\Database\QueryBuilder applyKeyAndUser($key, $user = null) Scope to find a setting record
  *  for the specified module (or plugin) name, setting name and user.
  */
 class Preferences extends Model
 {
-    use \Winter\Storm\Support\Traits\KeyParser;
+    use \Laralips\Storm\Support\Traits\KeyParser;
 
     /**
      * @var string The database table used by the model.
@@ -35,7 +35,7 @@ class Preferences extends Model
     protected $jsonable = ['value'];
 
     /**
-     * @var \Winter\Storm\Auth\Models\User|null A user who owns the preferences
+     * @var \Laralips\Storm\Auth\Models\User|null A user who owns the preferences
      */
     public $userContext;
 
@@ -167,7 +167,7 @@ class Preferences extends Model
 
     /**
      * Scope to find a setting record for the specified module (or plugin) name, setting name and user.
-     * @param \Winter\Storm\Database\QueryBuilder $query
+     * @param \Laralips\Storm\Database\QueryBuilder $query
      * @param string $key Specifies the setting key value, for example 'backend:items.perpage'
      * @param mixed $user An optional user object.
      * @return mixed Returns the found record or null.

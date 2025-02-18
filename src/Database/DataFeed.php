@@ -1,9 +1,9 @@
-<?php namespace Winter\Storm\Database;
+<?php namespace Laralips\Storm\Database;
 
 use Closure;
 use Exception;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
-use Winter\Storm\Support\Facades\DB;
+use Laralips\Storm\Support\Facades\DB;
 
 /**
  * Model Data Feed class.

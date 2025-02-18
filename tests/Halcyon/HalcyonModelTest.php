@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Http\Request;
-use Winter\Storm\Halcyon\Model;
-use Winter\Storm\Halcyon\Datasource\Resolver;
-use Winter\Storm\Halcyon\Datasource\FileDatasource;
-use Winter\Storm\Filesystem\Filesystem;
-use Winter\Storm\Support\Facades\Input;
+use Laralips\Storm\Halcyon\Model;
+use Laralips\Storm\Halcyon\Datasource\Resolver;
+use Laralips\Storm\Halcyon\Datasource\FileDatasource;
+use Laralips\Storm\Filesystem\Filesystem;
+use Laralips\Storm\Support\Facades\Input;
 
 class HalcyonModelTest extends TestCase
 {
@@ -138,7 +138,7 @@ ESC;
 
     public function testCreatePageInDirectoryFail()
     {
-        $this->expectException(\Winter\Storm\Halcyon\Exception\InvalidFileNameException::class);
+        $this->expectException(\Laralips\Storm\Halcyon\Exception\InvalidFileNameException::class);
         $this->expectExceptionMessage('The specified file name [one/small/step/for-man.htm] is invalid.');
 
         HalcyonTestPage::create([
@@ -262,7 +262,7 @@ ESC;
 
     public function testUpdatePageFileExists()
     {
-        $this->expectException(\Winter\Storm\Halcyon\Exception\FileExistsException::class);
+        $this->expectException(\Laralips\Storm\Halcyon\Exception\FileExistsException::class);
         $this->expectExceptionMessage('A file already exists');
 
         @unlink($targetFile = __DIR__.'/../fixtures/halcyon/themes/theme1/pages/testfile2a.htm');
@@ -302,7 +302,7 @@ ESC;
 
     public function testPageWithValidation()
     {
-        $this->expectException(\Winter\Storm\Halcyon\Exception\ModelException::class);
+        $this->expectException(\Laralips\Storm\Halcyon\Exception\ModelException::class);
         $this->expectExceptionMessage('The title field is required.');
 
         $page = new HalcyonTestPageWithValidation;
@@ -314,7 +314,7 @@ ESC;
 
     public function testPageWithNestedValidationFail()
     {
-        $this->expectException(\Winter\Storm\Halcyon\Exception\ModelException::class);
+        $this->expectException(\Laralips\Storm\Halcyon\Exception\ModelException::class);
         $this->expectExceptionMessage('The meta title field is required.');
 
         $page = new HalcyonTestPageWithValidation;
@@ -388,7 +388,7 @@ ESC;
 
         $translator->expects($this->any())->method('get')->will($this->returnArgument(0));
 
-        $factory = new \Winter\Storm\Validation\Factory($translator);
+        $factory = new \Laralips\Storm\Validation\Factory($translator);
 
         HalcyonTestPageWithValidation::setModelValidator($factory);
     }

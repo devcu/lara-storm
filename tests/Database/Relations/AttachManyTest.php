@@ -1,11 +1,11 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Relations;
+namespace Laralips\Storm\Tests\Database\Relations;
 
-use Winter\Storm\Database\Attach\File;
-use Winter\Storm\Database\Model;
-use Winter\Storm\Tests\Database\Fixtures\User;
-use Winter\Storm\Tests\DbTestCase;
+use Laralips\Storm\Database\Attach\File;
+use Laralips\Storm\Database\Model;
+use Laralips\Storm\Tests\Database\Fixtures\User;
+use Laralips\Storm\Tests\DbTestCase;
 
 class AttachManyTest extends DbTestCase
 {

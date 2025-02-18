@@ -1,13 +1,13 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Fixtures;
+namespace Laralips\Storm\Tests\Database\Fixtures;
 
-use Winter\Storm\Database\Models\Revision;
+use Laralips\Storm\Database\Models\Revision;
 
 class RevisionablePost extends Post
 {
-    use \Winter\Storm\Database\Traits\Revisionable;
-    use \Winter\Storm\Database\Traits\SoftDelete;
+    use \Laralips\Storm\Database\Traits\Revisionable;
+    use \Laralips\Storm\Database\Traits\SoftDelete;
 
     /**
      * @var array Guarded fields

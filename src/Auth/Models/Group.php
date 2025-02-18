@@ -1,15 +1,15 @@
-<?php namespace Winter\Storm\Auth\Models;
+<?php namespace Laralips\Storm\Auth\Models;
 
-use Winter\Storm\Database\Model;
+use Laralips\Storm\Database\Model;
 
 /**
  * Group model
  *
- * @method \Winter\Storm\Database\Relations\BelongsToMany users() Users relation.
+ * @method \Laralips\Storm\Database\Relations\BelongsToMany users() Users relation.
  */
 class Group extends Model
 {
-    use \Winter\Storm\Database\Traits\Validation;
+    use \Laralips\Storm\Database\Traits\Validation;
 
     /**
      * @var string The table associated with the model.

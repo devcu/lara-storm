@@ -1,8 +1,8 @@
 <?php
 
-use Winter\Storm\Extension\Extendable;
-use Winter\Storm\Extension\ExtensionBase;
-use Winter\Storm\Support\Testing\MocksClassLoader;
+use Laralips\Storm\Extension\Extendable;
+use Laralips\Storm\Extension\ExtensionBase;
+use Laralips\Storm\Support\Testing\MocksClassLoader;
 
 class ExtendableTest extends TestCase
 {

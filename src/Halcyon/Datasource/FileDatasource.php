@@ -1,16 +1,16 @@
-<?php namespace Winter\Storm\Halcyon\Datasource;
+<?php namespace Laralips\Storm\Halcyon\Datasource;
 
 use Exception;
 use RecursiveIteratorIterator;
 use RecursiveDirectoryIterator;
-use Winter\Storm\Filesystem\Filesystem;
-use Winter\Storm\Filesystem\PathResolver;
-use Winter\Storm\Halcyon\Processors\Processor;
-use Winter\Storm\Halcyon\Exception\CreateFileException;
-use Winter\Storm\Halcyon\Exception\DeleteFileException;
-use Winter\Storm\Halcyon\Exception\FileExistsException;
-use Winter\Storm\Halcyon\Exception\InvalidFileNameException;
-use Winter\Storm\Halcyon\Exception\CreateDirectoryException;
+use Laralips\Storm\Filesystem\Filesystem;
+use Laralips\Storm\Filesystem\PathResolver;
+use Laralips\Storm\Halcyon\Processors\Processor;
+use Laralips\Storm\Halcyon\Exception\CreateFileException;
+use Laralips\Storm\Halcyon\Exception\DeleteFileException;
+use Laralips\Storm\Halcyon\Exception\FileExistsException;
+use Laralips\Storm\Halcyon\Exception\InvalidFileNameException;
+use Laralips\Storm\Halcyon\Exception\CreateDirectoryException;
 
 /**
  * File based datasource.
@@ -25,7 +25,7 @@ class FileDatasource extends Datasource
     /**
      * The filesystem instance.
      */
-    protected \Winter\Storm\Filesystem\Filesystem $files;
+    protected \Laralips\Storm\Filesystem\Filesystem $files;
 
     /**
      * Resolved path map.

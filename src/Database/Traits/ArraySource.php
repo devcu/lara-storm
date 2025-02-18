@@ -1,16 +1,16 @@
 <?php
 
-namespace Winter\Storm\Database\Traits;
+namespace Laralips\Storm\Database\Traits;
 
 use ReflectionClass;
 use Illuminate\Database\QueryException;
 use Illuminate\Support\Facades\App;
-use Winter\Storm\Database\Connectors\ConnectionFactory;
-use Winter\Storm\Exception\ApplicationException;
-use Winter\Storm\Filesystem\PathResolver;
-use Winter\Storm\Support\Str;
-use Winter\Storm\Support\Facades\File;
-use Winter\Storm\Support\Facades\Config;
+use Laralips\Storm\Database\Connectors\ConnectionFactory;
+use Laralips\Storm\Exception\ApplicationException;
+use Laralips\Storm\Filesystem\PathResolver;
+use Laralips\Storm\Support\Str;
+use Laralips\Storm\Support\Facades\File;
+use Laralips\Storm\Support\Facades\Config;
 
 /**
  * Array Source trait.

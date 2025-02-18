@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Argon;
+<?php namespace Laralips\Storm\Argon;
 
-use Winter\Storm\Support\ServiceProvider;
+use Laralips\Storm\Support\ServiceProvider;
 
 class ArgonServiceProvider extends ServiceProvider
 {

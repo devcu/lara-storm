@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Database;
+<?php namespace Laralips\Storm\Database;
 
 /**
  * Query memory cache class.
@@ -9,7 +9,7 @@
  */
 class MemoryCache
 {
-    use \Winter\Storm\Support\Traits\Singleton;
+    use \Laralips\Storm\Support\Traits\Singleton;
 
     /**
      * Cached results.

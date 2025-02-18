@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Html\Helper as HtmlHelper;
+use Laralips\Storm\Html\Helper as HtmlHelper;
 
 class HtmlHelperTest extends TestCase
 {

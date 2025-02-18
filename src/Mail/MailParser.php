@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Mail;
+<?php namespace Laralips\Storm\Mail;
 
 /**
  * This class parses Mail templates.

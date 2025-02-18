@@ -1,6 +1,6 @@
 <?php
 
-namespace Winter\Storm\Database\Relations\Concerns;
+namespace Laralips\Storm\Database\Relations\Concerns;
 
 /**
  * Relation name storage.

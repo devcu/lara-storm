@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Network;
+<?php namespace Laralips\Storm\Network;
 
-use Winter\Storm\Exception\ApplicationException;
-use Winter\Storm\Support\Str;
+use Laralips\Storm\Exception\ApplicationException;
+use Laralips\Storm\Support\Str;
 
 /**
  * HTTP Network Access

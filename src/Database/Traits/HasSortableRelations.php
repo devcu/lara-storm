@@ -1,8 +1,8 @@
-<?php namespace Winter\Storm\Database\Traits;
+<?php namespace Laralips\Storm\Database\Traits;
 
 use Exception;
 
-use Winter\Sorm\Database\Model;
+use Laralips\Sorm\Database\Model;
 
 /**
  * HasSortableRelations trait
@@ -11,7 +11,7 @@ use Winter\Sorm\Database\Model;
  *
  * In the model class definition add:
  *
- *   use \Winter\Storm\Database\Traits\HasSortableRelations;
+ *   use \Laralips\Storm\Database\Traits\HasSortableRelations;
  *
  *   public $sortableRelations = ['relation_name' => 'sort_order_column'];
  *

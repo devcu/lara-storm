@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Filesystem\Filesystem;
+use Laralips\Storm\Filesystem\Filesystem;
 
 class FilesystemTest extends TestCase
 {

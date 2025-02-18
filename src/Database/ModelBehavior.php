@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Database;
+<?php namespace Laralips\Storm\Database;
 
-use Winter\Storm\Extension\ExtensionBase;
+use Laralips\Storm\Extension\ExtensionBase;
 
 /**
  * Base class for model behaviors.
@@ -10,13 +10,13 @@ use Winter\Storm\Extension\ExtensionBase;
 class ModelBehavior extends ExtensionBase
 {
     /**
-     * @var \Winter\Storm\Database\Model Reference to the extended model.
+     * @var \Laralips\Storm\Database\Model Reference to the extended model.
      */
     protected $model;
 
     /**
      * Constructor
-     * @param \Winter\Storm\Database\Model $model The extended model.
+     * @param \Laralips\Storm\Database\Model $model The extended model.
      */
     public function __construct($model)
     {

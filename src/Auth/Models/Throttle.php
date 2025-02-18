@@ -1,14 +1,14 @@
-<?php namespace Winter\Storm\Auth\Models;
+<?php namespace Laralips\Storm\Auth\Models;
 
 use Carbon\Carbon;
-use Winter\Storm\Auth\AuthException;
-use Winter\Storm\Database\Model;
+use Laralips\Storm\Auth\AuthException;
+use Laralips\Storm\Database\Model;
 
 /**
  * Throttle model
  *
- * @property \Winter\Storm\Auth\Models\User|null $user Related user.
- * @method \Winter\Storm\Database\Relations\BelongsTo user() User relation.
+ * @property \Laralips\Storm\Auth\Models\User|null $user Related user.
+ * @method \Laralips\Storm\Database\Relations\BelongsTo user() User relation.
  */
 class Throttle extends Model
 {

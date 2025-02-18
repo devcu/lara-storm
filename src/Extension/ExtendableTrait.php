@@ -1,12 +1,12 @@
-<?php namespace Winter\Storm\Extension;
+<?php namespace Laralips\Storm\Extension;
 
 use Exception;
 use ReflectionClass;
 use ReflectionMethod;
 use BadMethodCallException;
 use Closure;
-use Winter\Storm\Support\ClassLoader;
-use Winter\Storm\Support\Serialization;
+use Laralips\Storm\Support\ClassLoader;
+use Laralips\Storm\Support\Serialization;
 use Illuminate\Support\Facades\App;
 use ReflectionException;
 use October\Rain\Extension\ExtendableTrait as OctoberExtendableTrait;
@@ -155,7 +155,7 @@ trait ExtendableTrait
     {
         if (!method_exists($extensionObject, 'extensionIsHiddenMethod')) {
             throw new Exception(sprintf(
-                'Extension %s should inherit Winter\Storm\Extension\ExtensionBase or implement Winter\Storm\Extension\ExtensionTrait.',
+                'Extension %s should inherit Laralips\Storm\Extension\ExtensionBase or implement Laralips\Storm\Extension\ExtensionTrait.',
                 $extensionName
             ));
         }

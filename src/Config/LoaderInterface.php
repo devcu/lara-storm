@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Config;
+<?php namespace Laralips\Storm\Config;
 
 interface LoaderInterface
 {

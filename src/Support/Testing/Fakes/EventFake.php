@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Support\Testing\Fakes;
+<?php namespace Laralips\Storm\Support\Testing\Fakes;
 
-use Winter\Storm\Events\Dispatcher;
-use Winter\Storm\Support\Arr;
+use Laralips\Storm\Events\Dispatcher;
+use Laralips\Storm\Support\Arr;
 
 class EventFake extends \Illuminate\Support\Testing\Fakes\EventFake
 {

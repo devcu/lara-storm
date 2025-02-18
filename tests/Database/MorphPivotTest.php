@@ -1,10 +1,10 @@
 <?php
 
-namespace Winter\Storm\Tests\Database;
+namespace Laralips\Storm\Tests\Database;
 
-use Winter\Storm\Database\Model;
-use Winter\Storm\Database\MorphPivot;
-use Winter\Storm\Tests\Database\Fixtures\CustomMorphPivot;
+use Laralips\Storm\Database\Model;
+use Laralips\Storm\Database\MorphPivot;
+use Laralips\Storm\Tests\Database\Fixtures\CustomMorphPivot;
 
 class MorphPivotTest extends \DbTestCase
 {

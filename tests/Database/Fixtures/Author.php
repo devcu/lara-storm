@@ -1,14 +1,14 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Fixtures;
+namespace Laralips\Storm\Tests\Database\Fixtures;
 
 use Illuminate\Database\Schema\Builder;
-use Winter\Storm\Database\Attributes\Relation;
-use Winter\Storm\Database\Model;
-use Winter\Storm\Database\Relations\BelongsToMany;
-use Winter\Storm\Database\Relations\HasMany;
-use Winter\Storm\Database\Relations\HasOne;
-use Winter\Storm\Database\Relations\MorphToMany;
+use Laralips\Storm\Database\Attributes\Relation;
+use Laralips\Storm\Database\Model;
+use Laralips\Storm\Database\Relations\BelongsToMany;
+use Laralips\Storm\Database\Relations\HasMany;
+use Laralips\Storm\Database\Relations\HasOne;
+use Laralips\Storm\Database\Relations\MorphToMany;
 
 class Author extends Model
 {
@@ -43,7 +43,7 @@ class Author extends Model
 
     public $belongsToMany = [
         'roles' => [
-            'Winter\Storm\Tests\Database\Fixtures\Role',
+            'Laralips\Storm\Tests\Database\Fixtures\Role',
             'table' => 'database_tester_authors_roles'
         ],
     ];

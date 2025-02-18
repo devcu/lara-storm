@@ -1,6 +1,6 @@
 <?php
 
-namespace Winter\Storm\Database\Connectors;
+namespace Laralips\Storm\Database\Connectors;
 
 use Illuminate\Database\Connectors\SQLiteConnector as BaseSQLiteConnector;
 use Illuminate\Database\SQLiteDatabaseDoesNotExistException;

@@ -1,10 +1,10 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Traits;
+namespace Laralips\Storm\Tests\Database\Traits;
 
-use Winter\Storm\Database\Model;
-use Winter\Storm\Tests\Database\Fixtures\CategoryNested;
-use Winter\Storm\Tests\DbTestCase;
+use Laralips\Storm\Database\Model;
+use Laralips\Storm\Tests\Database\Fixtures\CategoryNested;
+use Laralips\Storm\Tests\DbTestCase;
 
 class NestedTreeTest extends DbTestCase
 {

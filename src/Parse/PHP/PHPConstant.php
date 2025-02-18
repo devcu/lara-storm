@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Parse\PHP;
+<?php namespace Laralips\Storm\Parse\PHP;
 
-use Winter\LaravelConfigWriter\Parser\PHPConstant as BasePHPConstant;
+use Laralips\LaravelConfigWriter\Parser\PHPConstant as BasePHPConstant;
 
 class PHPConstant extends BasePHPConstant
 {

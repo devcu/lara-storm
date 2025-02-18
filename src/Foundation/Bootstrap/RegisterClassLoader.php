@@ -1,8 +1,8 @@
-<?php namespace Winter\Storm\Foundation\Bootstrap;
+<?php namespace Laralips\Storm\Foundation\Bootstrap;
 
-use Winter\Storm\Support\ClassLoader;
-use Winter\Storm\Filesystem\Filesystem;
-use Winter\Storm\Foundation\Application;
+use Laralips\Storm\Support\ClassLoader;
+use Laralips\Storm\Filesystem\Filesystem;
+use Laralips\Storm\Foundation\Application;
 
 class RegisterClassLoader
 {

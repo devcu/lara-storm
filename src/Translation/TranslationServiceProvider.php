@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Translation;
+<?php namespace Laralips\Storm\Translation;
 
 use Illuminate\Support\ServiceProvider;
 

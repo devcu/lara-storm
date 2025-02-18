@@ -1,25 +1,25 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Concerns;
+namespace Laralips\Storm\Tests\Database\Concerns;
 
-use Winter\Storm\Database\Relations\BelongsTo;
-use Winter\Storm\Database\Relations\BelongsToMany;
-use Winter\Storm\Database\Relations\HasMany;
-use Winter\Storm\Database\Relations\HasOne;
-use Winter\Storm\Database\Relations\MorphMany;
-use Winter\Storm\Database\Relations\MorphOne;
-use Winter\Storm\Database\Relations\MorphToMany;
-use Winter\Storm\Tests\Database\Fixtures\Author;
-use Winter\Storm\Tests\Database\Fixtures\Country;
-use Winter\Storm\Tests\Database\Fixtures\EventLog;
-use Winter\Storm\Tests\Database\Fixtures\Meta;
-use Winter\Storm\Tests\Database\Fixtures\Phone;
-use Winter\Storm\Tests\Database\Fixtures\Post;
-use Winter\Storm\Tests\Database\Fixtures\Role;
-use Winter\Storm\Tests\Database\Fixtures\SoftDeleteUser;
-use Winter\Storm\Tests\Database\Fixtures\Tag;
-use Winter\Storm\Tests\Database\Fixtures\User;
-use Winter\Storm\Tests\DbTestCase;
+use Laralips\Storm\Database\Relations\BelongsTo;
+use Laralips\Storm\Database\Relations\BelongsToMany;
+use Laralips\Storm\Database\Relations\HasMany;
+use Laralips\Storm\Database\Relations\HasOne;
+use Laralips\Storm\Database\Relations\MorphMany;
+use Laralips\Storm\Database\Relations\MorphOne;
+use Laralips\Storm\Database\Relations\MorphToMany;
+use Laralips\Storm\Tests\Database\Fixtures\Author;
+use Laralips\Storm\Tests\Database\Fixtures\Country;
+use Laralips\Storm\Tests\Database\Fixtures\EventLog;
+use Laralips\Storm\Tests\Database\Fixtures\Meta;
+use Laralips\Storm\Tests\Database\Fixtures\Phone;
+use Laralips\Storm\Tests\Database\Fixtures\Post;
+use Laralips\Storm\Tests\Database\Fixtures\Role;
+use Laralips\Storm\Tests\Database\Fixtures\SoftDeleteUser;
+use Laralips\Storm\Tests\Database\Fixtures\Tag;
+use Laralips\Storm\Tests\Database\Fixtures\User;
+use Laralips\Storm\Tests\DbTestCase;
 
 class HasRelationshipsTest extends DbTestCase
 {
@@ -268,7 +268,7 @@ class HasRelationshipsTest extends DbTestCase
 
         $this->assertEquals([
             'roles' => [ // Property-style
-                'Winter\Storm\Tests\Database\Fixtures\Role',
+                'Laralips\Storm\Tests\Database\Fixtures\Role',
                 'table' => 'database_tester_authors_roles'
             ],
             'scopes' => [ // Laravel-style

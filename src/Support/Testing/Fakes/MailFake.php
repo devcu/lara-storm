@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Support\Testing\Fakes;
+<?php namespace Laralips\Storm\Support\Testing\Fakes;
 
-use Winter\Storm\Mail\Mailable;
+use Laralips\Storm\Mail\Mailable;
 
 class MailFake extends \Illuminate\Support\Testing\Fakes\MailFake
 {
@@ -74,7 +74,7 @@ class MailFake extends \Illuminate\Support\Testing\Fakes\MailFake
      * @param  array  $data
      * @param  \Closure|string  $callback
      * @param  bool  $queued
-     * @return \Winter\Storm\Mail\Mailable
+     * @return \Laralips\Storm\Mail\Mailable
      */
     public function buildMailable($view, $data, $callback, $queued = false)
     {

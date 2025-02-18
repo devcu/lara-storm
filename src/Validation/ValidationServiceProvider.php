@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Validation;
+<?php namespace Laralips\Storm\Validation;
 
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Validation\ValidationServiceProvider as BaseServiceProvider;
@@ -25,7 +25,7 @@ class ValidationServiceProvider extends BaseServiceProvider implements Deferrabl
                 $validator->setPresenceVerifier($app['validation.presence']);
             }
 
-            $validator->extend('slug', \Winter\Storm\Validation\Rules\Slug::class);
+            $validator->extend('slug', \Laralips\Storm\Validation\Rules\Slug::class);
 
             return $validator;
         });

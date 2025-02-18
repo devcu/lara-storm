@@ -1,9 +1,9 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Traits;
+namespace Laralips\Storm\Tests\Database\Traits;
 
-use Winter\Storm\Tests\Database\Fixtures\SluggablePost;
-use Winter\Storm\Tests\DbTestCase;
+use Laralips\Storm\Tests\Database\Fixtures\SluggablePost;
+use Laralips\Storm\Tests\DbTestCase;
 
 class SluggableTest extends DbTestCase
 {
@@ -219,10 +219,10 @@ class SluggableTest extends DbTestCase
 * Class with Sluggable and SoftDelete traits
 * with allowTrashedSlugs
 */
-class TestModelSluggableSoftDeleteAllow extends \Winter\Storm\Database\Model
+class TestModelSluggableSoftDeleteAllow extends \Laralips\Storm\Database\Model
 {
-    use \Winter\Storm\Database\Traits\SoftDelete;
-    use \Winter\Storm\Database\Traits\Sluggable;
+    use \Laralips\Storm\Database\Traits\SoftDelete;
+    use \Laralips\Storm\Database\Traits\Sluggable;
 
     protected $slugs = ['slug' => 'name'];
     protected $fillable = ['name'];
@@ -234,10 +234,10 @@ class TestModelSluggableSoftDeleteAllow extends \Winter\Storm\Database\Model
 * Class with Sluggable and SoftDelete traits
 * with default behavior (allowTrashedSlugs = false)
 */
-class TestModelSluggableSoftDelete extends \Winter\Storm\Database\Model
+class TestModelSluggableSoftDelete extends \Laralips\Storm\Database\Model
 {
-    use \Winter\Storm\Database\Traits\SoftDelete;
-    use \Winter\Storm\Database\Traits\Sluggable;
+    use \Laralips\Storm\Database\Traits\SoftDelete;
+    use \Laralips\Storm\Database\Traits\Sluggable;
 
     protected $slugs = ['slug' => 'name'];
     protected $fillable = ['name'];
@@ -248,10 +248,10 @@ class TestModelSluggableSoftDelete extends \Winter\Storm\Database\Model
 * Class with Sluggable and SoftDelete traits
 * with default behavior (allowTrashedSlugs = false)
 */
-class TestModelSluggableSoftDeleteNoUnique extends \Winter\Storm\Database\Model
+class TestModelSluggableSoftDeleteNoUnique extends \Laralips\Storm\Database\Model
 {
-    use \Winter\Storm\Database\Traits\SoftDelete;
-    use \Winter\Storm\Database\Traits\Sluggable;
+    use \Laralips\Storm\Database\Traits\SoftDelete;
+    use \Laralips\Storm\Database\Traits\Sluggable;
 
     protected $slugs = ['slug' => 'name'];
     protected $fillable = ['name'];
@@ -261,9 +261,9 @@ class TestModelSluggableSoftDeleteNoUnique extends \Winter\Storm\Database\Model
 /*
 * Class with only Sluggable trait
 */
-class TestModelSluggable extends \Winter\Storm\Database\Model
+class TestModelSluggable extends \Laralips\Storm\Database\Model
 {
-    use \Winter\Storm\Database\Traits\Sluggable;
+    use \Laralips\Storm\Database\Traits\Sluggable;
 
     protected $slugs = ['slug' => 'name'];
     protected $fillable = ['name'];

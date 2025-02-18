@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Support\Facades;
+<?php namespace Laralips\Storm\Support\Facades;
 
-use Winter\Storm\Support\Facade;
-use Winter\Storm\Support\Testing\Fakes\MailFake;
+use Laralips\Storm\Support\Facade;
+use Laralips\Storm\Support\Testing\Fakes\MailFake;
 
 /**
  * @method static \Illuminate\Mail\PendingMail to($users)
@@ -22,15 +22,15 @@ use Winter\Storm\Support\Testing\Fakes\MailFake;
  * @method static \Illuminate\Support\Collection queued(string $mailable, \Closure|string $callback = null)
  * @method static bool hasQueued(string $mailable)
  *
- * @see \Winter\Storm\Mail\Mailer
- * @see \Winter\Storm\Support\Testing\Fakes\MailFake
+ * @see \Laralips\Storm\Mail\Mailer
+ * @see \Laralips\Storm\Support\Testing\Fakes\MailFake
  */
 class Mail extends Facade
 {
     /**
      * Replace the bound instance with a fake.
      *
-     * @return \Winter\Storm\Support\Testing\Fakes\MailFake
+     * @return \Laralips\Storm\Support\Testing\Fakes\MailFake
      */
     public static function fake()
     {

@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Validation\Concerns;
+<?php namespace Laralips\Storm\Validation\Concerns;
 
 use Illuminate\Support\Str;
 

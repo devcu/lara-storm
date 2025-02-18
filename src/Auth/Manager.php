@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Auth;
+<?php namespace Laralips\Storm\Auth;
 
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Cookie;
@@ -12,7 +12,7 @@ use Illuminate\Session\SessionManager;
  */
 class Manager implements \Illuminate\Contracts\Auth\StatefulGuard
 {
-    use \Winter\Storm\Support\Traits\Singleton;
+    use \Laralips\Storm\Support\Traits\Singleton;
 
     /**
      * @var Models\User|null The currently logged in user
@@ -106,12 +106,12 @@ class Manager implements \Illuminate\Contracts\Auth\StatefulGuard
     /**
      * Prepares a query derived from the user model.
      *
-     * @return \Winter\Storm\Database\Builder $query
+     * @return \Laralips\Storm\Database\Builder $query
      */
     protected function createUserModelQuery()
     {
         $model = $this->createUserModel();
-        /** @var \Winter\Storm\Database\Builder */
+        /** @var \Laralips\Storm\Database\Builder */
         $query = $model->newQuery();
         $this->extendUserQuery($query);
 
@@ -120,7 +120,7 @@ class Manager implements \Illuminate\Contracts\Auth\StatefulGuard
 
     /**
      * Extend the query used for finding the user.
-     * @param \Winter\Storm\Database\Builder $query
+     * @param \Laralips\Storm\Database\Builder $query
      * @return void
      */
     public function extendUserQuery($query)
@@ -769,7 +769,7 @@ class Manager implements \Illuminate\Contracts\Auth\StatefulGuard
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.auth.beforeImpersonate', function (\Winter\Storm\Auth\Models\User|false $impersonator) use (\Winter\Storm\Models\Auth\User $model) {
+         *     $model->bindEvent('model.auth.beforeImpersonate', function (\Laralips\Storm\Auth\Models\User|false $impersonator) use (\Laralips\Storm\Models\Auth\User $model) {
          *         \Log::info($impersonator->full_name . ' is attempting to impersonate ' . $model->full_name);
          *
          *         // Ignore the results of $model->canBeImpersonated() and grant impersonation access
@@ -820,7 +820,7 @@ class Manager implements \Illuminate\Contracts\Auth\StatefulGuard
              *
              * Example usage:
              *
-             *     $model->bindEvent('model.auth.afterImpersonate', function (\Winter\Storm\Auth\Models\User|false $impersonator) use (\Winter\Storm\Auth\Models\User $model) {
+             *     $model->bindEvent('model.auth.afterImpersonate', function (\Laralips\Storm\Auth\Models\User|false $impersonator) use (\Laralips\Storm\Auth\Models\User $model) {
              *         \Log::info($impersonator->full_name . ' has stopped impersonating ' . $model->full_name);
              *     });
              *

@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Database\Connections;
+<?php namespace Laralips\Storm\Database\Connections;
 
 use Closure;
 use Exception;
@@ -7,7 +7,7 @@ use Illuminate\Database\Schema\SqlServerBuilder;
 use Illuminate\Database\PDO\SqlServerDriver;
 use Illuminate\Database\Query\Processors\SqlServerProcessor;
 use Illuminate\Database\Schema\Grammars\SqlServerGrammar as SchemaGrammar;
-use Winter\Storm\Database\Query\Grammars\SqlServerGrammar as QueryGrammar;
+use Laralips\Storm\Database\Query\Grammars\SqlServerGrammar as QueryGrammar;
 
 /**
  * @phpstan-property \Illuminate\Database\Schema\Grammars\Grammar|null $schemaGrammar

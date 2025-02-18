@@ -1,9 +1,9 @@
-<?php namespace Winter\Storm\Auth;
+<?php namespace Laralips\Storm\Auth;
 
 use Exception;
 use Illuminate\Support\Facades\Lang;
-use Winter\Storm\Support\Facades\Config;
-use Winter\Storm\Exception\ApplicationException;
+use Laralips\Storm\Support\Facades\Config;
+use Laralips\Storm\Exception\ApplicationException;
 
 /**
  * Used when user authentication fails. Implements a softer error message.

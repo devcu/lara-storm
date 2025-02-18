@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Database;
+<?php namespace Laralips\Storm\Database;
 
 /**
  * The Model interface defines required methods for models to work.

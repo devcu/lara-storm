@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Html;
+<?php namespace Laralips\Storm\Html;
 
 /**
  * Methods that may be useful for processing HTML tasks

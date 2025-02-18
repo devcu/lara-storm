@@ -2,8 +2,8 @@
 
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Request;
-use Winter\Storm\Support\Collection;
-use Winter\Storm\Support\Facades\Event;
+use Laralips\Storm\Support\Collection;
+use Laralips\Storm\Support\Facades\Event;
 
 require_once("helpers-array.php");
 require_once("helpers-paths.php");
@@ -38,7 +38,7 @@ if (!function_exists('trans')) {
      */
     function trans($id = null, $parameters = [], $locale = null)
     {
-        /** @var \Winter\Storm\Translation\Translator $translator */
+        /** @var \Laralips\Storm\Translation\Translator $translator */
         $translator = app('translator');
         return $translator->trans($id, $parameters, $locale);
     }
@@ -49,7 +49,7 @@ if (!function_exists('collect')) {
      * Create a collection from the given value.
      *
      * @param  mixed  $value
-     * @return \Winter\Storm\Support\Collection
+     * @return \Laralips\Storm\Support\Collection
      */
     function collect($value = null)
     {
@@ -70,8 +70,8 @@ if (!function_exists('get')) {
         /*
          * Array field name, eg: field[key][key2][key3]
          */
-        if (class_exists('Winter\Storm\Html\Helper')) {
-            $name = implode('.', Winter\Storm\Html\Helper::nameToArray($name));
+        if (class_exists('Laralips\Storm\Html\Helper')) {
+            $name = implode('.', Laralips\Storm\Html\Helper::nameToArray($name));
         }
 
         return array_get(Request::query(), $name, $default);
@@ -95,8 +95,8 @@ if (!function_exists('post')) {
         /*
          * Array field name, eg: field[key][key2][key3]
          */
-        if (class_exists('Winter\Storm\Html\Helper')) {
-            $name = implode('.', Winter\Storm\Html\Helper::nameToArray($name));
+        if (class_exists('Laralips\Storm\Html\Helper')) {
+            $name = implode('.', Laralips\Storm\Html\Helper::nameToArray($name));
         }
 
         return array_get(Request::post(), $name, $default);
@@ -120,17 +120,17 @@ if (!function_exists('input')) {
     function input($name = null, $default = null)
     {
         if ($name === null) {
-            return \Winter\Storm\Support\Facades\Input::all();
+            return \Laralips\Storm\Support\Facades\Input::all();
         }
 
         /*
          * Array field name, eg: field[key][key2][key3]
          */
-        if (class_exists('Winter\Storm\Html\Helper')) {
-            $name = implode('.', Winter\Storm\Html\Helper::nameToArray($name));
+        if (class_exists('Laralips\Storm\Html\Helper')) {
+            $name = implode('.', Laralips\Storm\Html\Helper::nameToArray($name));
         }
 
-        return \Winter\Storm\Support\Facades\Input::get($name, $default);
+        return \Laralips\Storm\Support\Facades\Input::get($name, $default);
     }
 }
 

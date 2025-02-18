@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Events;
+<?php namespace Laralips\Storm\Events;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Queue\Factory as QueueFactoryContract;

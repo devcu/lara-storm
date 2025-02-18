@@ -1,6 +1,6 @@
 <?php
 
-namespace Winter\Storm\Database\Relations;
+namespace Laralips\Storm\Database\Relations;
 
 /**
  * Winter relation interface.

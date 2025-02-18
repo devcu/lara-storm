@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Database\Attach;
+<?php namespace Laralips\Storm\Database\Attach;
 
 use Exception;
 use Illuminate\Filesystem\FilesystemAdapter;
@@ -7,11 +7,11 @@ use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Storage;
 use Symfony\Component\HttpFoundation\File\File as FileObj;
 use Symfony\Component\HttpFoundation\File\UploadedFile;
-use Winter\Storm\Database\Model;
-use Winter\Storm\Exception\ApplicationException;
-use Winter\Storm\Network\Http;
-use Winter\Storm\Support\Facades\File as FileHelper;
-use Winter\Storm\Support\Svg;
+use Laralips\Storm\Database\Model;
+use Laralips\Storm\Exception\ApplicationException;
+use Laralips\Storm\Network\Http;
+use Laralips\Storm\Support\Facades\File as FileHelper;
+use Laralips\Storm\Support\Svg;
 
 /**
  * File attachment model
@@ -25,7 +25,7 @@ use Winter\Storm\Support\Svg;
  */
 class File extends Model
 {
-    use \Winter\Storm\Database\Traits\Sortable;
+    use \Laralips\Storm\Database\Traits\Sortable;
 
     /**
      * @var string The table associated with the model.

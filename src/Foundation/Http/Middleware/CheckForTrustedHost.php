@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Foundation\Http\Middleware;
+<?php namespace Laralips\Storm\Foundation\Http\Middleware;
 
-use Winter\Storm\Support\Facades\Config;
-use Winter\Storm\Http\Middleware\TrustHosts as BaseMiddleware;
+use Laralips\Storm\Support\Facades\Config;
+use Laralips\Storm\Http\Middleware\TrustHosts as BaseMiddleware;
 
 class CheckForTrustedHost extends BaseMiddleware
 {

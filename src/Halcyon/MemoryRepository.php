@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Halcyon;
+<?php namespace Laralips\Storm\Halcyon;
 
 use Illuminate\Cache\Repository;
 

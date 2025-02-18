@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Support\Facades;
+<?php namespace Laralips\Storm\Support\Facades;
 
-use Winter\Storm\Support\Facade;
+use Laralips\Storm\Support\Facade;
 
 /**
  * @method static \Illuminate\Contracts\Validation\Validator make(array $data, array $rules, array $messages = [], array $customAttributes = [])
@@ -8,7 +8,7 @@ use Winter\Storm\Support\Facade;
  * @method static void extendImplicit(string $rule, \Closure|string $extension, string $message = null)
  * @method static void replacer(string $rule, \Closure|string $replacer)
  *
- * @see \Winter\Storm\Validation\Factory
+ * @see \Laralips\Storm\Validation\Factory
  */
 class Validator extends Facade
 {

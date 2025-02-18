@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Database\Model;
+use Laralips\Storm\Database\Model;
 
 class PurgeableTraitTest extends DbTestCase
 {
@@ -46,7 +46,7 @@ class PurgeableTraitTest extends DbTestCase
 
 class TestModelPurgeable extends Model
 {
-    use \Winter\Storm\Database\Traits\Purgeable;
+    use \Laralips\Storm\Database\Traits\Purgeable;
 
     protected $guarded = ['data'];
 

@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Parse\EnvFile;
+use Laralips\Storm\Parse\EnvFile;
 
 class EnvFileTest extends TestCase
 {

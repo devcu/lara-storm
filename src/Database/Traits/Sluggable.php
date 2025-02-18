@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Database\Traits;
+<?php namespace Laralips\Storm\Database\Traits;
 
-use Winter\Storm\Support\Str;
+use Laralips\Storm\Support\Str;
 use Exception;
 
 trait Sluggable

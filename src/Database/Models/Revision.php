@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Database\Models;
+<?php namespace Laralips\Storm\Database\Models;
 
-use Winter\Storm\Database\Model;
+use Laralips\Storm\Database\Model;
 
 /**
  * Revision Model

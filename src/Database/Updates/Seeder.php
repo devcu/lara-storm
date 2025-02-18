@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Database\Updates;
+<?php namespace Laralips\Storm\Database\Updates;
 
 use Illuminate\Database\Seeder as SeederBase;
 

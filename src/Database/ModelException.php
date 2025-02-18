@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Database;
+<?php namespace Laralips\Storm\Database;
 
-use Winter\Storm\Exception\ValidationException;
+use Laralips\Storm\Exception\ValidationException;
 
 /**
  * Used when validation fails. Contains the invalid model for easy analysis.

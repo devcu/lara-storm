@@ -1,10 +1,10 @@
 <?php
 
-namespace Winter\Storm\Database\Capsule;
+namespace Laralips\Storm\Database\Capsule;
 
 use Illuminate\Database\DatabaseManager;
 use Illuminate\Database\Capsule\Manager as BaseManager;
-use Winter\Storm\Database\Connectors\ConnectionFactory;
+use Laralips\Storm\Database\Connectors\ConnectionFactory;
 
 class Manager extends BaseManager
 {

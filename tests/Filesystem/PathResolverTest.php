@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Filesystem\PathResolver;
+use Laralips\Storm\Filesystem\PathResolver;
 
 /**
  * The tests below will test both the resolve_path() method (and wrapped PathResolver::resolve() method),

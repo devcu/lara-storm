@@ -1,9 +1,9 @@
 <?php
 
-namespace Winter\Storm\Database\Relations;
+namespace Laralips\Storm\Database\Relations;
 
 use Illuminate\Database\Eloquent\Builder;
-use Winter\Storm\Database\MorphPivot;
+use Laralips\Storm\Database\MorphPivot;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphToMany as BaseMorphToMany;
@@ -15,7 +15,7 @@ use Illuminate\Database\Eloquent\Relations\MorphToMany as BaseMorphToMany;
  * to maintain covariance with Laravel. We instead use the `Concerns\BelongsOrMorphsToMany` trait
  * to provide base `BaseToMany` functionality that includes Winter overrides.
  *
- * @phpstan-property \Winter\Storm\Database\Model $parent
+ * @phpstan-property \Laralips\Storm\Database\Model $parent
  */
 class MorphToMany extends BaseMorphToMany implements RelationInterface
 {

@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Mail;
+<?php namespace Laralips\Storm\Mail;
 
 use InvalidArgumentException;
 use Illuminate\Mail\MailManager as BaseMailManager;
@@ -31,7 +31,7 @@ class MailManager extends BaseMailManager
      * Resolve the given mailer.
      *
      * @param  string  $name
-     * @return \Winter\Storm\Mail\Mailer
+     * @return \Laralips\Storm\Mail\Mailer
      *
      * @throws \InvalidArgumentException
      */

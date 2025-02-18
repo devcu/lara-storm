@@ -1,11 +1,11 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Fixtures;
+namespace Laralips\Storm\Tests\Database\Fixtures;
 
 use Illuminate\Database\Schema\Builder;
-use Winter\Storm\Database\Attributes\Relation;
-use Winter\Storm\Database\Model;
-use Winter\Storm\Database\Relations\HasManyThrough;
+use Laralips\Storm\Database\Attributes\Relation;
+use Laralips\Storm\Database\Model;
+use Laralips\Storm\Database\Relations\HasManyThrough;
 
 class Country extends Model
 {

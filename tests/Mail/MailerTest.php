@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Mail\Mailer;
+use Laralips\Storm\Mail\Mailer;
 use Illuminate\Mail\Transport\ArrayTransport;
 
 class MailerTest extends TestCase

@@ -1,16 +1,16 @@
 <?php
 
-namespace Winter\Storm\Database\Traits;
+namespace Laralips\Storm\Database\Traits;
 
 use Illuminate\Database\Eloquent\Model as EloquentModel;
 use Illuminate\Database\Eloquent\Collection as CollectionBase;
 use Illuminate\Database\Eloquent\Relations\Relation;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Winter\Storm\Database\Relations\BelongsToMany;
-use Winter\Storm\Database\Relations\MorphToMany;
+use Laralips\Storm\Database\Relations\BelongsToMany;
+use Laralips\Storm\Database\Relations\MorphToMany;
 
 /**
- * @mixin \Winter\Storm\Database\Model
+ * @mixin \Laralips\Storm\Database\Model
  */
 trait SoftDelete
 {
@@ -42,7 +42,7 @@ trait SoftDelete
              *
              * Example usage:
              *
-             *     $model->bindEvent('model.beforeRestore', function () use (\Winter\Storm\Database\Model $model) {
+             *     $model->bindEvent('model.beforeRestore', function () use (\Laralips\Storm\Database\Model $model) {
              *         \Log::info("{$model->name} is going to be restored!");
              *     });
              *
@@ -62,7 +62,7 @@ trait SoftDelete
              *
              * Example usage:
              *
-             *     $model->bindEvent('model.afterRestore', function () use (\Winter\Storm\Database\Model $model) {
+             *     $model->bindEvent('model.afterRestore', function () use (\Laralips\Storm\Database\Model $model) {
              *         \Log::info("{$model->name} has been brought back to life!");
              *     });
              *

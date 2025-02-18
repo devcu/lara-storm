@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Support\Facades;
+<?php namespace Laralips\Storm\Support\Facades;
 
-use Winter\Storm\Support\Facade;
+use Laralips\Storm\Support\Facade;
 
 /**
  * @method static bool exists(string $path)
@@ -56,7 +56,7 @@ use Winter\Storm\Support\Facade;
  * @method static bool copyBetweenDisks(string|FilesystemAdapter $sourceDisk, string|FilesystemAdapter $destinationDisk, string $filePath, ?string $targetPath = null)
  * @method static bool moveBetweenDisks(string|FilesystemAdapter $sourceDisk, string|FilesystemAdapter $destinationDisk, string $filePath, ?string $targetPath = null)
  *
- * @see \Winter\Storm\Filesystem\Filesystem
+ * @see \Laralips\Storm\Filesystem\Filesystem
  */
 class File extends Facade
 {

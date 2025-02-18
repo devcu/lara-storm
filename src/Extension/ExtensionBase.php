@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Extension;
+<?php namespace Laralips\Storm\Extension;
 
 /**
  * Extension class

@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Html;
+<?php namespace Laralips\Storm\Html;
 
 use Illuminate\Session\Store as Session;
 use Illuminate\Routing\UrlGenerator as UrlGeneratorBase;
@@ -15,7 +15,7 @@ class FormBuilder
     /**
      * The HTML builder instance.
      */
-    protected \Winter\Storm\Html\HtmlBuilder $html;
+    protected \Laralips\Storm\Html\HtmlBuilder $html;
 
     /**
      * The URL generator instance.

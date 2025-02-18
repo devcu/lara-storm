@@ -1,9 +1,9 @@
-<?php namespace Winter\Storm\Support;
+<?php namespace Laralips\Storm\Support;
 
 use Closure;
 use Throwable;
 use Exception;
-use Winter\Storm\Filesystem\Filesystem;
+use Laralips\Storm\Filesystem\Filesystem;
 
 /**
  * Class loader

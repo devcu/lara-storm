@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Support\Facades;
+<?php namespace Laralips\Storm\Support\Facades;
 
-use Winter\Storm\Support\Facade;
-use Winter\Storm\Network\Http as NetworkHttp;
+use Laralips\Storm\Support\Facade;
+use Laralips\Storm\Network\Http as NetworkHttp;
 
 /**
  * Facade for the Http network access class.
@@ -41,7 +41,7 @@ use Winter\Storm\Network\Http as NetworkHttp;
  * @property array $headers The headers from the last response.
  * @property array $info The cURL response information.
  *
- * @see \Winter\Storm\Network\Http
+ * @see \Laralips\Storm\Network\Http
  */
 class Http extends Facade
 {

@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Parse\Processor;
+<?php namespace Laralips\Storm\Parse\Processor;
 
-use Winter\Storm\Parse\Processor\Contracts\YamlProcessor as YamlProcessorContract;
+use Laralips\Storm\Parse\Processor\Contracts\YamlProcessor as YamlProcessorContract;
 
 /**
  * YAML processor abstract.

@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Filesystem;
+<?php namespace Laralips\Storm\Filesystem;
 
-use Winter\Storm\Support\Facades\Config;
+use Laralips\Storm\Support\Facades\Config;
 use Exception;
 
 /**

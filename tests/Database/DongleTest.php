@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Database\Dongle;
+use Laralips\Storm\Database\Dongle;
 
 class DongleTest extends TestCase
 {

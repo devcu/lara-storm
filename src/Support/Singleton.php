@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Support;
+<?php namespace Laralips\Storm\Support;
 
 use Illuminate\Support\Facades\App; // @todo Allow external binding
 

@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Database\Relations\Concerns;
+<?php namespace Laralips\Storm\Database\Relations\Concerns;
 
 trait BelongsOrMorphsTo
 {
@@ -16,7 +16,7 @@ trait BelongsOrMorphsTo
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.relation.beforeAssociate', function (string $relationName, \Winter\Storm\Database\Model $relatedModel) use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.relation.beforeAssociate', function (string $relationName, \Laralips\Storm\Database\Model $relatedModel) use (\Laralips\Storm\Database\Model $model) {
          *         if ($relationName === 'dummyRelation') {
          *             throw new \Exception("Invalid relation!");
          *         }
@@ -33,7 +33,7 @@ trait BelongsOrMorphsTo
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.relation.afterAssociate', function (string $relationName, \Winter\Storm\Database\Model $relatedModel) use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.relation.afterAssociate', function (string $relationName, \Laralips\Storm\Database\Model $relatedModel) use (\Laralips\Storm\Database\Model $model) {
          *         $relatedClass = get_class($relatedModel);
          *         $modelClass = get_class($model);
          *         traceLog("{$relatedClass} was associated as {$relationName} to {$modelClass}.");
@@ -75,7 +75,7 @@ trait BelongsOrMorphsTo
          *
          * Example usage:
          *
-         *     $model->bindEvent('model.relation.afterDissociate', function (string $relationName, Model $relatedModel) use (\Winter\Storm\Database\Model $model) {
+         *     $model->bindEvent('model.relation.afterDissociate', function (string $relationName, Model $relatedModel) use (\Laralips\Storm\Database\Model $model) {
          *         $modelClass = get_class($model);
          *         traceLog("{$relationName} was dissociated from {$modelClass}.");
          *     });

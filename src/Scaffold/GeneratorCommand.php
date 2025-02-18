@@ -1,13 +1,13 @@
-<?php namespace Winter\Storm\Scaffold;
+<?php namespace Laralips\Storm\Scaffold;
 
 use Exception;
 use Illuminate\Foundation\Inspiring;
 use InvalidArgumentException;
 use ReflectionClass;
-use Winter\Storm\Console\Command;
-use Winter\Storm\Filesystem\Filesystem;
-use Winter\Storm\Support\Facades\Twig;
-use Winter\Storm\Support\Str;
+use Laralips\Storm\Console\Command;
+use Laralips\Storm\Filesystem\Filesystem;
+use Laralips\Storm\Support\Facades\Twig;
+use Laralips\Storm\Support\Str;
 
 /**
  * Generator command.
@@ -18,7 +18,7 @@ use Winter\Storm\Support\Str;
 abstract class GeneratorCommand extends Command
 {
     /**
-     * @var \Winter\Storm\Filesystem\Filesystem The filesystem instance.
+     * @var \Laralips\Storm\Filesystem\Filesystem The filesystem instance.
      */
     protected $files;
 

@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Support\Facades;
+<?php namespace Laralips\Storm\Support\Facades;
 
-use Winter\Storm\Support\Facade;
+use Laralips\Storm\Support\Facade;
 
 /**
  * @method static bool has(string $key)
@@ -15,8 +15,8 @@ use Winter\Storm\Support\Facade;
  * @method static void afterLoading(string $namespace, \Closure $callback)
  * @method static void addNamespace(string $namespace, string $hint)
  * @method static array getNamespaces()
- * @method static \Winter\Storm\Config\LoaderInterface getLoader()
- * @method static void setLoader(\Winter\Storm\Config\LoaderInterface $loader)
+ * @method static \Laralips\Storm\Config\LoaderInterface getLoader()
+ * @method static void setLoader(\Laralips\Storm\Config\LoaderInterface $loader)
  * @method static string getEnvironment()
  * @method static array getAfterLoadCallbacks()
  * @method static array getItems()
@@ -25,7 +25,7 @@ use Winter\Storm\Support\Facade;
  * @method static void offsetSet(string $key, mixed $value)
  * @method static void offsetUnset(string $key)
  *
- * @see \Winter\Storm\Config\Repository
+ * @see \Laralips\Storm\Config\Repository
  */
 class Config extends Facade
 {

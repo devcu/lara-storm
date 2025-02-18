@@ -1,10 +1,10 @@
-<?php namespace Winter\Storm\Support\Traits;
+<?php namespace Laralips\Storm\Support\Traits;
 
 use Closure;
 use Illuminate\Events\QueuedClosure;
 use Illuminate\Support\Traits\ReflectsClosures;
-use Winter\Storm\Support\Arr;
-use Winter\Storm\Support\Serialization;
+use Laralips\Storm\Support\Arr;
+use Laralips\Storm\Support\Serialization;
 
 /**
  * Adds event related features to any class.

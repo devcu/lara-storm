@@ -1,14 +1,14 @@
-<?php namespace Winter\Storm\Database\Traits;
+<?php namespace Laralips\Storm\Database\Traits;
 
 use Exception;
 use Illuminate\Support\MessageBag;
 use Illuminate\Support\Facades\App;
 use Illuminate\Support\Facades\Lang;
 use Illuminate\Contracts\Validation\Rule;
-use Winter\Storm\Support\Str;
-use Winter\Storm\Database\ModelException;
-use Winter\Storm\Support\Facades\Input;
-use Winter\Storm\Support\Facades\Validator;
+use Laralips\Storm\Support\Str;
+use Laralips\Storm\Database\ModelException;
+use Laralips\Storm\Support\Facades\Input;
+use Laralips\Storm\Support\Facades\Validator;
 
 trait Validation
 {
@@ -31,7 +31,7 @@ trait Validation
      */
 
     /**
-     * @var bool Makes the validation procedure throw an {@link Winter\Storm\Database\ModelException}
+     * @var bool Makes the validation procedure throw an {@link Laralips\Storm\Database\ModelException}
      * instead of returning false when validation fails.
      *
      * public $throwOnValidation = true;
@@ -74,7 +74,7 @@ trait Validation
              *
              * Example usage:
              *
-             *     $model->bindEvent('model.beforeValidate', function () use (\Winter\Storm\Database\Model $model) {
+             *     $model->bindEvent('model.beforeValidate', function () use (\Laralips\Storm\Database\Model $model) {
              *         // Prevent anything from validating ever!
              *         return false;
              *     });
@@ -96,7 +96,7 @@ trait Validation
              *
              * Example usage:
              *
-             *     $model->bindEvent('model.afterValidate', function () use (\Winter\Storm\Database\Model $model) {
+             *     $model->bindEvent('model.afterValidate', function () use (\Laralips\Storm\Database\Model $model) {
              *         \Log::info("{$model->name} successfully passed validation");
              *     });
              *

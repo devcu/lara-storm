@@ -1,4 +1,4 @@
-<?php namespace Winter\Plugin\Controller;
+<?php namespace Laralips\Plugin\Controller;
 
 class TestController
 {

@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Flash;
+<?php namespace Laralips\Storm\Flash;
 
 use Illuminate\Support\MessageBag;
 use Illuminate\Support\Facades\App;
@@ -145,7 +145,7 @@ class FlashBag extends MessageBag
      *
      * @param  string  $key
      * @param  string  $message
-     * @return \Winter\Storm\Flash\FlashBag
+     * @return \Laralips\Storm\Flash\FlashBag
      */
     public function add($key, $message)
     {

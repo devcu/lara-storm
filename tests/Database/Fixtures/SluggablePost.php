@@ -1,10 +1,10 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Fixtures;
+namespace Laralips\Storm\Tests\Database\Fixtures;
 
 class SluggablePost extends Post
 {
-    use \Winter\Storm\Database\Traits\Sluggable;
+    use \Laralips\Storm\Database\Traits\Sluggable;
 
     /**
      * @var array Guarded fields

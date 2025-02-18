@@ -1,8 +1,8 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Fixtures;
+namespace Laralips\Storm\Tests\Database\Fixtures;
 
 class UserWithSoftAuthorAndSoftDelete extends UserWithSoftAuthor
 {
-    use \Winter\Storm\Database\Traits\SoftDelete;
+    use \Laralips\Storm\Database\Traits\SoftDelete;
 }

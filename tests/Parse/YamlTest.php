@@ -1,9 +1,9 @@
 <?php
 
-use Winter\Storm\Parse\Processor\YamlProcessor;
+use Laralips\Storm\Parse\Processor\YamlProcessor;
 use Symfony\Component\Yaml\Exception\ParseException;
-use Winter\Storm\Parse\Processor\Symfony3Processor;
-use Winter\Storm\Parse\Yaml as YamlParser;
+use Laralips\Storm\Parse\Processor\Symfony3Processor;
+use Laralips\Storm\Parse\Yaml as YamlParser;
 
 class YamlTest extends TestCase
 {

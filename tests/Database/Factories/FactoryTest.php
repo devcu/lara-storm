@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Database\Factories\Factory;
+use Laralips\Storm\Database\Factories\Factory;
 
 class FactoryTest extends TestCase
 {

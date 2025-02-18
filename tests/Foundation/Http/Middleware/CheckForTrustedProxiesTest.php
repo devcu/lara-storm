@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
-use Winter\Storm\Foundation\Http\Middleware\CheckForTrustedProxies;
+use Laralips\Storm\Foundation\Http\Middleware\CheckForTrustedProxies;
 
 /**
  * Test cases for testing trusted proxies.

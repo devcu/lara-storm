@@ -1,19 +1,19 @@
 <?php
 
-namespace Winter\Storm\Tests\Extension;
+namespace Laralips\Storm\Tests\Extension;
 
 use TestCase;
-use Winter\Storm\Extension\Extendable;
-use Winter\Storm\Extension\ExtendableTrait;
+use Laralips\Storm\Extension\Extendable;
+use Laralips\Storm\Extension\ExtendableTrait;
 
 /**
- * @testdox Extendable Trait (\Winter\Storm\Extension\ExtendableTrait)
- * @package Winter\Storm\Tests\Extension
+ * @testdox Extendable Trait (\Laralips\Storm\Extension\ExtendableTrait)
+ * @package Laralips\Storm\Tests\Extension
  */
 class ExtendableTraitTest extends TestCase
 {
     /**
-     * @testdox won't return a parent class for classes that extend \Winter\Storm\Extension\Extendable
+     * @testdox won't return a parent class for classes that extend \Laralips\Storm\Extension\Extendable
      *
      * We don't want to return parent classes that also use the extension framework, because these will infinitely loop
      * back to the extension architecture.
@@ -30,7 +30,7 @@ class ExtendableTraitTest extends TestCase
     }
 
     /**
-     * @testdox will return a non-extendable parent class reflection for classes that use the \Winter\Storm\Extension\ExtendableTrait
+     * @testdox will return a non-extendable parent class reflection for classes that use the \Laralips\Storm\Extension\ExtendableTrait
      */
     public function testGetExtensionParentClassOnExtendableTrait()
     {

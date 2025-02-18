@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Foundation\Http;
+<?php namespace Laralips\Storm\Foundation\Http;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -8,13 +8,13 @@ class Kernel extends HttpKernel
      * {@inheritDoc}
      */
     protected $bootstrappers = [
-        \Winter\Storm\Foundation\Bootstrap\RegisterClassLoader::class,
-        \Winter\Storm\Foundation\Bootstrap\LoadEnvironmentVariables::class,
-        \Winter\Storm\Foundation\Bootstrap\LoadConfiguration::class,
-        \Winter\Storm\Foundation\Bootstrap\LoadTranslation::class,
+        \Laralips\Storm\Foundation\Bootstrap\RegisterClassLoader::class,
+        \Laralips\Storm\Foundation\Bootstrap\LoadEnvironmentVariables::class,
+        \Laralips\Storm\Foundation\Bootstrap\LoadConfiguration::class,
+        \Laralips\Storm\Foundation\Bootstrap\LoadTranslation::class,
         \Illuminate\Foundation\Bootstrap\HandleExceptions::class,
         \Illuminate\Foundation\Bootstrap\RegisterFacades::class,
-        \Winter\Storm\Foundation\Bootstrap\RegisterWinter::class,
+        \Laralips\Storm\Foundation\Bootstrap\RegisterWinter::class,
         \Illuminate\Foundation\Bootstrap\RegisterProviders::class,
         \Illuminate\Foundation\Bootstrap\BootProviders::class,
     ];
@@ -23,10 +23,10 @@ class Kernel extends HttpKernel
      * {@inheritDoc}
      */
     protected $middleware = [
-        \Winter\Storm\Foundation\Http\Middleware\CheckForTrustedHost::class,
-        \Winter\Storm\Foundation\Http\Middleware\CheckForTrustedProxies::class,
+        \Laralips\Storm\Foundation\Http\Middleware\CheckForTrustedHost::class,
+        \Laralips\Storm\Foundation\Http\Middleware\CheckForTrustedProxies::class,
         \Illuminate\Http\Middleware\HandleCors::class,
-        \Winter\Storm\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
+        \Laralips\Storm\Foundation\Http\Middleware\CheckForMaintenanceMode::class,
     ];
 
     /**
@@ -46,7 +46,7 @@ class Kernel extends HttpKernel
      */
     protected $middlewareGroups = [
         'web' => [
-            \Winter\Storm\Cookie\Middleware\EncryptCookies::class,
+            \Laralips\Storm\Cookie\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,

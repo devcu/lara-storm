@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Support\Traits;
+<?php namespace Laralips\Storm\Support\Traits;
 
 /**
  * Key Parser trait

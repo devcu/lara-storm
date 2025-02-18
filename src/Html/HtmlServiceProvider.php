@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Html;
+<?php namespace Laralips\Storm\Html;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Support\DeferrableProvider;

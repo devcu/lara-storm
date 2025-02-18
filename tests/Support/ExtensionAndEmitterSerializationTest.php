@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Extension\Extendable;
+use Laralips\Storm\Extension\Extendable;
 
 class ExtensionAndEmitterSerializationTest extends TestCase
 {
@@ -25,7 +25,7 @@ class ExtensionAndEmitterSerializationTest extends TestCase
 
 class ExtendableEmitter extends Extendable
 {
-    use \Winter\Storm\Support\Traits\Emitter;
+    use \Laralips\Storm\Support\Traits\Emitter;
 
     /**
      * @var string $output used for keeping a testable variable as references don't survive serialisation

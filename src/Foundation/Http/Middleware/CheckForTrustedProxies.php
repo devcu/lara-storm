@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Foundation\Http\Middleware;
+<?php namespace Laralips\Storm\Foundation\Http\Middleware;
 
-use Winter\Storm\Support\Facades\Config;
+use Laralips\Storm\Support\Facades\Config;
 use Illuminate\Http\Request;
 use Illuminate\Contracts\Foundation\Application;
 use Symfony\Component\HttpKernel\Event\RequestEvent;

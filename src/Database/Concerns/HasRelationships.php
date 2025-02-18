@@ -1,27 +1,27 @@
 <?php
 
-namespace Winter\Storm\Database\Concerns;
+namespace Laralips\Storm\Database\Concerns;
 
 use InvalidArgumentException;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\Relation as EloquentRelation;
-use Winter\Storm\Database\Attributes\Relation;
-use Winter\Storm\Database\Model as DatabaseModel;
-use Winter\Storm\Database\Relations\AttachMany;
-use Winter\Storm\Database\Relations\AttachOne;
-use Winter\Storm\Database\Relations\BelongsTo;
-use Winter\Storm\Database\Relations\BelongsToMany;
-use Winter\Storm\Database\Relations\HasMany;
-use Winter\Storm\Database\Relations\HasManyThrough;
-use Winter\Storm\Database\Relations\HasOne;
-use Winter\Storm\Database\Relations\HasOneThrough;
-use Winter\Storm\Database\Relations\MorphMany;
-use Winter\Storm\Database\Relations\MorphOne;
-use Winter\Storm\Database\Relations\MorphTo;
-use Winter\Storm\Database\Relations\MorphToMany;
-use Winter\Storm\Exception\SystemException;
-use Winter\Storm\Support\Arr;
+use Laralips\Storm\Database\Attributes\Relation;
+use Laralips\Storm\Database\Model as DatabaseModel;
+use Laralips\Storm\Database\Relations\AttachMany;
+use Laralips\Storm\Database\Relations\AttachOne;
+use Laralips\Storm\Database\Relations\BelongsTo;
+use Laralips\Storm\Database\Relations\BelongsToMany;
+use Laralips\Storm\Database\Relations\HasMany;
+use Laralips\Storm\Database\Relations\HasManyThrough;
+use Laralips\Storm\Database\Relations\HasOne;
+use Laralips\Storm\Database\Relations\HasOneThrough;
+use Laralips\Storm\Database\Relations\MorphMany;
+use Laralips\Storm\Database\Relations\MorphOne;
+use Laralips\Storm\Database\Relations\MorphTo;
+use Laralips\Storm\Database\Relations\MorphToMany;
+use Laralips\Storm\Exception\SystemException;
+use Laralips\Storm\Support\Arr;
 
 /**
  * Model relationship methods.
@@ -29,17 +29,17 @@ use Winter\Storm\Support\Arr;
  * The following functionality handles custom relationship functionality for Winter CMS models, extending the base
  * Laravel Eloquent relationship functionality.
  *
- * @method \Winter\Storm\Database\Relations\HasOne hasOne(string $related, string|null $foreignKey = null, string|null $localKey = null)
- * @method \Winter\Storm\Database\Relations\HasOneThrough hasOneThrough(string $related, string $through, string|null $firstKey = null, string|null $secondKey = null, string|null $localKey = null, string|null $secondLocalKey = null)
- * @method \Winter\Storm\Database\Relations\MorphOne morphOne(string $related, string $name, string|null $type = null, string|null $id = null, string|null $localKey = null)
- * @method \Winter\Storm\Database\Relations\BelongsTo belongsTo(string $related, string|null $foreignKey = null, string|null $ownerKey = null, string|null $relation = null)
- * @method \Winter\Storm\Database\Relations\MorphTo morphTo(string|null $name = null, string|null $type = null, string|null $id = null, string|null $ownerKey = null)
- * @method \Winter\Storm\Database\Relations\HasMany hasMany(string $related, string|null $foreignKey = null, string|null $localKey = null)
- * @method \Winter\Storm\Database\Relations\HasManyThrough hasManyThrough(string $related, string $through, string|null $firstKey = null, string|null $secondKey = null, string|null $localKey = null, string|null $secondLocalKey = null)
- * @method \Winter\Storm\Database\Relations\MorphMany morphMany(string $related, string $name, string|null $type = null, string|null $id = null, string|null $localKey = null)
- * @method \Winter\Storm\Database\Relations\BelongsToMany belongsToMany(string $related, string|null $table = null, string|null $foreignPivotKey = null, string|null $relatedPivotKey = null, string|null $parentKey = null, string|null $relatedKey = null, string|null $relation = null)
- * @method \Winter\Storm\Database\Relations\MorphToMany morphToMany(string $related, string $name, string|null $table = null, string|null $foreignPivotKey = null, string|null $relatedPivotKey = null, string|null $parentKey = null, string|null $relatedKey = null, bool $inverse = false)
- * @method \Winter\Storm\Database\Relations\MorphToMany morphedByMany(string $related, string $name, string|null $table = null, string|null $foreignPivotKey = null, string|null $relatedPivotKey = null, string|null $parentKey = null, string|null $relatedKey = null)
+ * @method \Laralips\Storm\Database\Relations\HasOne hasOne(string $related, string|null $foreignKey = null, string|null $localKey = null)
+ * @method \Laralips\Storm\Database\Relations\HasOneThrough hasOneThrough(string $related, string $through, string|null $firstKey = null, string|null $secondKey = null, string|null $localKey = null, string|null $secondLocalKey = null)
+ * @method \Laralips\Storm\Database\Relations\MorphOne morphOne(string $related, string $name, string|null $type = null, string|null $id = null, string|null $localKey = null)
+ * @method \Laralips\Storm\Database\Relations\BelongsTo belongsTo(string $related, string|null $foreignKey = null, string|null $ownerKey = null, string|null $relation = null)
+ * @method \Laralips\Storm\Database\Relations\MorphTo morphTo(string|null $name = null, string|null $type = null, string|null $id = null, string|null $ownerKey = null)
+ * @method \Laralips\Storm\Database\Relations\HasMany hasMany(string $related, string|null $foreignKey = null, string|null $localKey = null)
+ * @method \Laralips\Storm\Database\Relations\HasManyThrough hasManyThrough(string $related, string $through, string|null $firstKey = null, string|null $secondKey = null, string|null $localKey = null, string|null $secondLocalKey = null)
+ * @method \Laralips\Storm\Database\Relations\MorphMany morphMany(string $related, string $name, string|null $type = null, string|null $id = null, string|null $localKey = null)
+ * @method \Laralips\Storm\Database\Relations\BelongsToMany belongsToMany(string $related, string|null $table = null, string|null $foreignPivotKey = null, string|null $relatedPivotKey = null, string|null $parentKey = null, string|null $relatedKey = null, string|null $relation = null)
+ * @method \Laralips\Storm\Database\Relations\MorphToMany morphToMany(string $related, string $name, string|null $table = null, string|null $foreignPivotKey = null, string|null $relatedPivotKey = null, string|null $parentKey = null, string|null $relatedKey = null, bool $inverse = false)
+ * @method \Laralips\Storm\Database\Relations\MorphToMany morphedByMany(string $related, string $name, string|null $table = null, string|null $foreignPivotKey = null, string|null $relatedPivotKey = null, string|null $parentKey = null, string|null $relatedKey = null)
  */
 trait HasRelationships
 {
@@ -115,14 +115,14 @@ trait HasRelationships
 
     /**
      * protected $attachOne = [
-     *     'picture' => ['Winter\Storm\Database\Attach\File', 'public' => false]
+     *     'picture' => ['Laralips\Storm\Database\Attach\File', 'public' => false]
      * ];
      */
     public $attachOne = [];
 
     /**
      * protected $attachMany = [
-     *     'pictures' => ['Winter\Storm\Database\Attach\File', 'name'=> 'imageable']
+     *     'pictures' => ['Laralips\Storm\Database\Attach\File', 'name'=> 'imageable']
      * ];
      */
     public $attachMany = [];
@@ -367,7 +367,7 @@ trait HasRelationships
      *
      * If the relation is defined in both places, an exception will be thrown.
      *
-     * @throws \Winter\Storm\Exception\SystemException
+     * @throws \Laralips\Storm\Exception\SystemException
      */
     protected function detectRelationConflict(string $name): void
     {
@@ -562,7 +562,7 @@ trait HasRelationships
         if (
             ($definition['delete'] ?? false) === true
             && in_array(
-                \Winter\Storm\Database\Relations\Concerns\CanBeDependent::class,
+                \Laralips\Storm\Database\Relations\Concerns\CanBeDependent::class,
                 class_uses_recursive($relation)
             )
         ) {
@@ -573,7 +573,7 @@ trait HasRelationships
         if (
             ($definition['softDelete'] ?? false) === true
             && in_array(
-                \Winter\Storm\Database\Relations\Concerns\CanBeSoftDeleted::class,
+                \Laralips\Storm\Database\Relations\Concerns\CanBeSoftDeleted::class,
                 class_uses_recursive($relation)
             )
         ) {
@@ -584,7 +584,7 @@ trait HasRelationships
         if (
             ($definition['detach'] ?? true) === false
             && in_array(
-                \Winter\Storm\Database\Relations\Concerns\CanBeDetachable::class,
+                \Laralips\Storm\Database\Relations\Concerns\CanBeDetachable::class,
                 class_uses_recursive($relation)
             )
         ) {
@@ -595,7 +595,7 @@ trait HasRelationships
         if (
             ($definition['push'] ?? true) === false
             && in_array(
-                \Winter\Storm\Database\Relations\Concerns\CanBePushed::class,
+                \Laralips\Storm\Database\Relations\Concerns\CanBePushed::class,
                 class_uses_recursive($relation)
             )
         ) {
@@ -607,7 +607,7 @@ trait HasRelationships
             ($definition['count'] ?? false) === true
             && $addConstraints
             && in_array(
-                \Winter\Storm\Database\Relations\Concerns\CanBeCounted::class,
+                \Laralips\Storm\Database\Relations\Concerns\CanBeCounted::class,
                 class_uses_recursive($relation)
             )
         ) {
@@ -646,7 +646,7 @@ trait HasRelationships
                 $trace['class'],
                 [
                     \Illuminate\Database\Eloquent\Model::class,
-                    \Winter\Storm\Database\Model::class,
+                    \Laralips\Storm\Database\Model::class,
                 ]
             );
 
@@ -667,7 +667,7 @@ trait HasRelationships
             if ($stepOne['function'] !== 'call_user_func_array') {
                 return null;
             }
-            if ($stepTwo['class'] !== \Winter\Storm\Database\Model::class || $stepTwo['function'] !== 'extendableCall') {
+            if ($stepTwo['class'] !== \Laralips\Storm\Database\Model::class || $stepTwo['function'] !== 'extendableCall') {
                 return null;
             }
 

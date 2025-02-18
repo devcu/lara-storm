@@ -1,9 +1,9 @@
-<?php namespace Winter\Storm\Database\Traits;
+<?php namespace Laralips\Storm\Database\Traits;
 
 use DateTime;
 use Exception;
 use Illuminate\Database\Eloquent\Model as EloquentModel;
-use Winter\Storm\Support\Facades\DB;
+use Laralips\Storm\Support\Facades\DB;
 
 trait Revisionable
 {
@@ -101,7 +101,7 @@ trait Revisionable
         }
 
         $softDeletes = in_array(
-            'Winter\Storm\Database\Traits\SoftDelete',
+            'Laralips\Storm\Database\Traits\SoftDelete',
             class_uses_recursive(get_class($this))
         );
 

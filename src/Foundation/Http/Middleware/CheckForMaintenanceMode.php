@@ -1,6 +1,6 @@
 <?php
 
-namespace Winter\Storm\Foundation\Http\Middleware;
+namespace Laralips\Storm\Foundation\Http\Middleware;
 
 use Closure;
 use Illuminate\Foundation\Http\Middleware\CheckForMaintenanceMode as Middleware;

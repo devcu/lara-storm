@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Foundation\Providers;
+<?php namespace Laralips\Storm\Foundation\Providers;
 
 use Illuminate\Log\LogServiceProvider as LogServiceProviderBase;
 

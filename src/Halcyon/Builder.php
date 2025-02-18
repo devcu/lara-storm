@@ -1,13 +1,13 @@
-<?php namespace Winter\Storm\Halcyon;
+<?php namespace Laralips\Storm\Halcyon;
 
 use BadMethodCallException;
-use Winter\Storm\Exception\ApplicationException;
-use Winter\Storm\Exception\SystemException;
-use Winter\Storm\Halcyon\Datasource\DatasourceInterface;
-use Winter\Storm\Halcyon\Processors\Processor;
-use Winter\Storm\Halcyon\Exception\MissingFileNameException;
-use Winter\Storm\Halcyon\Exception\InvalidFileNameException;
-use Winter\Storm\Halcyon\Exception\InvalidExtensionException;
+use Laralips\Storm\Exception\ApplicationException;
+use Laralips\Storm\Exception\SystemException;
+use Laralips\Storm\Halcyon\Datasource\DatasourceInterface;
+use Laralips\Storm\Halcyon\Processors\Processor;
+use Laralips\Storm\Halcyon\Exception\MissingFileNameException;
+use Laralips\Storm\Halcyon\Exception\InvalidFileNameException;
+use Laralips\Storm\Halcyon\Exception\InvalidExtensionException;
 
 /**
  * Query builder
@@ -19,21 +19,21 @@ class Builder
     /**
      * The datasource instance.
      *
-     * @var \Winter\Storm\Halcyon\Datasource\DatasourceInterface
+     * @var \Laralips\Storm\Halcyon\Datasource\DatasourceInterface
      */
     protected $datasource;
 
     /**
      * The model being queried.
      *
-     * @var \Winter\Storm\Halcyon\Model
+     * @var \Laralips\Storm\Halcyon\Model
      */
     protected $model;
 
     /**
      * The datasource query post processor instance.
      *
-     * @var \Winter\Storm\Halcyon\Processors\Processor
+     * @var \Laralips\Storm\Halcyon\Processors\Processor
      */
     protected $processor;
 
@@ -131,8 +131,8 @@ class Builder
     /**
      * Create a new query builder instance.
      *
-     * @param  \Winter\Storm\Halcyon\Datasource\DatasourceInterface  $datasource
-     * @param  \Winter\Storm\Halcyon\Processors\Processor  $processor
+     * @param  \Laralips\Storm\Halcyon\Datasource\DatasourceInterface  $datasource
+     * @param  \Laralips\Storm\Halcyon\Processors\Processor  $processor
      * @return void
      */
     public function __construct(DatasourceInterface $datasource, Processor $processor)
@@ -193,7 +193,7 @@ class Builder
      * Alias to set the "limit" value of the query.
      *
      * @param  int  $value
-     * @return \Winter\Storm\Halcyon\Builder|static
+     * @return \Laralips\Storm\Halcyon\Builder|static
      */
     public function take($value)
     {
@@ -217,7 +217,7 @@ class Builder
      * Alias to set the "offset" value of the query.
      *
      * @param  int  $value
-     * @return \Winter\Storm\Halcyon\Builder|static
+     * @return \Laralips\Storm\Halcyon\Builder|static
      */
     public function skip($value)
     {
@@ -277,7 +277,7 @@ class Builder
      * Execute the query as a fresh "select" statement.
      *
      * @param  array  $columns
-     * @return \Winter\Storm\Halcyon\Collection|static[]
+     * @return \Laralips\Storm\Halcyon\Collection|static[]
      */
     public function getFresh($columns = ['*'])
     {
@@ -316,7 +316,7 @@ class Builder
      * Execute the query as a "select" statement.
      *
      * @param  array  $columns
-     * @return \Winter\Storm\Halcyon\Collection
+     * @return \Laralips\Storm\Halcyon\Collection
      */
     public function get($columns = ['*'])
     {
@@ -430,7 +430,7 @@ class Builder
     /**
      * Set a model instance for the model being queried.
      *
-     * @param  \Winter\Storm\Halcyon\Model  $model
+     * @param  \Laralips\Storm\Halcyon\Model  $model
      * @return $this
      */
     public function setModel(Model $model)
@@ -447,7 +447,7 @@ class Builder
     /**
      * Get the model instance being queried.
      *
-     * @return \Winter\Storm\Halcyon\Model
+     * @return \Laralips\Storm\Halcyon\Model
      */
     public function getModel()
     {
@@ -458,7 +458,7 @@ class Builder
      * Get the hydrated models.
      *
      * @param  array  $results
-     * @return \Winter\Storm\Halcyon\Model[]
+     * @return \Laralips\Storm\Halcyon\Model[]
      */
     public function getModels(array $results)
     {
@@ -752,8 +752,8 @@ class Builder
 
     /**
      * Initialize the cache data of each record.
-     * @param  \Winter\Storm\Halcyon\Collection|array  $data
-     * @return \Winter\Storm\Halcyon\Collection|array
+     * @param  \Laralips\Storm\Halcyon\Collection|array  $data
+     * @return \Laralips\Storm\Halcyon\Collection|array
      */
     protected function processInitCacheData($data)
     {

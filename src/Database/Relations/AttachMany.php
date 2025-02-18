@@ -1,14 +1,14 @@
 <?php
 
-namespace Winter\Storm\Database\Relations;
+namespace Laralips\Storm\Database\Relations;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\MorphMany as MorphManyBase;
-use Winter\Storm\Database\Attach\File as FileModel;
+use Laralips\Storm\Database\Attach\File as FileModel;
 
 /**
- * @phpstan-property \Winter\Storm\Database\Model $parent
+ * @phpstan-property \Laralips\Storm\Database\Model $parent
  */
 class AttachMany extends MorphManyBase implements RelationInterface
 {

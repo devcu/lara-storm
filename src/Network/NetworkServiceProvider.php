@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Network;
+<?php namespace Laralips\Storm\Network;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Support\DeferrableProvider;

@@ -5,8 +5,8 @@ use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\Collection;
 use Illuminate\Translation\MessageSelector;
 use Mockery as m;
-use Winter\Storm\Translation\FileLoader;
-use Winter\Storm\Translation\Translator;
+use Laralips\Storm\Translation\FileLoader;
+use Laralips\Storm\Translation\Translator;
 
 /**
  * Some tests were adapted from the Laravel 9.x test cases to ensure our functionality still

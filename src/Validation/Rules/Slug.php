@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Validation\Rules;
+<?php namespace Laralips\Storm\Validation\Rules;
 
-use Winter\Storm\Support\Str;
-use Winter\Storm\Validation\Rule;
+use Laralips\Storm\Support\Str;
+use Laralips\Storm\Validation\Rule;
 
 class Slug extends Rule
 {

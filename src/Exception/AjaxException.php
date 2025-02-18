@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Exception;
+<?php namespace Laralips\Storm\Exception;
 
 /**
  * This class represents an AJAX exception.

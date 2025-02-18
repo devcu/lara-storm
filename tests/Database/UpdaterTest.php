@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Database\Updater;
+use Laralips\Storm\Database\Updater;
 
 class UpdaterTest extends TestCase
 {

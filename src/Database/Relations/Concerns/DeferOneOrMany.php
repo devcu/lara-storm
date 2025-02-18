@@ -1,8 +1,8 @@
-<?php namespace Winter\Storm\Database\Relations\Concerns;
+<?php namespace Laralips\Storm\Database\Relations\Concerns;
 
-use Winter\Storm\Support\Facades\DbDongle;
-use Winter\Storm\Database\Relations\BelongsToMany;
-use Winter\Storm\Database\Relations\MorphToMany;
+use Laralips\Storm\Support\Facades\DbDongle;
+use Laralips\Storm\Database\Relations\BelongsToMany;
+use Laralips\Storm\Database\Relations\MorphToMany;
 
 trait DeferOneOrMany
 {

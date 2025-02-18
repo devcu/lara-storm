@@ -1,12 +1,12 @@
-<?php namespace Winter\Storm\Console\Traits;
+<?php namespace Laralips\Storm\Console\Traits;
 
-use Winter\Storm\Database\Builder;
+use Laralips\Storm\Database\Builder;
 
 /**
  * Console Command Trait that provides the "processQuery($query, $callback, $chunkSize, $limit)"
  * helper method to cleanly handle processing a large number of records in the console.
  *
- * @package winter\storm
+ * @package laralips\storm
  * @author Luke Towers
  */
 trait ProcessesQuery

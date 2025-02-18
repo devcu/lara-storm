@@ -1,13 +1,13 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Relations;
+namespace Laralips\Storm\Tests\Database\Relations;
 
-use Winter\Storm\Database\Collection;
-use Winter\Storm\Database\Model;
-use Winter\Storm\Tests\Database\Fixtures\Author;
-use Winter\Storm\Tests\Database\Fixtures\Country;
-use Winter\Storm\Tests\Database\Fixtures\Post;
-use Winter\Storm\Tests\DbTestCase;
+use Laralips\Storm\Database\Collection;
+use Laralips\Storm\Database\Model;
+use Laralips\Storm\Tests\Database\Fixtures\Author;
+use Laralips\Storm\Tests\Database\Fixtures\Country;
+use Laralips\Storm\Tests\Database\Fixtures\Post;
+use Laralips\Storm\Tests\DbTestCase;
 
 class HasManyThroughTest extends DbTestCase
 {

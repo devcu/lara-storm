@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Parse\Ini as IniParser;
+use Laralips\Storm\Parse\Ini as IniParser;
 
 class IniTest extends TestCase
 {

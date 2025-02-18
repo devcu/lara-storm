@@ -1,11 +1,11 @@
-<?php namespace Winter\Storm\Support\Facades;
+<?php namespace Laralips\Storm\Support\Facades;
 
-use Winter\Storm\Support\Facade;
+use Laralips\Storm\Support\Facade;
 
 /**
  * @method static string extract(string $path, bool $minify = true)
  *
- * @see \Winter\Storm\Support\Svg
+ * @see \Laralips\Storm\Support\Svg
  */
 class Svg extends Facade
 {

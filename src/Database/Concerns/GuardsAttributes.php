@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Database\Concerns;
+<?php namespace Laralips\Storm\Database\Concerns;
 
-use Winter\Storm\Support\Str;
+use Laralips\Storm\Support\Str;
 
 trait GuardsAttributes
 {

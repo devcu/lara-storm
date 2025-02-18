@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Validation\Rule;
+use Laralips\Storm\Validation\Rule;
 
 class FailRule extends Rule
 {

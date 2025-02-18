@@ -1,14 +1,14 @@
-<?php namespace Winter\Storm\Support;
+<?php namespace Laralips\Storm\Support;
 
-use Winter\Storm\Support\Str;
-use Winter\Storm\Support\ClassLoader;
-use Winter\Storm\Support\Facades\File;
+use Laralips\Storm\Support\Str;
+use Laralips\Storm\Support\ClassLoader;
+use Laralips\Storm\Support\Facades\File;
 use Illuminate\Support\ServiceProvider as ServiceProviderBase;
 
 abstract class ModuleServiceProvider extends ServiceProviderBase
 {
     /**
-     * @var \Winter\Storm\Foundation\Application The application instance.
+     * @var \Laralips\Storm\Foundation\Application The application instance.
      */
     protected $app;
 
@@ -86,7 +86,7 @@ abstract class ModuleServiceProvider extends ServiceProviderBase
      */
     protected function loadConfigFrom($path, $namespace)
     {
-        /** @var \Winter\Storm\Config\Repository */
+        /** @var \Laralips\Storm\Config\Repository */
         $config = $this->app['config'];
         $config->package($namespace, $path);
     }

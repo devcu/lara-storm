@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Router;
+<?php namespace Laralips\Storm\Router;
 
 use InvalidArgumentException;
 

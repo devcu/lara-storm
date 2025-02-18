@@ -1,7 +1,7 @@
 <?php
 
-use Winter\Storm\Events\Dispatcher;
-use Winter\Storm\Support\Testing\Fakes\EventFake;
+use Laralips\Storm\Events\Dispatcher;
+use Laralips\Storm\Support\Testing\Fakes\EventFake;
 
 class EventFakeTest extends TestCase
 {

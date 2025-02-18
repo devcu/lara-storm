@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Exception;
+<?php namespace Laralips\Storm\Exception;
 
 use Illuminate\Support\MessageBag;
 use Illuminate\Validation\Validator;

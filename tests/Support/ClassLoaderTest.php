@@ -1,7 +1,7 @@
 <?php
 
-use Winter\Storm\Filesystem\Filesystem;
-use Winter\Storm\Support\ClassLoader;
+use Laralips\Storm\Filesystem\Filesystem;
+use Laralips\Storm\Support\ClassLoader;
 
 class ClassLoaderTest extends TestCase
 {
@@ -20,7 +20,7 @@ class ClassLoaderTest extends TestCase
 
         $this->classLoader->register();
 
-        $this->classLoader->autoloadPackage('Winter\\Plugin', 'plugins/winter/plugin');
+        $this->classLoader->autoloadPackage('Laralips\\Plugin', 'plugins/winter/plugin');
     }
 
     public function tearDown(): void
@@ -37,13 +37,13 @@ class ClassLoaderTest extends TestCase
 
         // Alias missing classes
         $this->classLoader->addAliases([
-            'Winter\Plugin\Classes\TestClass' => 'OldOrg\Plugin\Classes\TestClass',
-            'Winter\Plugin\Models\TestModel' => 'OldOrg\Plugin\Models\TestModel',
+            'Laralips\Plugin\Classes\TestClass' => 'OldOrg\Plugin\Classes\TestClass',
+            'Laralips\Plugin\Models\TestModel' => 'OldOrg\Plugin\Models\TestModel',
         ]);
 
         // Check that class identifies as both original and alias
-        $newInstance = new \Winter\Plugin\Classes\TestClass;
-        $this->assertTrue($newInstance instanceof Winter\Plugin\Classes\TestClass);
+        $newInstance = new \Laralips\Plugin\Classes\TestClass;
+        $this->assertTrue($newInstance instanceof Laralips\Plugin\Classes\TestClass);
         $this->assertTrue($newInstance instanceof OldOrg\Plugin\Classes\TestClass);
 
         $this->assertTrue(class_exists('OldOrg\Plugin\Classes\TestClass'));
@@ -51,15 +51,15 @@ class ClassLoaderTest extends TestCase
 
         $instance = new OldOrg\Plugin\Classes\TestClass;
         $this->assertInstanceOf('OldOrg\Plugin\Classes\TestClass', $instance);
-        $this->assertInstanceOf('Winter\Plugin\Classes\TestClass', $instance);
+        $this->assertInstanceOf('Laralips\Plugin\Classes\TestClass', $instance);
 
         // Alias a class that exists - the original should still be used
         $this->classLoader->addAliases([
-            'NewOrg\Plugin\Classes\TestClass' => 'Winter\Plugin\Classes\TestClass',
+            'NewOrg\Plugin\Classes\TestClass' => 'Laralips\Plugin\Classes\TestClass',
         ]);
 
-        $instance = new Winter\Plugin\Classes\TestClass;
-        $this->assertInstanceOf('Winter\Plugin\Classes\TestClass', $instance);
+        $instance = new Laralips\Plugin\Classes\TestClass;
+        $this->assertInstanceOf('Laralips\Plugin\Classes\TestClass', $instance);
         $this->assertFalse(class_exists('NewOrg\Plugin\Classes\TestClass'));
     }
 
@@ -70,7 +70,7 @@ class ClassLoaderTest extends TestCase
 
         // Alias missing classes
         $this->classLoader->addNamespaceAliases([
-            'Winter\Plugin' => 'OldOrgTwo\Plugin'
+            'Laralips\Plugin' => 'OldOrgTwo\Plugin'
         ]);
 
         $this->assertTrue(class_exists('OldOrgTwo\Plugin\Classes\TestClass'));
@@ -78,28 +78,28 @@ class ClassLoaderTest extends TestCase
 
         $instance = new OldOrgTwo\Plugin\Classes\TestClass;
         $this->assertInstanceOf('OldOrgTwo\Plugin\Classes\TestClass', $instance);
-        $this->assertInstanceOf('Winter\Plugin\Classes\TestClass', $instance);
+        $this->assertInstanceOf('Laralips\Plugin\Classes\TestClass', $instance);
 
         // Alias a class that exists - the original should still be used
         $this->classLoader->addAliases([
-            'NewOrgTwo\Plugin' => 'Winter\Plugin',
+            'NewOrgTwo\Plugin' => 'Laralips\Plugin',
         ]);
-        $instance = new Winter\Plugin\Classes\TestClass;
-        $this->assertInstanceOf('Winter\Plugin\Classes\TestClass', $instance);
+        $instance = new Laralips\Plugin\Classes\TestClass;
+        $this->assertInstanceOf('Laralips\Plugin\Classes\TestClass', $instance);
         $this->assertFalse(class_exists('NewOrgTwo\Plugin\Classes\TestClass'));
     }
 
     public function testClassesExist()
     {
         // Classes should be available from the class loader
-        $this->assertTrue(class_exists('Winter\Plugin\Classes\TestClass'));
-        $this->assertTrue(class_exists('Winter\Plugin\Models\TestModel'));
+        $this->assertTrue(class_exists('Laralips\Plugin\Classes\TestClass'));
+        $this->assertTrue(class_exists('Laralips\Plugin\Models\TestModel'));
 
         // Classes should not be available from the class loader (missing classes)
-        $this->assertFalse(class_exists('Winter\Plugin\Classes\MissingClass'));
-        $this->assertFalse(class_exists('Winter\Plugin\Widgets\MissingWidget'));
+        $this->assertFalse(class_exists('Laralips\Plugin\Classes\MissingClass'));
+        $this->assertFalse(class_exists('Laralips\Plugin\Widgets\MissingWidget'));
 
         // Class should not be available from the class loader (misnamed namespace)
-        $this->assertFalse(class_exists('Winter\Plugin\Controllers\TestController'));
+        $this->assertFalse(class_exists('Laralips\Plugin\Controllers\TestController'));
     }
 }

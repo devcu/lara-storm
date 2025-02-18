@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Halcyon\Exception;
+<?php namespace Laralips\Storm\Halcyon\Exception;
 
 use RuntimeException;
 

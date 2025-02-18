@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Database\Query\Grammars\Concerns;
+<?php namespace Laralips\Storm\Database\Query\Grammars\Concerns;
 
 use \Illuminate\Database\Query\Builder;
 use Illuminate\Database\Query\Expression;

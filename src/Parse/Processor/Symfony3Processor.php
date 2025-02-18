@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Parse\Processor;
+<?php namespace Laralips\Storm\Parse\Processor;
 
-use Winter\Storm\Support\Str;
+use Laralips\Storm\Support\Str;
 
 /**
  * Symfony/Yaml 3 processor.

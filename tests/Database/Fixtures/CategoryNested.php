@@ -1,12 +1,12 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Fixtures;
+namespace Laralips\Storm\Tests\Database\Fixtures;
 
 use Illuminate\Database\Schema\Builder;
 
 class CategoryNested extends Category
 {
-    use \Winter\Storm\Database\Traits\NestedTree;
+    use \Laralips\Storm\Database\Traits\NestedTree;
 
     /**
      * @var string The database table used by the model.

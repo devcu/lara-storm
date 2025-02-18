@@ -1,8 +1,8 @@
-<?php namespace Winter\Storm\Database\Models;
+<?php namespace Laralips\Storm\Database\Models;
 
 use Carbon\Carbon;
 use Exception;
-use Winter\Storm\Database\Model;
+use Laralips\Storm\Database\Model;
 
 /**
  * Deferred Binding Model
@@ -19,7 +19,7 @@ use Winter\Storm\Database\Model;
  */
 class DeferredBinding extends Model
 {
-    use \Winter\Storm\Database\Traits\Nullable;
+    use \Laralips\Storm\Database\Traits\Nullable;
 
     /**
      * @var string The database table used by the model.

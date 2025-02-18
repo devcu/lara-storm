@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Router;
+<?php namespace Laralips\Storm\Router;
 
-use Winter\Storm\Support\Str;
+use Laralips\Storm\Support\Str;
 use Illuminate\Routing\UrlGenerator as UrlGeneratorBase;
 
 class UrlGenerator extends UrlGeneratorBase

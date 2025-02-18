@@ -1,6 +1,6 @@
 <?php
 
-namespace Winter\Storm\Database\Factories;
+namespace Laralips\Storm\Database\Factories;
 
 trait HasFactory
 {
@@ -19,7 +19,7 @@ trait HasFactory
     /**
      * Create a new factory instance for the model.
      *
-     * @return \Winter\Storm\Database\Factories\Factory<static>
+     * @return \Laralips\Storm\Database\Factories\Factory<static>
      */
     protected static function newFactory()
     {

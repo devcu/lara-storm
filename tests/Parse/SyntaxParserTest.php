@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Parse\Syntax\Parser;
+use Laralips\Storm\Parse\Syntax\Parser;
 
 class DropDownOptions
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Winter\Storm\Foundation\Console;
+namespace Laralips\Storm\Foundation\Console;
 
 use Illuminate\Foundation\Console\ConfigCacheCommand as BaseCommand;
 

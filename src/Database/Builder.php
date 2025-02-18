@@ -1,8 +1,8 @@
-<?php namespace Winter\Storm\Database;
+<?php namespace Laralips\Storm\Database;
 
 use Illuminate\Pagination\Paginator;
 use Illuminate\Database\Eloquent\Builder as BuilderModel;
-use Winter\Storm\Support\Facades\DbDongle;
+use Laralips\Storm\Support\Facades\DbDongle;
 
 /**
  * Query builder class.
@@ -10,21 +10,21 @@ use Winter\Storm\Support\Facades\DbDongle;
  * Extends Eloquent builder class.
  *
  * @author Alexey Bobkov, Samuel Georges
- * @mixin \Winter\Storm\Database\QueryBuilder
+ * @mixin \Laralips\Storm\Database\QueryBuilder
  */
 class Builder extends BuilderModel
 {
     /**
      * The base query builder instance.
      *
-     * @var \Winter\Storm\Database\QueryBuilder
+     * @var \Laralips\Storm\Database\QueryBuilder
      */
     protected $query;
 
     /**
      * The model being queried.
      *
-     * @var \Winter\Storm\Database\Model
+     * @var \Laralips\Storm\Database\Model
      */
     protected $model;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Traits;
+namespace Laralips\Storm\Tests\Database\Traits;
 
-use Winter\Storm\Tests\DbTestCase;
+use Laralips\Storm\Tests\DbTestCase;
 
 class SortableTest extends DbTestCase
 {
@@ -40,16 +40,16 @@ class SortableTest extends DbTestCase
     }
 }
 
-class TestSortableModel extends \Winter\Storm\Database\Model
+class TestSortableModel extends \Laralips\Storm\Database\Model
 {
-    use \Winter\Storm\Database\Traits\Sortable;
+    use \Laralips\Storm\Database\Traits\Sortable;
 
     protected $table = 'test';
 }
 
-class TestCustomSortableModel extends \Winter\Storm\Database\Model
+class TestCustomSortableModel extends \Laralips\Storm\Database\Model
 {
-    use \Winter\Storm\Database\Traits\Sortable;
+    use \Laralips\Storm\Database\Traits\Sortable;
 
     const SORT_ORDER = 'rank';
 

@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Console;
+<?php namespace Laralips\Storm\Console;
 
 use Illuminate\Console\Command as BaseCommand;
 use Symfony\Component\Console\Command\SignalableCommandInterface;
@@ -15,7 +15,7 @@ abstract class Command extends BaseCommand implements SignalableCommandInterface
     use Traits\ProvidesAutocompletion;
 
     /**
-     * @var \Winter\Storm\Foundation\Application
+     * @var \Laralips\Storm\Foundation\Application
      */
     protected $laravel;
 

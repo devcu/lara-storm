@@ -3,11 +3,11 @@
 use Illuminate\Database\ConnectionInterface;
 use Illuminate\Database\Query\Grammars\Grammar;
 use Illuminate\Database\Query\Processors\Processor;
-use Winter\Storm\Database\Query\Grammars\MySqlGrammar;
-use Winter\Storm\Database\Query\Grammars\PostgresGrammar;
-use Winter\Storm\Database\Query\Grammars\SQLiteGrammar;
-use Winter\Storm\Database\Query\Grammars\SqlServerGrammar;
-use Winter\Storm\Database\QueryBuilder;
+use Laralips\Storm\Database\Query\Grammars\MySqlGrammar;
+use Laralips\Storm\Database\Query\Grammars\PostgresGrammar;
+use Laralips\Storm\Database\Query\Grammars\SQLiteGrammar;
+use Laralips\Storm\Database\Query\Grammars\SqlServerGrammar;
+use Laralips\Storm\Database\QueryBuilder;
 
 class QueryBuilderTest extends TestCase
 {

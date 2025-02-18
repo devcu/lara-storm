@@ -1,11 +1,11 @@
-<?php namespace Winter\Storm\Support\Facades;
+<?php namespace Laralips\Storm\Support\Facades;
 
-use Winter\Storm\Support\Facade;
+use Laralips\Storm\Support\Facade;
 
 /**
  * @method static string parse(string $contents, array $vars = [])
  *
- * @see \Winter\Storm\Parse\Twig
+ * @see \Laralips\Storm\Parse\Twig
  */
 class Twig extends Facade
 {

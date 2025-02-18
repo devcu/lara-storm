@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Halcyon\Model;
+use Laralips\Storm\Halcyon\Model;
 
 class HalcyonTestPage extends Model
 {
@@ -27,7 +27,7 @@ class HalcyonTestPage extends Model
 
 class HalcyonTestPageWithValidation extends HalcyonTestPage
 {
-    use \Winter\Storm\Halcyon\Traits\Validation;
+    use \Laralips\Storm\Halcyon\Traits\Validation;
 
     public $customMessages = [
        'required' => 'The :attribute field is required.'

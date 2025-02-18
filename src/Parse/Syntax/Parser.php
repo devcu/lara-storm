@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Parse\Syntax;
+<?php namespace Laralips\Storm\Parse\Syntax;
 
-use Winter\Storm\Parse\Bracket as TextParser;
+use Laralips\Storm\Parse\Bracket as TextParser;
 
 /**
  * Dynamic Syntax parser
@@ -16,12 +16,12 @@ class Parser
     protected $template = '';
 
     /**
-     * @var \Winter\Storm\Parse\Syntax\FieldParser Field parser instance.
+     * @var \Laralips\Storm\Parse\Syntax\FieldParser Field parser instance.
      */
     protected $fieldParser;
 
     /**
-     * @var \Winter\Storm\Parse\Bracket Text parser instance.
+     * @var \Laralips\Storm\Parse\Bracket Text parser instance.
      */
     protected $textParser;
 
@@ -48,7 +48,7 @@ class Parser
         $this->fieldParser = new FieldParser($template, $options);
 
         $textFilters = [
-            'md' => ['Winter\Storm\Parse\Markdown', 'parse'],
+            'md' => ['Laralips\Storm\Parse\Markdown', 'parse'],
             'media' => ['System\Classes\MediaLibrary', 'url']
         ];
 

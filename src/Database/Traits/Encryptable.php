@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Database\Traits;
+<?php namespace Laralips\Storm\Database\Traits;
 
 use Exception;
 use Illuminate\Support\Facades\App;

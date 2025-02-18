@@ -1,10 +1,10 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Traits;
+namespace Laralips\Storm\Tests\Database\Traits;
 
 use Carbon\Carbon;
-use Winter\Storm\Tests\Database\Fixtures\RevisionablePost;
-use Winter\Storm\Tests\DbTestCase;
+use Laralips\Storm\Tests\Database\Fixtures\RevisionablePost;
+use Laralips\Storm\Tests\DbTestCase;
 
 class RevisionableTest extends DbTestCase
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Fixtures;
+namespace Laralips\Storm\Tests\Database\Fixtures;
 
 class NullablePost extends Post
 {
-    use \Winter\Storm\Database\Traits\Nullable;
+    use \Laralips\Storm\Database\Traits\Nullable;
 
     /**
      * @var array Guarded fields

@@ -1,9 +1,9 @@
-<?php namespace Winter\Storm\Database\Connections;
+<?php namespace Laralips\Storm\Database\Connections;
 
 use Illuminate\Database\Schema\SQLiteBuilder;
 use Illuminate\Database\Query\Processors\SQLiteProcessor;
 use Illuminate\Database\PDO\SQLiteDriver;
-use Winter\Storm\Database\Query\Grammars\SQLiteGrammar as QueryGrammar;
+use Laralips\Storm\Database\Query\Grammars\SQLiteGrammar as QueryGrammar;
 use Illuminate\Database\Schema\Grammars\SQLiteGrammar as SchemaGrammar;
 
 /**

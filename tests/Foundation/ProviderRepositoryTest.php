@@ -2,11 +2,11 @@
 
 use Illuminate\Cache\CacheServiceProvider;
 use Illuminate\Foundation\ProviderRepository as LaravelProviderRepository;
-use Winter\Storm\Config\ConfigServiceProvider;
-use Winter\Storm\Filesystem\Filesystem;
-use Winter\Storm\Foundation\Application;
-use Winter\Storm\Foundation\ProviderRepository as WinterProviderRepository;
-use Winter\Storm\Support\ServiceProvider;
+use Laralips\Storm\Config\ConfigServiceProvider;
+use Laralips\Storm\Filesystem\Filesystem;
+use Laralips\Storm\Foundation\Application;
+use Laralips\Storm\Foundation\ProviderRepository as WinterProviderRepository;
+use Laralips\Storm\Support\ServiceProvider;
 
 class ProviderRepositoryTest extends TestCase
 {

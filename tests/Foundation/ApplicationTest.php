@@ -1,7 +1,7 @@
 <?php
 
-use Winter\Storm\Foundation\Application;
-use Winter\Storm\Filesystem\PathResolver;
+use Laralips\Storm\Foundation\Application;
+use Laralips\Storm\Filesystem\PathResolver;
 
 class ApplicationTest extends TestCase
 {

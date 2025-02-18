@@ -13,7 +13,7 @@ A *true singleton* is a class that can ever only have a single instance, no matt
 ```php
 class MyClass
 {
-    use \Winter\Storm\Support\Traits\Singleton;
+    use \Laralips\Storm\Support\Traits\Singleton;
 }
 
 $class = MyClass::instance();
@@ -39,7 +39,7 @@ Adds event related features to any class.
 ```php
 class MyClass
 {
-    use Winter\Storm\Support\Traits\Emitter;
+    use Laralips\Storm\Support\Traits\Emitter;
 }
 ```
 

@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Validation\Concerns;
+<?php namespace Laralips\Storm\Validation\Concerns;
 
 use Egulias\EmailValidator\EmailValidator;
 use Egulias\EmailValidator\Validation\DNSCheckValidation;

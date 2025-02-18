@@ -1,11 +1,11 @@
-<?php namespace Winter\Storm\Halcyon\Datasource;
+<?php namespace Laralips\Storm\Halcyon\Datasource;
 
 interface DatasourceInterface
 {
     /**
      * Get the query post processor used by the connection.
      */
-    public function getPostProcessor(): \Winter\Storm\Halcyon\Processors\Processor;
+    public function getPostProcessor(): \Laralips\Storm\Halcyon\Processors\Processor;
 
     /**
      * Returns a single Halcyon model (template).

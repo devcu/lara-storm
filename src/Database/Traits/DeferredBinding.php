@@ -1,8 +1,8 @@
-<?php namespace Winter\Storm\Database\Traits;
+<?php namespace Laralips\Storm\Database\Traits;
 
-use Winter\Storm\Database\Collection;
+use Laralips\Storm\Database\Collection;
 use Illuminate\Database\Eloquent\Model;
-use Winter\Storm\Database\Models\DeferredBinding as DeferredBindingModel;
+use Laralips\Storm\Database\Models\DeferredBinding as DeferredBindingModel;
 
 trait DeferredBinding
 {

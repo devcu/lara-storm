@@ -1,14 +1,14 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Fixtures;
+namespace Laralips\Storm\Tests\Database\Fixtures;
 
 use Illuminate\Database\Schema\Builder;
-use Winter\Storm\Database\Model;
+use Laralips\Storm\Database\Model;
 
 class EventLog extends Model
 {
     use MigratesForTesting;
-    use \Winter\Storm\Database\Traits\SoftDelete;
+    use \Laralips\Storm\Database\Traits\SoftDelete;
 
     /**
      * @var string The database table used by the model.

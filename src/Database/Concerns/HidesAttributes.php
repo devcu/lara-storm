@@ -1,6 +1,6 @@
 <?php
 
-namespace Winter\Storm\Database\Concerns;
+namespace Laralips\Storm\Database\Concerns;
 
 /**
  * Hides and shows attributes for serialization.

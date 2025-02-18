@@ -1,11 +1,11 @@
-<?php namespace Winter\Storm\Support\Facades;
+<?php namespace Laralips\Storm\Support\Facades;
 
-use Winter\Storm\Support\Facade;
+use Laralips\Storm\Support\Facade;
 
 /**
  * @method static \Doctrine\DBAL\Driver\PDOConnection getPdo()
  * @method static \Illuminate\Database\Connection connection(string $name = null)
- * @method static \Winter\Storm\Database\QueryBuilder table(string $table, string $as = null)
+ * @method static \Laralips\Storm\Database\QueryBuilder table(string $table, string $as = null)
  * @method static \Illuminate\Database\Query\Expression raw($value)
  * @method static array getQueryLog()
  * @method static array prepareBindings(array $bindings)

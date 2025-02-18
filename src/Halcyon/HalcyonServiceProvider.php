@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Halcyon;
+<?php namespace Laralips\Storm\Halcyon;
 
-use Winter\Storm\Halcyon\Datasource\Resolver;
-use Winter\Storm\Support\ServiceProvider;
+use Laralips\Storm\Halcyon\Datasource\Resolver;
+use Laralips\Storm\Support\ServiceProvider;
 use Illuminate\Cache\CacheManager;
 
 /**

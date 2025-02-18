@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Parse;
+<?php namespace Laralips\Storm\Parse;
 
-use Winter\LaravelConfigWriter\EnvFile as BaseEnvFile;
+use Laralips\LaravelConfigWriter\EnvFile as BaseEnvFile;
 
 class EnvFile extends BaseEnvFile
 {

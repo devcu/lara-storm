@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Extension;
+<?php namespace Laralips\Storm\Extension;
 
-use Winter\Storm\Support\Serialization;
+use Laralips\Storm\Support\Serialization;
 
 /**
  * Extension trait

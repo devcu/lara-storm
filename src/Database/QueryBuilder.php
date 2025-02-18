@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Database;
+<?php namespace Laralips\Storm\Database;
 
-use Winter\Storm\Support\Arr;
+use Laralips\Storm\Support\Arr;
 use Illuminate\Support\Collection as BaseCollection;
 use Illuminate\Support\Facades\App;
 use Illuminate\Database\Query\Builder as QueryBuilderBase;

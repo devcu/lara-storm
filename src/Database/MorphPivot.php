@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Database;
+<?php namespace Laralips\Storm\Database;
 
 /**
  * Reimplementation of \Illuminate\Database\Eloquent\Relations\MorphPivot
@@ -103,7 +103,7 @@ class MorphPivot extends Pivot
      * Set the morph class for the pivot.
      *
      * @param  string  $morphClass
-     * @return \Winter\Storm\Database\MorphPivot
+     * @return \Laralips\Storm\Database\MorphPivot
      */
     public function setMorphClass($morphClass)
     {

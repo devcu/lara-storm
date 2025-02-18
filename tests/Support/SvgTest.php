@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Support\Svg;
+use Laralips\Storm\Support\Svg;
 
 class SvgTest extends TestCase
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Fixtures;
+namespace Laralips\Storm\Tests\Database\Fixtures;
 
-use Winter\Storm\Database\Model;
+use Laralips\Storm\Database\Model;
 use Illuminate\Database\Schema\Builder;
 
 class Phone extends Model

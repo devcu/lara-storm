@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Parse\Processor\Contracts;
+<?php namespace Laralips\Storm\Parse\Processor\Contracts;
 
 /**
  * Yaml processor contract.

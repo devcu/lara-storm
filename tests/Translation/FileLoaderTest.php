@@ -1,7 +1,7 @@
 <?php
 
-use Winter\Storm\Filesystem\Filesystem;
-use Winter\Storm\Translation\FileLoader;
+use Laralips\Storm\Filesystem\Filesystem;
+use Laralips\Storm\Translation\FileLoader;
 use Mockery as m;
 
 /**

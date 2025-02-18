@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Http\Request;
-use Winter\Storm\Router\UrlGenerator;
+use Laralips\Storm\Router\UrlGenerator;
 use Illuminate\Routing\RouteCollection;
 
 class UrlGeneratorTest extends TestCase
@@ -545,7 +545,7 @@ class UrlGeneratorTest extends TestCase
         ];
 
         foreach ($checkUrlsOnBoth as $url) {
-            $generator = new \Winter\Storm\Router\UrlGenerator(new RouteCollection, Request::create($url));
+            $generator = new \Laralips\Storm\Router\UrlGenerator(new RouteCollection, Request::create($url));
             $baseGenerator = new \Illuminate\Routing\UrlGenerator(new RouteCollection, Request::create($url));
 
             // @NOTE: Laravel does not guarantee that the URL generator always returns
@@ -562,7 +562,7 @@ class UrlGeneratorTest extends TestCase
         $urlInPath = 'https://testUrlInPath/path?k1=v1&k2';
         $url = 'https://testdomain/' . rawurlencode($urlInPath);
 
-        $generator = new \Winter\Storm\Router\UrlGenerator(new RouteCollection, Request::create($url));
+        $generator = new \Laralips\Storm\Router\UrlGenerator(new RouteCollection, Request::create($url));
         $baseGenerator = new \Illuminate\Routing\UrlGenerator(new RouteCollection, Request::create($url));
 
         $this->assertEquals(
@@ -576,7 +576,7 @@ class UrlGeneratorTest extends TestCase
         $urlInPath = 'https://testUrlInPath/path?k1=v1&k2';
         $url = 'https://testdomain/' . rawurlencode(rawurlencode($urlInPath));
 
-        $generator = new \Winter\Storm\Router\UrlGenerator(new RouteCollection, Request::create($url));
+        $generator = new \Laralips\Storm\Router\UrlGenerator(new RouteCollection, Request::create($url));
         $baseGenerator = new \Illuminate\Routing\UrlGenerator(new RouteCollection, Request::create($url));
 
         $this->assertEquals(

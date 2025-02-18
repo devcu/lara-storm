@@ -1,8 +1,8 @@
-<?php namespace Winter\Storm\Database\Query\Grammars;
+<?php namespace Laralips\Storm\Database\Query\Grammars;
 
 use Illuminate\Database\Query\Expression;
 use Illuminate\Database\Query\Grammars\SQLiteGrammar as BaseSQLiteGrammar;
-use Winter\Storm\Database\Query\Grammars\Concerns\SelectConcatenations;
+use Laralips\Storm\Database\Query\Grammars\Concerns\SelectConcatenations;
 
 class SQLiteGrammar extends BaseSQLiteGrammar
 {

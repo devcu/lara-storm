@@ -1,11 +1,11 @@
-<?php namespace Winter\Storm\Database\Connections;
+<?php namespace Laralips\Storm\Database\Connections;
 
 use PDO;
 use Illuminate\Database\PDO\MySqlDriver;
 use Illuminate\Database\Schema\MySqlBuilder;
 use Illuminate\Database\Query\Processors\MySqlProcessor;
 use Illuminate\Database\Schema\Grammars\MySqlGrammar as SchemaGrammar;
-use Winter\Storm\Database\Query\Grammars\MySqlGrammar as QueryGrammar;
+use Laralips\Storm\Database\Query\Grammars\MySqlGrammar as QueryGrammar;
 
 /**
  * @phpstan-property \Illuminate\Database\Schema\Grammars\Grammar|null $schemaGrammar

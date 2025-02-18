@@ -1,8 +1,8 @@
 <?php
 
-use Winter\Storm\Filesystem\Filesystem;
-use Winter\Storm\Halcyon\Datasource\Resolver;
-use Winter\Storm\Halcyon\Datasource\FileDatasource;
+use Laralips\Storm\Filesystem\Filesystem;
+use Laralips\Storm\Halcyon\Datasource\Resolver;
+use Laralips\Storm\Halcyon\Datasource\FileDatasource;
 
 class DatasourceResolverTest extends TestCase
 {

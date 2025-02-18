@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Support\Facades;
+<?php namespace Laralips\Storm\Support\Facades;
 
-use Winter\Storm\Support\Facade;
+use Laralips\Storm\Support\Facade;
 
 /**
  * @method static string current()
@@ -14,7 +14,7 @@ use Winter\Storm\Support\Facade;
  * @method static \Illuminate\Contracts\Routing\UrlGenerator setRootControllerNamespace(string $rootNamespace)
  * @method static string buildUrl(array $url, array $replace = [], $flags = HTTP_URL_REPLACE, array &$newUrl = [])
  *
- * @see \Winter\Storm\Router\UrlGenerator
+ * @see \Laralips\Storm\Router\UrlGenerator
  */
 class Url extends Facade
 {

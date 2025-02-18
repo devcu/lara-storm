@@ -1,8 +1,8 @@
-<?php namespace Winter\Storm\Exception;
+<?php namespace Laralips\Storm\Exception;
 
 use Exception;
 use Throwable;
-use Winter\Storm\Support\Facades\File;
+use Laralips\Storm\Support\Facades\File;
 
 /**
  * The base exception class.

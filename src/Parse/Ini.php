@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Parse;
+<?php namespace Laralips\Storm\Parse;
 
 /**
  * Initialization (INI) configuration parser that uses "Winter flavoured INI",

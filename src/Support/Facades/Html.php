@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Support\Facades;
+<?php namespace Laralips\Storm\Support\Facades;
 
-use Winter\Storm\Support\Facade;
+use Laralips\Storm\Support\Facade;
 
 /**
  * @method static string entities(string $value)
@@ -24,7 +24,7 @@ use Winter\Storm\Support\Facade;
  * @method static string limit(string $html, int $maxLength = 100, string $end = '...')
  * @method static string clean(string $html)
  *
- * @see \Winter\Storm\Html\HtmlBuilder
+ * @see \Laralips\Storm\Html\HtmlBuilder
  */
 class Html extends Facade
 {

@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Database\Schema\Blueprint;
+use Laralips\Storm\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
 class DbDeferredBindings extends Migration

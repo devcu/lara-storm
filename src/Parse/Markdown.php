@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Parse;
+<?php namespace Laralips\Storm\Parse;
 
 use League\CommonMark\Environment\Environment;
 use League\CommonMark\Extension\Attributes\AttributesExtension;
@@ -17,9 +17,9 @@ use League\CommonMark\Parser\MarkdownParser;
 use League\CommonMark\Parser\MarkdownParserInterface;
 use League\CommonMark\Renderer\DocumentRendererInterface;
 use League\CommonMark\Renderer\HtmlRenderer;
-use Winter\Storm\Parse\Markdown\CommonMarkCoreExtension;
-use Winter\Storm\Parse\Markdown\StrikethroughExtension;
-use Winter\Storm\Support\Facades\Event;
+use Laralips\Storm\Parse\Markdown\CommonMarkCoreExtension;
+use Laralips\Storm\Parse\Markdown\StrikethroughExtension;
+use Laralips\Storm\Support\Facades\Event;
 
 /**
  * Markdown parser.
@@ -54,21 +54,21 @@ use Winter\Storm\Support\Facades\Event;
  * @method static disableTaskLists()
  * @method static disableTables()
  * @method static disableTableOfContents()
- * @method static \Winter\Storm\Parse\Markdown setAttributes(bool $enabled)
- * @method static \Winter\Storm\Parse\Markdown setAutolinking(bool $enabled)
- * @method static \Winter\Storm\Parse\Markdown setConfig(array $config)
- * @method static \Winter\Storm\Parse\Markdown setFootnotes(bool $enabled)
- * @method static \Winter\Storm\Parse\Markdown setFrontMatter(bool $enabled)
- * @method static \Winter\Storm\Parse\Markdown setHeadingPermalinks(bool $enabled)
- * @method static \Winter\Storm\Parse\Markdown setInlineOnly(bool $enabled)
- * @method static \Winter\Storm\Parse\Markdown setSafeMode(bool $enabled)
- * @method static \Winter\Storm\Parse\Markdown setTaskLists(bool $enabled)
- * @method static \Winter\Storm\Parse\Markdown setTables(bool $enabled)
- * @method static \Winter\Storm\Parse\Markdown setTableOfContents(bool $enabled)
+ * @method static \Laralips\Storm\Parse\Markdown setAttributes(bool $enabled)
+ * @method static \Laralips\Storm\Parse\Markdown setAutolinking(bool $enabled)
+ * @method static \Laralips\Storm\Parse\Markdown setConfig(array $config)
+ * @method static \Laralips\Storm\Parse\Markdown setFootnotes(bool $enabled)
+ * @method static \Laralips\Storm\Parse\Markdown setFrontMatter(bool $enabled)
+ * @method static \Laralips\Storm\Parse\Markdown setHeadingPermalinks(bool $enabled)
+ * @method static \Laralips\Storm\Parse\Markdown setInlineOnly(bool $enabled)
+ * @method static \Laralips\Storm\Parse\Markdown setSafeMode(bool $enabled)
+ * @method static \Laralips\Storm\Parse\Markdown setTaskLists(bool $enabled)
+ * @method static \Laralips\Storm\Parse\Markdown setTables(bool $enabled)
+ * @method static \Laralips\Storm\Parse\Markdown setTableOfContents(bool $enabled)
  **/
 class Markdown
 {
-    use \Winter\Storm\Support\Traits\Emitter;
+    use \Laralips\Storm\Support\Traits\Emitter;
 
     /**
      * Enables the parsing of attributes for block-level and inline content.

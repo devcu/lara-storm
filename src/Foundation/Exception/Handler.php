@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Foundation\Exception;
+<?php namespace Laralips\Storm\Foundation\Exception;
 
 use Closure;
 use Throwable;
@@ -8,8 +8,8 @@ use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
 use Illuminate\Support\Facades\Log;
 use Illuminate\Support\Facades\Response;
 use Symfony\Component\HttpKernel\Exception\HttpExceptionInterface;
-use Winter\Storm\Exception\AjaxException;
-use Winter\Storm\Support\Str;
+use Laralips\Storm\Exception\AjaxException;
+use Laralips\Storm\Support\Str;
 
 class Handler extends ExceptionHandler
 {
@@ -22,9 +22,9 @@ class Handler extends ExceptionHandler
      * @var array<int, class-string<\Throwable>>
      */
     protected $dontReport = [
-        \Winter\Storm\Exception\AjaxException::class,
-        \Winter\Storm\Exception\ValidationException::class,
-        \Winter\Storm\Exception\ApplicationException::class,
+        \Laralips\Storm\Exception\AjaxException::class,
+        \Laralips\Storm\Exception\ValidationException::class,
+        \Laralips\Storm\Exception\ApplicationException::class,
         \Illuminate\Database\Eloquent\ModelNotFoundException::class,
         \Symfony\Component\HttpKernel\Exception\HttpException::class,
     ];
@@ -58,7 +58,7 @@ class Handler extends ExceptionHandler
          *         }
          *     });
          */
-        /** @var \Winter\Storm\Events\Dispatcher */
+        /** @var \Laralips\Storm\Events\Dispatcher */
         $events = app()->make('events');
         if ($events->dispatch('exception.beforeReport', [$throwable], true) === false) {
             return;

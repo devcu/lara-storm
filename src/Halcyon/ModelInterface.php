@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Halcyon;
+<?php namespace Laralips\Storm\Halcyon;
 
 /**
  * The Model interface defines required methods for models to work.

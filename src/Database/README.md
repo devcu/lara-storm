@@ -39,4 +39,4 @@ These methods do not require chaining:
 - getChildren(): Return the child nodes below this one.
 - getChildCount(): Return the number of children below this node.
 
-All models must return a collection of the base class `Winter\Storm\Database\TreeCollection`.
+All models must return a collection of the base class `Laralips\Storm\Database\TreeCollection`.

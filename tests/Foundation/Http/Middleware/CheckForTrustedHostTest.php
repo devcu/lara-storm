@@ -3,8 +3,8 @@
 use Illuminate\Http\Request;
 use Illuminate\Routing\Route;
 use Illuminate\Routing\RouteCollection;
-use Winter\Storm\Router\UrlGenerator;
-use Winter\Storm\Foundation\Http\Middleware\CheckForTrustedHost;
+use Laralips\Storm\Router\UrlGenerator;
+use Laralips\Storm\Foundation\Http\Middleware\CheckForTrustedHost;
 use Symfony\Component\HttpFoundation\Exception\SuspiciousOperationException;
 
 /**

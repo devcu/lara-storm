@@ -1,12 +1,12 @@
-<?php namespace Winter\Storm\Parse;
+<?php namespace Laralips\Storm\Parse;
 
 use Illuminate\Support\Facades\Cache;
 use Symfony\Component\Yaml\Yaml as YamlComponent;
 use Symfony\Component\Yaml\Dumper;
 use Symfony\Component\Yaml\Parser;
 use Symfony\Component\Yaml\Exception\ParseException;
-use Winter\Storm\Parse\Processor\Contracts\YamlProcessor;
-use Winter\Storm\Support\Facades\Config;
+use Laralips\Storm\Parse\Processor\Contracts\YamlProcessor;
+use Laralips\Storm\Support\Facades\Config;
 
 /**
  * Yaml helper class

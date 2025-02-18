@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Support;
+<?php namespace Laralips\Storm\Support;
 
-use Winter\Storm\Exception\ApplicationException;
+use Laralips\Storm\Exception\ApplicationException;
 use enshrined\svgSanitize\Sanitizer;
 
 /**

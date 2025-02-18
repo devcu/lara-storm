@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Exception;
+<?php namespace Laralips\Storm\Exception;
 
 use Throwable;
-use Winter\Storm\Html\HtmlBuilder;
+use Laralips\Storm\Html\HtmlBuilder;
 
 /**
  * This class represents a critical system exception.

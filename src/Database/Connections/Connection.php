@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Database\Connections;
+<?php namespace Laralips\Storm\Database\Connections;
 
-use Winter\Storm\Database\MemoryCache;
-use Winter\Storm\Database\QueryBuilder;
+use Laralips\Storm\Database\MemoryCache;
+use Laralips\Storm\Database\QueryBuilder;
 use Illuminate\Database\Connection as ConnectionBase;
 
 class Connection extends ConnectionBase
@@ -9,7 +9,7 @@ class Connection extends ConnectionBase
     /**
      * Get a new query builder instance.
      *
-     * @return \Winter\Storm\Database\QueryBuilder
+     * @return \Laralips\Storm\Database\QueryBuilder
      */
     public function query()
     {
@@ -62,7 +62,7 @@ class Connection extends ConnectionBase
      */
     protected function fireEvent(string $event, array|object $attributes = []): void
     {
-        /** @var \Winter\Storm\Events\Dispatcher|null */
+        /** @var \Laralips\Storm\Events\Dispatcher|null */
         $eventManager = $this->events;
 
         if (!isset($eventManager)) {

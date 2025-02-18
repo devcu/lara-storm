@@ -59,10 +59,10 @@ class EncryptableBehaviorTest extends DbTestCase
     }
 }
 
-class TestModelEncryptableBehavior extends \Winter\Storm\Database\Model
+class TestModelEncryptableBehavior extends \Laralips\Storm\Database\Model
 {
     public $implement = [
-        \Winter\Storm\Database\Behaviors\Encryptable::class,
+        \Laralips\Storm\Database\Behaviors\Encryptable::class,
     ];
 
     protected $encryptable = ['secret'];

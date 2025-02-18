@@ -1,8 +1,8 @@
-<?php namespace Winter\Storm\Database;
+<?php namespace Laralips\Storm\Database;
 
 use Exception;
-use Winter\Storm\Support\Facades\File;
-use Winter\Storm\Database\Model;
+use Laralips\Storm\Support\Facades\File;
+use Laralips\Storm\Database\Model;
 
 /**
  * Database updater
@@ -112,7 +112,7 @@ class Updater
         }
 
         throw new Exception(sprintf(
-            'Database script [%s] must define a class that inherits the "Winter\Storm\Database\Updates\Migration" or "Winter\Storm\Database\Updates\Seeder" classes',
+            'Database script [%s] must define a class that inherits the "Laralips\Storm\Database\Updates\Migration" or "Laralips\Storm\Database\Updates\Seeder" classes',
             $file
         ));
     }

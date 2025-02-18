@@ -1,12 +1,12 @@
-<?php namespace Winter\Storm\Halcyon\Datasource;
+<?php namespace Laralips\Storm\Halcyon\Datasource;
 
 use Exception;
 use Carbon\Carbon;
-use Winter\Storm\Halcyon\Processors\Processor;
-use Winter\Storm\Halcyon\Exception\CreateFileException;
-use Winter\Storm\Halcyon\Exception\DeleteFileException;
-use Winter\Storm\Halcyon\Exception\FileExistsException;
-use Winter\Storm\Support\Facades\DB;
+use Laralips\Storm\Halcyon\Processors\Processor;
+use Laralips\Storm\Halcyon\Exception\CreateFileException;
+use Laralips\Storm\Halcyon\Exception\DeleteFileException;
+use Laralips\Storm\Halcyon\Exception\FileExistsException;
+use Laralips\Storm\Support\Facades\DB;
 
 /**
  * Database based data source
@@ -48,7 +48,7 @@ class DbDatasource extends Datasource
     /**
      * Get the base QueryBuilder object.
      */
-    public function getBaseQuery(): \Winter\Storm\Database\QueryBuilder
+    public function getBaseQuery(): \Laralips\Storm\Database\QueryBuilder
     {
         return DB::table($this->table)->enableDuplicateCache();
     }
@@ -58,7 +58,7 @@ class DbDatasource extends Datasource
      *
      * @param bool $ignoreDeleted Ignore deleted records. Defaults to `true`.
      */
-    public function getQuery(bool $ignoreDeleted = true): \Winter\Storm\Database\QueryBuilder
+    public function getQuery(bool $ignoreDeleted = true): \Laralips\Storm\Database\QueryBuilder
     {
         $query = $this->getBaseQuery();
 

@@ -20,7 +20,7 @@ class EmitterTest extends TestCase
      */
     public function setUp(): void
     {
-        $traitName = 'Winter\Storm\Support\Traits\Emitter';
+        $traitName = 'Laralips\Storm\Support\Traits\Emitter';
         $this->traitObject = $this->getObjectForTrait($traitName);
     }
 
@@ -248,7 +248,7 @@ class EmitterTest extends TestCase
 }
 class EmitterClass
 {
-    use \Winter\Storm\Support\Traits\Emitter;
+    use \Laralips\Storm\Support\Traits\Emitter;
 
     /**
      * @var string $output used for keeping a testable variable as references don't survive serialisation

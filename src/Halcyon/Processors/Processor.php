@@ -1,13 +1,13 @@
-<?php namespace Winter\Storm\Halcyon\Processors;
+<?php namespace Laralips\Storm\Halcyon\Processors;
 
-use Winter\Storm\Halcyon\Builder;
+use Laralips\Storm\Halcyon\Builder;
 
 class Processor
 {
     /**
      * Process the results of a singular "select" query.
      *
-     * @param  \Winter\Storm\Halcyon\Builder  $query
+     * @param  \Laralips\Storm\Halcyon\Builder  $query
      * @param  array|null  $result
      * @return array|null
      */
@@ -25,7 +25,7 @@ class Processor
     /**
      * Process the results of a "select" query.
      *
-     * @param  \Winter\Storm\Halcyon\Builder  $query
+     * @param  \Laralips\Storm\Halcyon\Builder  $query
      * @param  array  $results
      * @return array
      */
@@ -47,7 +47,7 @@ class Processor
 
     /**
      * Helper to break down template content in to a useful array.
-     * @param  \Winter\Storm\Halcyon\Builder  $query
+     * @param  \Laralips\Storm\Halcyon\Builder  $query
      * @param  array|null  $result
      * @param  string  $fileName
      * @return array
@@ -74,7 +74,7 @@ class Processor
     /**
      * Process the data in to an insert action.
      *
-     * @param  \Winter\Storm\Halcyon\Builder  $query
+     * @param  \Laralips\Storm\Halcyon\Builder  $query
      * @param  array  $data
      * @return string
      */
@@ -91,7 +91,7 @@ class Processor
     /**
      * Process the data in to an update action.
      *
-     * @param  \Winter\Storm\Halcyon\Builder  $query
+     * @param  \Laralips\Storm\Halcyon\Builder  $query
      * @param  array  $data
      * @return string
      */

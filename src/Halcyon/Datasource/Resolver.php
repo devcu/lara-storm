@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Halcyon\Datasource;
+<?php namespace Laralips\Storm\Halcyon\Datasource;
 
-use Winter\Storm\Halcyon\Exception\MissingDatasourceException;
+use Laralips\Storm\Halcyon\Exception\MissingDatasourceException;
 
 class Resolver implements ResolverInterface
 {

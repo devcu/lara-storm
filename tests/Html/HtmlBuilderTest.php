@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Html\HtmlBuilder;
+use Laralips\Storm\Html\HtmlBuilder;
 
 class HtmlBuilderTest extends TestCase
 {

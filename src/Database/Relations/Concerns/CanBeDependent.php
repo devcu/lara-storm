@@ -1,6 +1,6 @@
 <?php
 
-namespace Winter\Storm\Database\Relations\Concerns;
+namespace Laralips\Storm\Database\Relations\Concerns;
 
 /**
  * This trait is used to mark certain relationships as dependent.

@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Support\Facades;
+<?php namespace Laralips\Storm\Support\Facades;
 
-use Winter\Storm\Support\Facade;
+use Laralips\Storm\Support\Facade;
 
 /**
  * @method static void put(string $name)
@@ -13,7 +13,7 @@ use Winter\Storm\Support\Facade;
  * @method static string get(string $name, string $default = null)
  * @method static void reset()
  *
- * @see \Winter\Storm\Html\BlockBuilder
+ * @see \Laralips\Storm\Html\BlockBuilder
  */
 class Block extends Facade
 {

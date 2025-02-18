@@ -1,16 +1,16 @@
 <?php
 
-use Winter\Storm\Html\HtmlBuilder;
-use Winter\Storm\Html\FormBuilder;
-use Winter\Storm\Router\UrlGenerator;
+use Laralips\Storm\Html\HtmlBuilder;
+use Laralips\Storm\Html\FormBuilder;
+use Laralips\Storm\Router\UrlGenerator;
 
 use Illuminate\Http\Request;
 use Illuminate\Routing\RouteCollection;
-use Winter\Storm\Tests\Assertions\AssertHtml;
+use Laralips\Storm\Tests\Assertions\AssertHtml;
 
 /**
  * @testdox The FormBuilder utility
- * @covers \Winter\Storm\Html\FormBuilder
+ * @covers \Laralips\Storm\Html\FormBuilder
  */
 class FormBuilderTest extends TestCase
 {

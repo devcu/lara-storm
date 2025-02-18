@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Support\Str;
+use Laralips\Storm\Support\Str;
 
 class StrTest extends TestCase
 {

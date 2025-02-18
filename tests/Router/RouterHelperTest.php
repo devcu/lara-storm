@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Router\Helper;
+use Laralips\Storm\Router\Helper;
 
 class RouterHelperTest extends TestCase
 {

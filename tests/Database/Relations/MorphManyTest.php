@@ -1,14 +1,14 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Relations;
+namespace Laralips\Storm\Tests\Database\Relations;
 
-use Winter\Storm\Database\Collection;
-use Winter\Storm\Database\Model;
-use Winter\Storm\Tests\Database\Fixtures\Author;
-use Winter\Storm\Tests\Database\Fixtures\Tag;
-use Winter\Storm\Tests\Database\Fixtures\Post;
-use Winter\Storm\Tests\Database\Fixtures\EventLog;
-use Winter\Storm\Tests\DbTestCase;
+use Laralips\Storm\Database\Collection;
+use Laralips\Storm\Database\Model;
+use Laralips\Storm\Tests\Database\Fixtures\Author;
+use Laralips\Storm\Tests\Database\Fixtures\Tag;
+use Laralips\Storm\Tests\Database\Fixtures\Post;
+use Laralips\Storm\Tests\Database\Fixtures\EventLog;
+use Laralips\Storm\Tests\DbTestCase;
 
 class MorphManyTest extends DbTestCase
 {
@@ -27,8 +27,8 @@ class MorphManyTest extends DbTestCase
         $author->save();
         $this->assertEquals($author->id, $event1->related_id);
         $this->assertEquals($author->id, $event2->related_id);
-        $this->assertEquals('Winter\Storm\Tests\Database\Fixtures\Author', $event1->related_type);
-        $this->assertEquals('Winter\Storm\Tests\Database\Fixtures\Author', $event2->related_type);
+        $this->assertEquals('Laralips\Storm\Tests\Database\Fixtures\Author', $event1->related_type);
+        $this->assertEquals('Laralips\Storm\Tests\Database\Fixtures\Author', $event2->related_type);
         $this->assertEquals([
             'user-created',
             'user-updated'
@@ -40,7 +40,7 @@ class MorphManyTest extends DbTestCase
         $author->save();
         $event3 = EventLog::find($eventId);
         $this->assertEquals($author->id, $event3->related_id);
-        $this->assertEquals('Winter\Storm\Tests\Database\Fixtures\Author', $event3->related_type);
+        $this->assertEquals('Laralips\Storm\Tests\Database\Fixtures\Author', $event3->related_type);
         $this->assertEquals([
             'user-deleted'
         ], $author->event_log->lists('action'));
@@ -56,7 +56,7 @@ class MorphManyTest extends DbTestCase
         // Deferred in memory
         $author->event_log = $event4;
         $this->assertEquals($author->id, $event4->related_id);
-        $this->assertEquals('Winter\Storm\Tests\Database\Fixtures\Author', $event4->related_type);
+        $this->assertEquals('Laralips\Storm\Tests\Database\Fixtures\Author', $event4->related_type);
         $this->assertEquals([
             'user-restored'
         ], $author->event_log->lists('action'));
@@ -77,8 +77,8 @@ class MorphManyTest extends DbTestCase
         $author->save();
         $this->assertEquals($author->id, $event1->related_id);
         $this->assertEquals($author->id, $event2->related_id);
-        $this->assertEquals('Winter\Storm\Tests\Database\Fixtures\Author', $event1->related_type);
-        $this->assertEquals('Winter\Storm\Tests\Database\Fixtures\Author', $event2->related_type);
+        $this->assertEquals('Laralips\Storm\Tests\Database\Fixtures\Author', $event1->related_type);
+        $this->assertEquals('Laralips\Storm\Tests\Database\Fixtures\Author', $event2->related_type);
         $this->assertEquals([
             'user-created',
             'user-updated'
@@ -90,7 +90,7 @@ class MorphManyTest extends DbTestCase
         $author->save();
         $event3 = EventLog::find($eventId);
         $this->assertEquals($author->id, $event3->related_id);
-        $this->assertEquals('Winter\Storm\Tests\Database\Fixtures\Author', $event3->related_type);
+        $this->assertEquals('Laralips\Storm\Tests\Database\Fixtures\Author', $event3->related_type);
         $this->assertEquals([
             'user-deleted'
         ], $author->auditLogs->lists('action'));
@@ -106,7 +106,7 @@ class MorphManyTest extends DbTestCase
         // Deferred in memory
         $author->auditLogs = $event4;
         $this->assertEquals($author->id, $event4->related_id);
-        $this->assertEquals('Winter\Storm\Tests\Database\Fixtures\Author', $event4->related_type);
+        $this->assertEquals('Laralips\Storm\Tests\Database\Fixtures\Author', $event4->related_type);
         $this->assertEquals([
             'user-restored'
         ], $author->auditLogs->lists('action'));
@@ -116,8 +116,8 @@ class MorphManyTest extends DbTestCase
     {
         Model::unguard();
         $author = Author::create(['name' => 'Stevie']);
-        $event1 = EventLog::create(['action' => "user-created", 'related_id' => $author->id, 'related_type' => 'Winter\Storm\Tests\Database\Fixtures\Author']);
-        $event2 = EventLog::create(['action' => "user-updated", 'related_id' => $author->id, 'related_type' => 'Winter\Storm\Tests\Database\Fixtures\Author']);
+        $event1 = EventLog::create(['action' => "user-created", 'related_id' => $author->id, 'related_type' => 'Laralips\Storm\Tests\Database\Fixtures\Author']);
+        $event2 = EventLog::create(['action' => "user-updated", 'related_id' => $author->id, 'related_type' => 'Laralips\Storm\Tests\Database\Fixtures\Author']);
         Model::reguard();
 
         $this->assertEquals([$event1->id, $event2->id], $author->getRelationValue('event_log'));
@@ -127,8 +127,8 @@ class MorphManyTest extends DbTestCase
     {
         Model::unguard();
         $author = Author::create(['name' => 'Stevie']);
-        $event1 = EventLog::create(['action' => "user-created", 'related_id' => $author->id, 'related_type' => 'Winter\Storm\Tests\Database\Fixtures\Author']);
-        $event2 = EventLog::create(['action' => "user-updated", 'related_id' => $author->id, 'related_type' => 'Winter\Storm\Tests\Database\Fixtures\Author']);
+        $event1 = EventLog::create(['action' => "user-created", 'related_id' => $author->id, 'related_type' => 'Laralips\Storm\Tests\Database\Fixtures\Author']);
+        $event2 = EventLog::create(['action' => "user-updated", 'related_id' => $author->id, 'related_type' => 'Laralips\Storm\Tests\Database\Fixtures\Author']);
         Model::reguard();
 
         $this->assertEquals([$event1->id, $event2->id], $author->getRelationValue('auditLogs'));

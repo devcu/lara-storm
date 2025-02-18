@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Validation;
+<?php namespace Laralips\Storm\Validation;
 
 use Illuminate\Contracts\Validation\Rule as RuleContract;
 

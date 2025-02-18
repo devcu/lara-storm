@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Config;
+<?php namespace Laralips\Storm\Config;
 
 use Closure;
 use ArrayAccess;
@@ -12,12 +12,12 @@ use Illuminate\Contracts\Config\Repository as RepositoryContract;
  */
 class Repository extends BaseRepository implements ArrayAccess, RepositoryContract
 {
-    use \Winter\Storm\Support\Traits\KeyParser;
+    use \Laralips\Storm\Support\Traits\KeyParser;
 
     /**
      * The loader implementation.
      *
-     * @var \Winter\Storm\Config\LoaderInterface
+     * @var \Laralips\Storm\Config\LoaderInterface
      */
     protected $loader;
 
@@ -59,7 +59,7 @@ class Repository extends BaseRepository implements ArrayAccess, RepositoryContra
     /**
      * Create a new configuration repository.
      *
-     * @param  \Winter\Storm\Config\LoaderInterface  $loader
+     * @param  \Laralips\Storm\Config\LoaderInterface  $loader
      * @param  string  $environment
      * @return void
      */
@@ -388,7 +388,7 @@ class Repository extends BaseRepository implements ArrayAccess, RepositoryContra
     /**
      * Get the loader implementation.
      *
-     * @return \Winter\Storm\Config\LoaderInterface
+     * @return \Laralips\Storm\Config\LoaderInterface
      */
     public function getLoader()
     {
@@ -398,7 +398,7 @@ class Repository extends BaseRepository implements ArrayAccess, RepositoryContra
     /**
      * Set the loader implementation.
      *
-     * @param  \Winter\Storm\Config\LoaderInterface  $loader
+     * @param  \Laralips\Storm\Config\LoaderInterface  $loader
      * @return void
      */
     public function setLoader(LoaderInterface $loader)

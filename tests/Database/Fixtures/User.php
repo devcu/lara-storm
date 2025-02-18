@@ -1,13 +1,13 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Fixtures;
+namespace Laralips\Storm\Tests\Database\Fixtures;
 
 use Illuminate\Database\Schema\Builder;
-use Winter\Storm\Database\Attach\File;
-use Winter\Storm\Database\Model;
-use Winter\Storm\Database\Relations\AttachMany;
-use Winter\Storm\Database\Relations\AttachOne;
-use Winter\Storm\Database\Relations\HasOneThrough;
+use Laralips\Storm\Database\Attach\File;
+use Laralips\Storm\Database\Model;
+use Laralips\Storm\Database\Relations\AttachMany;
+use Laralips\Storm\Database\Relations\AttachOne;
+use Laralips\Storm\Database\Relations\HasOneThrough;
 
 class User extends Model
 {

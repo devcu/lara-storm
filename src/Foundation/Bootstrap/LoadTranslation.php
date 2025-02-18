@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Foundation\Bootstrap;
+<?php namespace Laralips\Storm\Foundation\Bootstrap;
 
-use Winter\Storm\Translation\Translator;
-use Winter\Storm\Translation\FileLoader;
+use Laralips\Storm\Translation\Translator;
+use Laralips\Storm\Translation\FileLoader;
 use Illuminate\Contracts\Foundation\Application;
 
 class LoadTranslation

@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Html\BlockBuilder;
+use Laralips\Storm\Html\BlockBuilder;
 
 class BlockBuilderTest extends TestCase
 {

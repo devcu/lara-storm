@@ -1,12 +1,12 @@
 <?php
 
-namespace Winter\Storm\Database\Relations\Concerns;
+namespace Laralips\Storm\Database\Relations\Concerns;
 
 use Illuminate\Database\Query\Builder;
-use Winter\Storm\Database\Relations\BelongsToMany;
-use Winter\Storm\Database\Relations\HasManyThrough;
-use Winter\Storm\Database\Relations\HasOneThrough;
-use Winter\Storm\Database\Relations\Relation;
+use Laralips\Storm\Database\Relations\BelongsToMany;
+use Laralips\Storm\Database\Relations\HasManyThrough;
+use Laralips\Storm\Database\Relations\HasOneThrough;
+use Laralips\Storm\Database\Relations\Relation;
 
 /**
  * This trait is used to mark certain relationships as being a counter only.

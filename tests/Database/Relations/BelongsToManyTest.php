@@ -1,14 +1,14 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Relations;
+namespace Laralips\Storm\Tests\Database\Relations;
 
-use Winter\Storm\Database\Model;
-use Winter\Storm\Support\Facades\DB;
-use Winter\Storm\Tests\Database\Fixtures\Category;
-use Winter\Storm\Tests\Database\Fixtures\Post;
-use Winter\Storm\Tests\Database\Fixtures\Role;
-use Winter\Storm\Tests\Database\Fixtures\Author;
-use Winter\Storm\Tests\DbTestCase;
+use Laralips\Storm\Database\Model;
+use Laralips\Storm\Support\Facades\DB;
+use Laralips\Storm\Tests\Database\Fixtures\Category;
+use Laralips\Storm\Tests\Database\Fixtures\Post;
+use Laralips\Storm\Tests\Database\Fixtures\Role;
+use Laralips\Storm\Tests\Database\Fixtures\Author;
+use Laralips\Storm\Tests\DbTestCase;
 
 class BelongsToManyTest extends DbTestCase
 {

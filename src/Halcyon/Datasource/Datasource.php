@@ -1,13 +1,13 @@
-<?php namespace Winter\Storm\Halcyon\Datasource;
+<?php namespace Laralips\Storm\Halcyon\Datasource;
 
-use \Winter\Storm\Halcyon\Processors\Processor;
+use \Laralips\Storm\Halcyon\Processors\Processor;
 
 /**
  * Datasource base class.
  */
 abstract class Datasource implements DatasourceInterface
 {
-    use \Winter\Storm\Support\Traits\Emitter;
+    use \Laralips\Storm\Support\Traits\Emitter;
 
     /**
      * Indicates if the record is currently being force deleted.

@@ -1,12 +1,12 @@
 <?php
 
-namespace Winter\Storm\Database\Relations;
+namespace Laralips\Storm\Database\Relations;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany as BelongsToManyBase;
 use Illuminate\Database\Eloquent\Collection;
 use Illuminate\Database\Eloquent\Model;
-use Winter\Storm\Database\Pivot;
+use Laralips\Storm\Database\Pivot;
 
 class BelongsToMany extends BelongsToManyBase implements RelationInterface
 {

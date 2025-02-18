@@ -1,13 +1,13 @@
-<?php namespace Winter\Storm\Support\Facades;
+<?php namespace Laralips\Storm\Support\Facades;
 
-use Winter\Storm\Support\Facade;
+use Laralips\Storm\Support\Facade;
 
 /**
  * @method static array parse(string $contents)
  * @method static array parseFile(string $fileName)
  * @method static string render(array $vars = [], array $options = [])
  *
- * @see \Winter\Storm\Parse\Yaml
+ * @see \Laralips\Storm\Parse\Yaml
  */
 class Yaml extends Facade
 {

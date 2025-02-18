@@ -1,8 +1,8 @@
-<?php namespace Winter\Storm\Database\Behaviors;
+<?php namespace Laralips\Storm\Database\Behaviors;
 
 use Exception;
-use Winter\Storm\Database\SortableScope;
-use Winter\Storm\Extension\ExtensionBase;
+use Laralips\Storm\Database\SortableScope;
+use Laralips\Storm\Extension\ExtensionBase;
 
 /**
  * Sortable model behavior
@@ -14,7 +14,7 @@ use Winter\Storm\Extension\ExtensionBase;
  * In the model class definition:
  *
  *   public $implement = [
- *       \Winter\Storm\Database\Behaviors\Sortable::class,
+ *       \Laralips\Storm\Database\Behaviors\Sortable::class,
  *   ];
  *
  * To set orders:

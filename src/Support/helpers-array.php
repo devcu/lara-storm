@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Support\Arr;
+use Laralips\Storm\Support\Arr;
 
 //
 // Winter Helpers

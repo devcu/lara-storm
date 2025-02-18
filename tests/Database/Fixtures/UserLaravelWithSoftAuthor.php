@@ -1,8 +1,8 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Fixtures;
+namespace Laralips\Storm\Tests\Database\Fixtures;
 
-use Winter\Storm\Database\Relations\HasOne;
+use Laralips\Storm\Database\Relations\HasOne;
 
 class UserLaravelWithSoftAuthor extends UserLaravel
 {

@@ -1,9 +1,9 @@
-<?php namespace Winter\Storm\Foundation\Bootstrap;
+<?php namespace Laralips\Storm\Foundation\Bootstrap;
 
 use Exception;
-use Winter\Storm\Config\Repository;
-use Winter\Storm\Config\FileLoader;
-use Winter\Storm\Foundation\Application;
+use Laralips\Storm\Config\Repository;
+use Laralips\Storm\Config\FileLoader;
+use Laralips\Storm\Foundation\Application;
 use Illuminate\Filesystem\Filesystem;
 
 class LoadConfiguration

@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Halcyon;
+<?php namespace Laralips\Storm\Halcyon;
 
-use Winter\Storm\Support\Collection as CollectionBase;
+use Laralips\Storm\Support\Collection as CollectionBase;
 
 /**
  * This class represents a collection of Halcyon models.

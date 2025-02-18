@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Database;
+<?php namespace Laralips\Storm\Database;
 
 use Illuminate\Database\Eloquent\Model as ModelBase;
 use Illuminate\Database\Eloquent\Scope as ScopeInterface;

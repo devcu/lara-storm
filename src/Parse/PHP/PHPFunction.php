@@ -1,6 +1,6 @@
-<?php namespace Winter\Storm\Parse\PHP;
+<?php namespace Laralips\Storm\Parse\PHP;
 
-use Winter\LaravelConfigWriter\Parser\PHPFunction as BasePHPFunction;
+use Laralips\LaravelConfigWriter\Parser\PHPFunction as BasePHPFunction;
 
 class PHPFunction extends BasePHPFunction
 {

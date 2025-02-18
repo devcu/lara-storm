@@ -1,9 +1,9 @@
 <?php
 
-namespace Winter\Storm\Database\Relations\Concerns;
+namespace Laralips\Storm\Database\Relations\Concerns;
 
-use Winter\Storm\Database\Relations\HasManyThrough;
-use Winter\Storm\Database\Relations\HasOneThrough;
+use Laralips\Storm\Database\Relations\HasManyThrough;
+use Laralips\Storm\Database\Relations\HasOneThrough;
 
 /*
  * Handles the constraints and filters defined by a relation.
@@ -68,7 +68,7 @@ trait DefinedConstraints
     /**
      * Add query based constraints.
      *
-     * @param \Illuminate\Database\Eloquent\Relations\Relation|\Winter\Storm\Database\QueryBuilder $query
+     * @param \Illuminate\Database\Eloquent\Relations\Relation|\Laralips\Storm\Database\QueryBuilder $query
      * @param array|null $args
      */
     public function addDefinedConstraintsToQuery($query = null, ?array $args = null)

@@ -1,10 +1,10 @@
-<?php namespace Winter\Storm\Database\Behaviors;
+<?php namespace Laralips\Storm\Database\Behaviors;
 
 use App;
 use Illuminate\Contracts\Encryption\Encrypter;
-use Winter\Storm\Database\Model;
-use Winter\Storm\Exception\ApplicationException;
-use Winter\Storm\Extension\ExtensionBase;
+use Laralips\Storm\Database\Model;
+use Laralips\Storm\Exception\ApplicationException;
+use Laralips\Storm\Extension\ExtensionBase;
 
 /**
  * Encryptable model behavior
@@ -14,7 +14,7 @@ use Winter\Storm\Extension\ExtensionBase;
  * In the model class definition:
  *
  *     public $implement = [
- *         \Winter\Storm\Database\Behaviors\Encryptable::class,
+ *         \Laralips\Storm\Database\Behaviors\Encryptable::class,
  *     ];
  *
  *     /**
@@ -26,7 +26,7 @@ use Winter\Storm\Extension\ExtensionBase;
  *
  *     TargetModel::extend(function ($model) {
  *         $model->addDynamicProperty('encryptable', ['encrypt_this']);
- *         $model->extendClassWith(\Winter\Storm\Database\Behaviors\Encryptable::class);
+ *         $model->extendClassWith(\Laralips\Storm\Database\Behaviors\Encryptable::class);
  *     });
  *
  * >**NOTE**: Encrypted attributes will be serialized and unserialized

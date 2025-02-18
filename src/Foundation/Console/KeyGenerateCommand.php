@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Foundation\Console;
+<?php namespace Laralips\Storm\Foundation\Console;
 
 use Illuminate\Foundation\Console\KeyGenerateCommand as KeyGenerateCommandBase;
-use Winter\Storm\Parse\EnvFile;
+use Laralips\Storm\Parse\EnvFile;
 
 class KeyGenerateCommand extends KeyGenerateCommandBase
 {

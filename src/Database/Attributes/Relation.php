@@ -1,20 +1,20 @@
 <?php
 
-namespace Winter\Storm\Database\Attributes;
+namespace Laralips\Storm\Database\Attributes;
 
 use Attribute;
-use Winter\Storm\Database\Relations\AttachMany;
-use Winter\Storm\Database\Relations\AttachOne;
-use Winter\Storm\Database\Relations\BelongsTo;
-use Winter\Storm\Database\Relations\BelongsToMany;
-use Winter\Storm\Database\Relations\HasMany;
-use Winter\Storm\Database\Relations\HasManyThrough;
-use Winter\Storm\Database\Relations\HasOne;
-use Winter\Storm\Database\Relations\HasOneThrough;
-use Winter\Storm\Database\Relations\MorphMany;
-use Winter\Storm\Database\Relations\MorphOne;
-use Winter\Storm\Database\Relations\MorphTo;
-use Winter\Storm\Database\Relations\MorphToMany;
+use Laralips\Storm\Database\Relations\AttachMany;
+use Laralips\Storm\Database\Relations\AttachOne;
+use Laralips\Storm\Database\Relations\BelongsTo;
+use Laralips\Storm\Database\Relations\BelongsToMany;
+use Laralips\Storm\Database\Relations\HasMany;
+use Laralips\Storm\Database\Relations\HasManyThrough;
+use Laralips\Storm\Database\Relations\HasOne;
+use Laralips\Storm\Database\Relations\HasOneThrough;
+use Laralips\Storm\Database\Relations\MorphMany;
+use Laralips\Storm\Database\Relations\MorphOne;
+use Laralips\Storm\Database\Relations\MorphTo;
+use Laralips\Storm\Database\Relations\MorphToMany;
 
 #[Attribute(Attribute::TARGET_METHOD | Attribute::TARGET_FUNCTION)]
 class Relation

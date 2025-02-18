@@ -1,22 +1,22 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Traits;
+namespace Laralips\Storm\Tests\Database\Traits;
 
-use Winter\Storm\Tests\Database\Fixtures\Author;
-use Winter\Storm\Tests\Database\Fixtures\UserWithAuthor;
-use Winter\Storm\Tests\Database\Fixtures\SoftDeleteAuthor;
-use Winter\Storm\Tests\Database\Fixtures\UserWithSoftAuthor;
-use Winter\Storm\Tests\Database\Fixtures\UserWithAuthorAndSoftDelete;
-use Winter\Storm\Tests\Database\Fixtures\UserWithSoftAuthorAndSoftDelete;
-use Winter\Storm\Database\Model;
-use Winter\Storm\Tests\Database\Fixtures\Category;
-use Winter\Storm\Tests\Database\Fixtures\EventLog;
-use Winter\Storm\Tests\Database\Fixtures\Post;
-use Winter\Storm\Tests\Database\Fixtures\UserLaravel;
-use Winter\Storm\Tests\Database\Fixtures\UserLaravelWithSoftAuthor;
-use Winter\Storm\Tests\Database\Fixtures\UserLaravelWithSoftAuthorAndSoftDelete;
-use Winter\Storm\Tests\Database\Fixtures\UserLaravelWithSoftDelete;
-use Winter\Storm\Tests\DbTestCase;
+use Laralips\Storm\Tests\Database\Fixtures\Author;
+use Laralips\Storm\Tests\Database\Fixtures\UserWithAuthor;
+use Laralips\Storm\Tests\Database\Fixtures\SoftDeleteAuthor;
+use Laralips\Storm\Tests\Database\Fixtures\UserWithSoftAuthor;
+use Laralips\Storm\Tests\Database\Fixtures\UserWithAuthorAndSoftDelete;
+use Laralips\Storm\Tests\Database\Fixtures\UserWithSoftAuthorAndSoftDelete;
+use Laralips\Storm\Database\Model;
+use Laralips\Storm\Tests\Database\Fixtures\Category;
+use Laralips\Storm\Tests\Database\Fixtures\EventLog;
+use Laralips\Storm\Tests\Database\Fixtures\Post;
+use Laralips\Storm\Tests\Database\Fixtures\UserLaravel;
+use Laralips\Storm\Tests\Database\Fixtures\UserLaravelWithSoftAuthor;
+use Laralips\Storm\Tests\Database\Fixtures\UserLaravelWithSoftAuthorAndSoftDelete;
+use Laralips\Storm\Tests\Database\Fixtures\UserLaravelWithSoftDelete;
+use Laralips\Storm\Tests\DbTestCase;
 
 class SoftDeleteTest extends DbTestCase
 {

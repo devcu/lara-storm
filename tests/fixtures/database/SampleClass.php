@@ -1,6 +1,6 @@
 <?php namespace TestPlugin;
 
-use Winter\Storm\Supports\Arr;
+use Laralips\Storm\Supports\Arr;
 
 class SampleClass
 {

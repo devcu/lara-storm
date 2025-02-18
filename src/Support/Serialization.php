@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Support;
+<?php namespace Laralips\Storm\Support;
 
 use Closure;
 use Laravel\SerializableClosure\SerializableClosure;

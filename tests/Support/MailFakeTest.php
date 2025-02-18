@@ -1,8 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\App;
-use Winter\Storm\Support\Facades\Mail;
-use Winter\Storm\Support\Testing\Fakes\MailFake;
+use Laralips\Storm\Support\Facades\Mail;
+use Laralips\Storm\Support\Testing\Fakes\MailFake;
 
 class MailFakeTest extends TestCase
 {

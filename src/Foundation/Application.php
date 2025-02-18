@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Foundation;
+<?php namespace Laralips\Storm\Foundation;
 
 use Closure;
 use Throwable;
@@ -7,15 +7,15 @@ use Illuminate\Filesystem\Filesystem;
 use Illuminate\Foundation\Application as ApplicationBase;
 use Illuminate\Foundation\PackageManifest;
 use Symfony\Component\ErrorHandler\Error\FatalError;
-use Winter\Storm\Events\EventServiceProvider;
-use Winter\Storm\Filesystem\PathResolver;
-use Winter\Storm\Foundation\ProviderRepository;
-use Winter\Storm\Foundation\Providers\ExecutionContextProvider;
-use Winter\Storm\Foundation\Providers\LogServiceProvider;
-use Winter\Storm\Router\RoutingServiceProvider;
-use Winter\Storm\Support\Collection;
-use Winter\Storm\Support\Str;
-use Winter\Storm\Support\Facades\Config;
+use Laralips\Storm\Events\EventServiceProvider;
+use Laralips\Storm\Filesystem\PathResolver;
+use Laralips\Storm\Foundation\ProviderRepository;
+use Laralips\Storm\Foundation\Providers\ExecutionContextProvider;
+use Laralips\Storm\Foundation\Providers\LogServiceProvider;
+use Laralips\Storm\Router\RoutingServiceProvider;
+use Laralips\Storm\Support\Collection;
+use Laralips\Storm\Support\Str;
+use Laralips\Storm\Support\Facades\Config;
 
 class Application extends ApplicationBase
 {
@@ -451,7 +451,7 @@ class Application extends ApplicationBase
     public function registerCoreContainerAliases()
     {
         $aliases = [
-            'app'                  => [\Winter\Storm\Foundation\Application::class, \Illuminate\Contracts\Container\Container::class, \Illuminate\Contracts\Foundation\Application::class],
+            'app'                  => [\Laralips\Storm\Foundation\Application::class, \Illuminate\Contracts\Container\Container::class, \Illuminate\Contracts\Foundation\Application::class],
             'blade.compiler'       => [\Illuminate\View\Compilers\BladeCompiler::class],
             'cache'                => [\Illuminate\Cache\CacheManager::class, \Illuminate\Contracts\Cache\Factory::class],
             'cache.store'          => [\Illuminate\Cache\Repository::class, \Illuminate\Contracts\Cache\Repository::class],
@@ -463,7 +463,7 @@ class Application extends ApplicationBase
             'db.schema'            => [\Illuminate\Database\Schema\Builder::class],
             'events'               => [\Illuminate\Events\Dispatcher::class, \Illuminate\Contracts\Events\Dispatcher::class],
             'files'                => [\Illuminate\Filesystem\Filesystem::class],
-            'filesystem'           => [\Winter\Storm\Filesystem\FilesystemManager::class, \Illuminate\Contracts\Filesystem\Factory::class],
+            'filesystem'           => [\Laralips\Storm\Filesystem\FilesystemManager::class, \Illuminate\Contracts\Filesystem\Factory::class],
             'filesystem.disk'      => [\Illuminate\Contracts\Filesystem\Filesystem::class],
             'filesystem.cloud'     => [\Illuminate\Contracts\Filesystem\Cloud::class],
             'hash'                 => [\Illuminate\Contracts\Hashing\Hasher::class],
@@ -480,8 +480,8 @@ class Application extends ApplicationBase
             'router'               => [\Illuminate\Routing\Router::class, \Illuminate\Contracts\Routing\Registrar::class, \Illuminate\Contracts\Routing\BindingRegistrar::class],
             'session'              => [\Illuminate\Session\SessionManager::class],
             'session.store'        => [\Illuminate\Session\Store::class, \Illuminate\Contracts\Session\Session::class],
-            'url'                  => [\Winter\Storm\Router\UrlGenerator::class, \Illuminate\Contracts\Routing\UrlGenerator::class],
-            'validator'            => [\Winter\Storm\Validation\Factory::class, \Illuminate\Contracts\Validation\Factory::class],
+            'url'                  => [\Laralips\Storm\Router\UrlGenerator::class, \Illuminate\Contracts\Routing\UrlGenerator::class],
+            'validator'            => [\Laralips\Storm\Validation\Factory::class, \Illuminate\Contracts\Validation\Factory::class],
             'view'                 => [\Illuminate\View\Factory::class, \Illuminate\Contracts\View\Factory::class],
         ];
 

@@ -1,7 +1,7 @@
 <?php
 
-use Winter\Storm\Extension\Extendable;
-use Winter\Storm\Extension\ExtensionBase;
+use Laralips\Storm\Extension\Extendable;
+use Laralips\Storm\Extension\ExtensionBase;
 
 class ExtensionTest extends TestCase
 {

@@ -1,4 +1,4 @@
 <?php
 
-class_alias('Winter\Storm\Tests\TestCase', 'TestCase');
-class_alias('Winter\Storm\Tests\DbTestCase', 'DbTestCase');
+class_alias('Laralips\Storm\Tests\TestCase', 'TestCase');
+class_alias('Laralips\Storm\Tests\DbTestCase', 'DbTestCase');

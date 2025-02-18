@@ -39,7 +39,7 @@ if (!function_exists('http_build_url')) {
     /**
      * Polyfill for the `http_build_url` function provided by PECL HTTP extension.
      *
-     * @see \Winter\Storm\Router\UrlGenerator::buildUrl()
+     * @see \Laralips\Storm\Router\UrlGenerator::buildUrl()
      * @param string|array|false|null $url The URL parts, as an array. Must match the structure returned from a `parse_url` call.
      * @param string|array|false|null $replace The URL replacement parts. Allows a developer to replace certain sections of the URL with
      *                       a different value.
@@ -50,7 +50,7 @@ if (!function_exists('http_build_url')) {
      */
     function http_build_url($url, $replace = [], $flags = HTTP_URL_REPLACE, array &$newUrl = [])
     {
-        return \Winter\Storm\Router\UrlGenerator::buildUrl($url, $replace, $flags, $newUrl);
+        return \Laralips\Storm\Router\UrlGenerator::buildUrl($url, $replace, $flags, $newUrl);
     }
 }
 
@@ -58,7 +58,7 @@ if (!function_exists('http_build_str')) {
     /**
      * Polyfill for the `http_build_str` function provided by PECL HTTP extension.
      *
-     * @see \Winter\Storm\Router\UrlGenerator::buildStr()
+     * @see \Laralips\Storm\Router\UrlGenerator::buildStr()
      * @param   array   $query          Associative array of query string parameters.
      * @param   string  $prefix         Top level prefix.
      * @param   string  $arg_separator  Argument separator to use (by default the INI setting arg_separator.output will be used, or "&" if neither is set.
@@ -66,6 +66,6 @@ if (!function_exists('http_build_str')) {
      */
     function http_build_str(array $query, $prefix = '', $arg_separator = null)
     {
-        return \Winter\Storm\Router\UrlGenerator::buildStr($query, $prefix, $arg_separator);
+        return \Laralips\Storm\Router\UrlGenerator::buildStr($query, $prefix, $arg_separator);
     }
 }

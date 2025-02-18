@@ -1,11 +1,11 @@
 <?php
 
-namespace Winter\Storm\Router;
+namespace Laralips\Storm\Router;
 
 use Illuminate\Routing\RoutingServiceProvider as RoutingServiceProviderBase;
 
 /**
- * @property \Winter\Storm\Foundation\Application $app
+ * @property \Laralips\Storm\Foundation\Application $app
  */
 class RoutingServiceProvider extends RoutingServiceProviderBase
 {

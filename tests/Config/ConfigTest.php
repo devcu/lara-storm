@@ -1,7 +1,7 @@
 <?php
 
-use Winter\Storm\Config\Repository;
-use Winter\Storm\Config\FileLoader;
+use Laralips\Storm\Config\Repository;
+use Laralips\Storm\Config\FileLoader;
 use Illuminate\Filesystem\Filesystem;
 
 class ConfigTest extends TestCase

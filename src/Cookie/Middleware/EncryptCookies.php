@@ -1,8 +1,8 @@
-<?php namespace Winter\Storm\Cookie\Middleware;
+<?php namespace Laralips\Storm\Cookie\Middleware;
 
 use Illuminate\Contracts\Encryption\Encrypter as EncrypterContract;
 use Illuminate\Cookie\Middleware\EncryptCookies as EncryptCookiesBase;
-use Winter\Storm\Support\Facades\Config;
+use Laralips\Storm\Support\Facades\Config;
 
 class EncryptCookies extends EncryptCookiesBase
 {

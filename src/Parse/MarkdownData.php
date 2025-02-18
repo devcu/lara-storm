@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Parse;
+<?php namespace Laralips\Storm\Parse;
 
 /**
  * Helper class for passing partially parsed Markdown input

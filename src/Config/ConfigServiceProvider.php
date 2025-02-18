@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Config;
+<?php namespace Laralips\Storm\Config;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Filesystem\Filesystem;
@@ -28,7 +28,7 @@ class ConfigServiceProvider extends ServiceProvider
     /**
      * Get the configuration loader instance.
      *
-     * @return \Winter\Storm\Config\LoaderInterface
+     * @return \Laralips\Storm\Config\LoaderInterface
      */
     public function getConfigLoader()
     {

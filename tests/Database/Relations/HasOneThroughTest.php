@@ -1,12 +1,12 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Relations;
+namespace Laralips\Storm\Tests\Database\Relations;
 
-use Winter\Storm\Database\Model;
-use Winter\Storm\Tests\Database\Fixtures\Author;
-use Winter\Storm\Tests\Database\Fixtures\Phone;
-use Winter\Storm\Tests\Database\Fixtures\User;
-use Winter\Storm\Tests\DbTestCase;
+use Laralips\Storm\Database\Model;
+use Laralips\Storm\Tests\Database\Fixtures\Author;
+use Laralips\Storm\Tests\Database\Fixtures\Phone;
+use Laralips\Storm\Tests\Database\Fixtures\User;
+use Laralips\Storm\Tests\DbTestCase;
 
 class HasOneThroughTest extends DbTestCase
 {

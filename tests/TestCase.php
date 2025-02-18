@@ -1,25 +1,25 @@
 <?php
 
-namespace Winter\Storm\Tests;
+namespace Laralips\Storm\Tests;
 
 use ReflectionClass;
 use Orchestra\Testbench\Foundation\PackageManifest;
 use Orchestra\Testbench\TestCase as TestbenchTestCase;
 use PHPUnit\Framework\Assert;
-use Winter\Storm\Foundation\Application;
+use Laralips\Storm\Foundation\Application;
 
 class TestCase extends TestbenchTestCase
 {
     /**
      * Resolve application implementation.
      *
-     * @return \Winter\Storm\Foundation\Application
+     * @return \Laralips\Storm\Foundation\Application
      */
     protected function resolveApplication()
     {
         return tap(new Application($this->getBasePath()), function ($app) {
             $app->bind(
-                \Winter\Storm\Foundation\Bootstrap\LoadConfiguration::class,
+                \Laralips\Storm\Foundation\Bootstrap\LoadConfiguration::class,
                 \Orchestra\Testbench\Bootstrap\LoadConfiguration::class
             );
 
@@ -63,7 +63,7 @@ class TestCase extends TestbenchTestCase
     {
         $app->singleton(
             \Illuminate\Contracts\Console\Kernel::class,
-            \Winter\Storm\Foundation\Console\Kernel::class
+            \Laralips\Storm\Foundation\Console\Kernel::class
         );
     }
 
@@ -77,7 +77,7 @@ class TestCase extends TestbenchTestCase
     {
         $app->singleton(
             \Illuminate\Contracts\Http\Kernel::class,
-            \Winter\Storm\Foundation\Http\Kernel::class
+            \Laralips\Storm\Foundation\Http\Kernel::class
         );
     }
 
@@ -111,19 +111,19 @@ class TestCase extends TestbenchTestCase
             /*
             * Winter Storm providers
             */
-            \Winter\Storm\Foundation\Providers\ConsoleSupportServiceProvider::class,
-            \Winter\Storm\Database\DatabaseServiceProvider::class,
-            \Winter\Storm\Halcyon\HalcyonServiceProvider::class,
-            \Winter\Storm\Filesystem\FilesystemServiceProvider::class,
-            \Winter\Storm\Parse\ParseServiceProvider::class,
-            \Winter\Storm\Html\HtmlServiceProvider::class,
-            \Winter\Storm\Html\UrlServiceProvider::class,
-            \Winter\Storm\Network\NetworkServiceProvider::class,
-            \Winter\Storm\Flash\FlashServiceProvider::class,
-            \Winter\Storm\Mail\MailServiceProvider::class,
-            \Winter\Storm\Argon\ArgonServiceProvider::class,
-            \Winter\Storm\Redis\RedisServiceProvider::class,
-            \Winter\Storm\Validation\ValidationServiceProvider::class,
+            \Laralips\Storm\Foundation\Providers\ConsoleSupportServiceProvider::class,
+            \Laralips\Storm\Database\DatabaseServiceProvider::class,
+            \Laralips\Storm\Halcyon\HalcyonServiceProvider::class,
+            \Laralips\Storm\Filesystem\FilesystemServiceProvider::class,
+            \Laralips\Storm\Parse\ParseServiceProvider::class,
+            \Laralips\Storm\Html\HtmlServiceProvider::class,
+            \Laralips\Storm\Html\UrlServiceProvider::class,
+            \Laralips\Storm\Network\NetworkServiceProvider::class,
+            \Laralips\Storm\Flash\FlashServiceProvider::class,
+            \Laralips\Storm\Mail\MailServiceProvider::class,
+            \Laralips\Storm\Argon\ArgonServiceProvider::class,
+            \Laralips\Storm\Redis\RedisServiceProvider::class,
+            \Laralips\Storm\Validation\ValidationServiceProvider::class,
         ];
     }
 }

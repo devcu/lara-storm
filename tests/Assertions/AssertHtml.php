@@ -1,6 +1,6 @@
 <?php
 
-namespace Winter\Storm\Tests\Assertions;
+namespace Laralips\Storm\Tests\Assertions;
 
 use DOMElement;
 use PHPUnit\Framework\Assert;

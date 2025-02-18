@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Http\Request;
-use Winter\Storm\Support\Facades\Input;
+use Laralips\Storm\Support\Facades\Input;
 
 class ValidationTest extends TestCase
 {
-    use \Winter\Storm\Database\Traits\Validation;
+    use \Laralips\Storm\Database\Traits\Validation;
 
     public $exists;
 
@@ -122,7 +122,7 @@ class ValidationTest extends TestCase
 
     public function testArrayFieldNames()
     {
-        $mock = $this->getMockForTrait('Winter\Storm\Database\Traits\Validation');
+        $mock = $this->getMockForTrait('Laralips\Storm\Database\Traits\Validation');
 
         $rules = [
             'field' => 'required',

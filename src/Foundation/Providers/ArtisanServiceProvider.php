@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Foundation\Providers;
+<?php namespace Laralips\Storm\Foundation\Providers;
 
-use Winter\Storm\Foundation\Console\KeyGenerateCommand;
-use Winter\Storm\Foundation\Console\ClearCompiledCommand;
+use Laralips\Storm\Foundation\Console\KeyGenerateCommand;
+use Laralips\Storm\Foundation\Console\ClearCompiledCommand;
 use Illuminate\Foundation\Providers\ArtisanServiceProvider as ArtisanServiceProviderBase;
 
 class ArtisanServiceProvider extends ArtisanServiceProviderBase
@@ -15,15 +15,15 @@ class ArtisanServiceProvider extends ArtisanServiceProviderBase
         // Currently included in Winter
         'CacheClear'            => \Illuminate\Cache\Console\ClearCommand::class,
         'CacheForget'           => \Illuminate\Cache\Console\ForgetCommand::class,
-        'ClearCompiled'         => \Winter\Storm\Foundation\Console\ClearCompiledCommand::class,
-        'ConfigCache'           => \Winter\Storm\Foundation\Console\ConfigCacheCommand::class,
+        'ClearCompiled'         => \Laralips\Storm\Foundation\Console\ClearCompiledCommand::class,
+        'ConfigCache'           => \Laralips\Storm\Foundation\Console\ConfigCacheCommand::class,
         'ConfigClear'           => \Illuminate\Foundation\Console\ConfigClearCommand::class,
         'Down'                  => \Illuminate\Foundation\Console\DownCommand::class,
         'Environment'           => \Illuminate\Foundation\Console\EnvironmentCommand::class,
         'EventCache'            => \Illuminate\Foundation\Console\EventCacheCommand::class,
         'EventClear'            => \Illuminate\Foundation\Console\EventClearCommand::class,
-        'EventList'             => \Winter\Storm\Foundation\Console\EventListCommand::class,
-        'KeyGenerate'           => \Winter\Storm\Foundation\Console\KeyGenerateCommand::class,
+        'EventList'             => \Laralips\Storm\Foundation\Console\EventListCommand::class,
+        'KeyGenerate'           => \Laralips\Storm\Foundation\Console\KeyGenerateCommand::class,
         'Optimize'              => \Illuminate\Foundation\Console\OptimizeCommand::class,
         'PackageDiscover'       => \Illuminate\Foundation\Console\PackageDiscoverCommand::class,
         'QueueFailed'           => \Illuminate\Queue\Console\ListFailedCommand::class,

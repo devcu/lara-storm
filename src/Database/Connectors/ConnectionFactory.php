@@ -1,12 +1,12 @@
-<?php namespace Winter\Storm\Database\Connectors;
+<?php namespace Laralips\Storm\Database\Connectors;
 
 use Illuminate\Support\Arr;
 use Illuminate\Database\Connectors\ConnectionFactory as ConnectionFactoryBase;
-use Winter\Storm\Database\Connections\Connection;
-use Winter\Storm\Database\Connections\MySqlConnection;
-use Winter\Storm\Database\Connections\SQLiteConnection;
-use Winter\Storm\Database\Connections\PostgresConnection;
-use Winter\Storm\Database\Connections\SqlServerConnection;
+use Laralips\Storm\Database\Connections\Connection;
+use Laralips\Storm\Database\Connections\MySqlConnection;
+use Laralips\Storm\Database\Connections\SQLiteConnection;
+use Laralips\Storm\Database\Connections\PostgresConnection;
+use Laralips\Storm\Database\Connections\SqlServerConnection;
 use PDOException;
 use InvalidArgumentException;
 

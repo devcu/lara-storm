@@ -12,9 +12,9 @@ class HasSortableRelationsTest extends TestCase
 /*
 * Class with HasSortableRelations trait
 */
-class TestModel extends \Winter\Storm\Database\Model
+class TestModel extends \Laralips\Storm\Database\Model
 {
-    use \Winter\Storm\Database\Traits\HasSortableRelations;
+    use \Laralips\Storm\Database\Traits\HasSortableRelations;
 
     protected $sortableRelations = [
         'relationToSelf' => 'sort_order',

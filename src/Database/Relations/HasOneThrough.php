@@ -1,14 +1,14 @@
 <?php
 
-namespace Winter\Storm\Database\Relations;
+namespace Laralips\Storm\Database\Relations;
 
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\HasOneThrough as HasOneThroughBase;
 
 /**
- * @phpstan-property \Winter\Storm\Database\Model $farParent
- * @phpstan-property \Winter\Storm\Database\Model $parent
+ * @phpstan-property \Laralips\Storm\Database\Model $farParent
+ * @phpstan-property \Laralips\Storm\Database\Model $parent
  */
 class HasOneThrough extends HasOneThroughBase
 {
@@ -36,7 +36,7 @@ class HasOneThrough extends HasOneThroughBase
     {
         $uses = class_uses_recursive(get_class($this->parent));
 
-        return in_array('Winter\Storm\Database\Traits\SoftDelete', $uses) ||
+        return in_array('Laralips\Storm\Database\Traits\SoftDelete', $uses) ||
             in_array('Illuminate\Database\Eloquent\SoftDeletes', $uses);
     }
 

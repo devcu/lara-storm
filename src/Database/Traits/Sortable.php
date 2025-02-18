@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Database\Traits;
+<?php namespace Laralips\Storm\Database\Traits;
 
 use Exception;
-use Winter\Storm\Database\SortableScope;
+use Laralips\Storm\Database\SortableScope;
 
 /**
  * Sortable model trait
@@ -12,7 +12,7 @@ use Winter\Storm\Database\SortableScope;
  *
  * In the model class definition:
  *
- *   use \Winter\Storm\Database\Traits\Sortable;
+ *   use \Laralips\Storm\Database\Traits\Sortable;
  *
  * To set orders:
  *

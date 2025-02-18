@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Parse\Syntax\FieldParser;
+use Laralips\Storm\Parse\Syntax\FieldParser;
 
 class SyntaxFieldParserTest extends TestCase
 {

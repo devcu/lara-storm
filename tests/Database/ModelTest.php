@@ -4,8 +4,8 @@ namespace Tests\Database;
 
 use Mockery;
 use Illuminate\Support\Facades\DB;
-use Winter\Storm\Database\Model;
-use Winter\Storm\Tests\DbTestCase;
+use Laralips\Storm\Database\Model;
+use Laralips\Storm\Tests\DbTestCase;
 
 class ModelTest extends DbTestCase
 {

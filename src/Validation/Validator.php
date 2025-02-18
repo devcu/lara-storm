@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Validation;
+<?php namespace Laralips\Storm\Validation;
 
 use Illuminate\Validation\Validator as BaseValidator;
 use Illuminate\Contracts\Validation\Validator as ValidatorContract;

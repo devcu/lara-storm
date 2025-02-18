@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Flash;
+<?php namespace Laralips\Storm\Flash;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Contracts\Support\DeferrableProvider;

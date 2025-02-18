@@ -1,15 +1,15 @@
 <?php
 
-namespace Winter\Storm\Database\Relations;
+namespace Laralips\Storm\Database\Relations;
 
 use Illuminate\Database\Eloquent\Builder;
-use Winter\Storm\Database\Collection;
+use Laralips\Storm\Database\Collection;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Collection as CollectionBase;
 use Illuminate\Database\Eloquent\Relations\MorphMany as MorphManyBase;
 
 /**
- * @phpstan-property \Winter\Storm\Database\Model $parent
+ * @phpstan-property \Laralips\Storm\Database\Model $parent
  */
 class MorphMany extends MorphManyBase implements RelationInterface
 {

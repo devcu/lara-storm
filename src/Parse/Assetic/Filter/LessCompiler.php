@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Parse\Assetic\Filter;
+<?php namespace Laralips\Storm\Parse\Assetic\Filter;
 
 use Less_Parser;
 use Assetic\Filter\BaseFilter;

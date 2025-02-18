@@ -67,7 +67,7 @@
             "src/Html/helpers.php"
         ],
         "psr-4": {
-            "Winter\\Storm\\": "src/"
+            "Laralips\\Storm\\": "src/"
         }
     },
     "autoload-dev": {

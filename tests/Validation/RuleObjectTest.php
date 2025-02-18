@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Filesystem\Filesystem;
-use Winter\Storm\Translation\FileLoader;
-use Winter\Storm\Translation\Translator;
-use Winter\Storm\Validation\Factory;
+use Laralips\Storm\Translation\FileLoader;
+use Laralips\Storm\Translation\Translator;
+use Laralips\Storm\Validation\Factory;
 
 class RuleObjectTest extends TestCase
 {

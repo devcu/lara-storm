@@ -1,7 +1,7 @@
-<?php namespace Winter\Storm\Database;
+<?php namespace Laralips\Storm\Database;
 
-use Winter\Storm\Database\Schema\Blueprint;
-use Winter\Storm\Database\Connectors\ConnectionFactory;
+use Laralips\Storm\Database\Schema\Blueprint;
+use Laralips\Storm\Database\Connectors\ConnectionFactory;
 use Illuminate\Database\DatabaseServiceProvider as DatabaseServiceProviderBase;
 use Illuminate\Database\DatabaseManager;
 

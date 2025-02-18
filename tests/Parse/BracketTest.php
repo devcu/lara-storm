@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Parse\Bracket as TextParser;
+use Laralips\Storm\Parse\Bracket as TextParser;
 
 class BracketTest extends TestCase
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Traits;
+namespace Laralips\Storm\Tests\Database\Traits;
 
-use Winter\Storm\Tests\Database\Fixtures\NullablePost;
-use Winter\Storm\Tests\DbTestCase;
+use Laralips\Storm\Tests\Database\Fixtures\NullablePost;
+use Laralips\Storm\Tests\DbTestCase;
 
 class NullableTest extends DbTestCase
 {

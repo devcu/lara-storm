@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Redis;
+<?php namespace Laralips\Storm\Redis;
 
 use Illuminate\Redis\RedisManager;
 use Illuminate\Redis\RedisServiceProvider as BaseRedisServiceProvider;

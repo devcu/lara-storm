@@ -1,8 +1,8 @@
 <?php
 
-namespace Winter\Storm\Tests\Database\Fixtures;
+namespace Laralips\Storm\Tests\Database\Fixtures;
 
 class CategorySimple extends Category
 {
-    use \Winter\Storm\Database\Traits\SimpleTree;
+    use \Laralips\Storm\Database\Traits\SimpleTree;
 }

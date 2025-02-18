@@ -1,15 +1,15 @@
 <?php
 
-namespace Winter\Storm\Support\Facades;
+namespace Laralips\Storm\Support\Facades;
 
 abstract class Facade {}
 
 /**
- * @mixin \Winter\Storm\Database\Dongle
+ * @mixin \Laralips\Storm\Database\Dongle
  */
 class DbDongle extends Facade {}
 
 /**
- * @mixin \Winter\Storm\Parse\Twig
+ * @mixin \Laralips\Storm\Parse\Twig
  */
 class Twig extends Facade {}

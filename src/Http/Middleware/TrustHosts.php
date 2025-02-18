@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Http\Middleware;
+<?php namespace Laralips\Storm\Http\Middleware;
 
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Http\Request;

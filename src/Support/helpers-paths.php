@@ -1,6 +1,6 @@
 <?php
 
-use Winter\Storm\Filesystem\PathResolver;
+use Laralips\Storm\Filesystem\PathResolver;
 
 if (!function_exists('config_path')) {
     /**

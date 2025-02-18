@@ -4,16 +4,16 @@ Halcyon is a file based ORM, and the cousin of Eloquent. The goal of this librar
 
 ### Registering a data source
 
-Datasources reside inside a resolving container called `Winter\Storm\Halcyon\Datasource\Resolver`. The following datasources are supported:
+Datasources reside inside a resolving container called `Laralips\Storm\Halcyon\Datasource\Resolver`. The following datasources are supported:
 
-- `Winter\Storm\Halcyon\Datasource\FileDatasource`: File based datasource.
+- `Laralips\Storm\Halcyon\Datasource\FileDatasource`: File based datasource.
 
 Here is an example of registering a datasource called `theme1`, then binding the resolver to all models.
 
-    use Winter\Storm\Halcyon\Model;
-    use Winter\Storm\Filesystem\Filesystem;
-    use Winter\Storm\Halcyon\Datasource\FileDatasource;
-    use Winter\Storm\Halcyon\Datasource\Resolver;
+    use Laralips\Storm\Halcyon\Model;
+    use Laralips\Storm\Filesystem\Filesystem;
+    use Laralips\Storm\Halcyon\Datasource\FileDatasource;
+    use Laralips\Storm\Halcyon\Datasource\Resolver;
 
     $datasource = new FileDatasource('/path/to/theme', new Filesystem);
     $resolver = new Resolver(['theme1' => $datasource]);
@@ -22,11 +22,11 @@ Here is an example of registering a datasource called `theme1`, then binding the
 
 ### Model example
 
-Inherit the `Winter\Storm\Halcyon\Model` to create a new model:
+Inherit the `Laralips\Storm\Halcyon\Model` to create a new model:
 
     <?php
 
-    use Winter\Storm\Halcyon\Model;
+    use Laralips\Storm\Halcyon\Model;
 
     class MyPage extends Model
     {
