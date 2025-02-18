@@ -1,8 +1,8 @@
 {
-    "name": "devcu/storm",
+    "name": "devcu/lara-storm",
     "description": "LaraLips CMS Storm Library",
     "homepage": "https://devcu.com",
-    "keywords": ["laralips", "cms", "storm"],
+    "keywords": ["laralips", "cms", "devCU Storm"],
     "license": "MIT",
     "authors": [
         {
