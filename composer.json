@@ -1,28 +1,18 @@
 {
-    "name": "winter/storm",
-    "description": "Winter CMS Storm Library",
-    "homepage": "https://wintercms.com",
-    "keywords": ["winter", "cms", "storm"],
+    "name": "devcu/storm",
+    "description": "LaraLips CMS Storm Library",
+    "homepage": "https://devcu.com",
+    "keywords": ["laralips", "cms", "storm"],
     "license": "MIT",
     "authors": [
         {
-            "name": "Alexey Bobkov",
-            "email": "aleksey.bobkov@gmail.com",
-            "role": "Original Author"
-        },
-        {
-            "name": "Samuel Georges",
-            "email": "daftspunky@gmail.com",
-            "role": "Original Author"
-        },
-        {
-            "name": "Luke Towers",
-            "email": "wintercms@luketowers.ca",
-            "role": "Lead Maintainer"
+            "name": "Gary Cornell",
+            "email": "gary@devcu.com",
+            "role": "Lead Maintainer/Refactoring"
         }
     ],
     "require": {
-        "php": "^8.0.2",
+        "php": "^8.3",
         "ext-ctype": "*",
         "ext-curl": "*",
         "ext-dom": "*",
@@ -38,7 +28,7 @@
         "assetic/framework": "~3.0",
         "doctrine/dbal": "^2.6",
         "enshrined/svg-sanitize": "~0.16",
-        "laravel/framework": "^9.1",
+        "laravel/framework": "^11.1",
         "laravel/tinker": "^2.7",
         "league/csv": "~9.1",
         "nesbot/carbon": "^2.0",
@@ -84,7 +74,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Winter\\Storm\\Tests\\": "tests/"
+            "Laralips\\Storm\\Tests\\": "tests/"
         }
     },
     "scripts": {
