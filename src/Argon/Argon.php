@@ -1,4 +1,4 @@
-<?php namespace Winter\Storm\Argon;
+<?php namespace Laralips\Storm\Argon;
 
 use Illuminate\Support\Carbon;
 
